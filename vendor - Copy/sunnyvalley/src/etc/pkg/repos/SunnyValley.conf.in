@@ -1,7 +1,0 @@
-SunnyValley: {
-  fingerprints: "/usr/local/etc/pkg/fingerprints/SunnyValley",
-  url: "https://updates.zenarmor.com/reticen8/${ABI}/%%PLUGIN_ABI%%/latest",
-  signature_type: "fingerprints",
-  priority: 7,
-  enabled: yes
-}

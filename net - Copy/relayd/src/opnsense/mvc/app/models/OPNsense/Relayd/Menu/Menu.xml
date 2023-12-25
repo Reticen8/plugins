@@ -1,9 +1,0 @@
-<menu>
-   <Services>
-      <Relayd cssClass="fa fa-truck fa-fw">
-         <Settings url="/ui/relayd"/>
-         <Status url="/ui/relayd/status"/>
-         <Log VisibleName="Log File" order="100" url="/ui/diagnostics/log/core/relayd"/>
-      </Relayd>
-   </Services>
-</menu>

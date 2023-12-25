@@ -1,5 +1,0 @@
-{% if helpers.exists('Reticen8.Rspamd.general.enabled') and Reticen8.Rspamd.general.enabled == '1' and helpers.exists('Reticen8.Rspamd.multimap.whitelistsender') and Reticen8.Rspamd.multimap.whitelistsender != '' %}
-{%   for sender in Reticen8.Rspamd.multimap.whitelistsender.split(',') %}
-{{ sender }}
-{%   endfor %}
-{% endif %}

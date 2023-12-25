@@ -1,3 +1,0 @@
-apcupsd:/etc/rc.conf.d/apcupsd
-apcupsd.conf:/usr/local/etc/apcupsd/apcupsd.conf
-syslog-filter.conf:/usr/local/reticen8/service/templates/Reticen8/Syslog/local/apcupsd.conf

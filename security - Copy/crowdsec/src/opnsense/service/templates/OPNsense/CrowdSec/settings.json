@@ -1,3 +1,0 @@
-{% if helpers.exists('Reticen8.crowdsec.general') -%}
-    {{ Reticen8.crowdsec.general | tojson }}
-{%- endif %}

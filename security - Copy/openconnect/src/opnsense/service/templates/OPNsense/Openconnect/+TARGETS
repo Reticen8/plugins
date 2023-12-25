@@ -1,3 +1,0 @@
-openconnect:/etc/rc.conf.d/reticen8-openconnect
-openconnect.conf:/usr/local/etc/openconnect.conf
-openconnect.secret:/usr/local/etc/openconnect.secret

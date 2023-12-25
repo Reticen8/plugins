@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/local/reticen8/scripts/Reticen8/HAProxy/rc-wrapper.sh stop

@@ -1,2 +1,0 @@
-nginx_setup="/usr/local/reticen8/scripts/nginx/setup.php"
-nginx_enable="YES"

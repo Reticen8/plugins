@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.tor.general.enabled') and Reticen8.tor.general.enabled == '1' %}
-tor_setup="/usr/local/reticen8/scripts/tor/setup.sh"
-tor_enable="YES"
-{% else %}
-tor_enable="NO"
-{% endif %}

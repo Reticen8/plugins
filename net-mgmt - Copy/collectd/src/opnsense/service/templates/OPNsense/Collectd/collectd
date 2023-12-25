@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.collectd.general.enabled') and Reticen8.collectd.general.enabled == '1' %}
-collectd_setup="/usr/local/reticen8/scripts/Reticen8/Collectd/setup.sh"
-collectd_enable="YES"
-{% else %}
-collectd_enable="NO"
-{% endif %}

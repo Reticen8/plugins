@@ -1,5 +1,0 @@
-{% if helpers.exists('Reticen8.zabbixproxy.general.enabled') and Reticen8.zabbixproxy.general.enabled == '1' %}
-{% if helpers.exists('Reticen8.zabbixproxy.general.encryption') and Reticen8.zabbixproxy.general.encryption == '1' %}
-{{ Reticen8.zabbixproxy.general.encryptionpsk }}
-{% endif %}
-{% endif %}

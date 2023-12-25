@@ -1,7 +1,0 @@
-{% if helpers.exists('Reticen8.ntopng.general.enabled') and Reticen8.ntopng.general.enabled == '1' %}
-ntopng_setup="/usr/local/reticen8/scripts/Reticen8/Ntopng/setup.sh"
-ntopng_enable="YES"
-ntopng_flags="/usr/local/etc/ntopng.conf"
-{% else %}
-ntopng_enable="NO"
-{% endif %}

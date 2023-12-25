@@ -1,3 +1,0 @@
-Wazuh is a free and open source platform used for threat prevention, detection, and response. It is capable of protecting workloads across on-premises, virtualized, containerized, and cloud-based environments.
-
-Using this plugin you can integrate your Reticen8 firewall into the Wazuh solution.

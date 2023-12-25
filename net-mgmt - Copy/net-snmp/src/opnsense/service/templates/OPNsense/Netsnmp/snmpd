@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.netsnmp.general.enabled') and Reticen8.netsnmp.general.enabled == '1' %}
-snmpd_setup="/usr/local/reticen8/scripts/Reticen8/Netsnmp/setup.sh"
-snmpd_enable="YES"
-{% else %}
-snmpd_enable="NO"
-{% endif %}

@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.siproxd.general.enabled') and Reticen8.siproxd.general.enabled == '1' %}
-siproxd_setup="/usr/local/reticen8/scripts/Reticen8/Siproxd/setup.sh"
-siproxd_enable="YES"
-{% else %}
-siproxd_enable="NO"
-{% endif %}

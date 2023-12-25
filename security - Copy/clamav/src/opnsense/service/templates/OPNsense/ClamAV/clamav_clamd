@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.clamav.general.enabled') and Reticen8.clamav.general.enabled == '1' %}
-clamav_clamd_setup="/usr/local/reticen8/scripts/Reticen8/ClamAV/setup.sh"
-clamav_clamd_enable="YES"
-{% else %}
-clamav_clamd_enable="NO"
-{% endif %}

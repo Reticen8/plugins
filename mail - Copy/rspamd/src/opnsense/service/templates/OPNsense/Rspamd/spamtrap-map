@@ -1,5 +1,0 @@
-{% if helpers.exists('Reticen8.Rspamd.general.enabled') and Reticen8.Rspamd.general.enabled == '1' and helpers.exists('Reticen8.Rspamd.spamtrap.spam_recipients') %}
-{%   for recipient in Reticen8.Rspamd.spamtrap.spam_recipients.split(',') %}
-/{{ recipient }}/i
-{%   endfor %}
-{% endif %}

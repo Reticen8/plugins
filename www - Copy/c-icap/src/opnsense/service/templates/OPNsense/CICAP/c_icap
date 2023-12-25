@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.cicap.general.enabled') and Reticen8.cicap.general.enabled == '1' %}
-c_icap_setup="/usr/local/reticen8/scripts/Reticen8/CICAP/setup.sh"
-c_icap_enable="YES"
-{% else %}
-c_icap_enable="NO"
-{% endif %}

@@ -1,9 +1,0 @@
-{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
-{%   if helpers.exists('Reticen8.postfix.sendercanonical.sendercanonicals.sendercanonical') %}
-{%     for sendercanonical in helpers.toList('Reticen8.postfix.sendercanonical.sendercanonicals.sendercanonical') %}
-{%       if sendercanonical.enabled == '1' %}
-{{ sendercanonical.from }} {{ sendercanonical.to }}
-{%       endif %}
-{%     endfor %}
-{%   endif %}
-{% endif %}

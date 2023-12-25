@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.freeradius.general.enabled') and Reticen8.freeradius.general.enabled == '1' %}
-radiusd_setup="/usr/local/reticen8/scripts/Freeradius/setup.sh"
-radiusd_enable="YES"
-{% else %}
-radiusd_enable="NO"
-{% endif %}

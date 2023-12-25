@@ -1,5 +1,0 @@
-{% if helpers.exists('Reticen8.ZabbixAgent.settings.features.encryption') and Reticen8.ZabbixAgent.settings.features.encryption != '' %}
-{%   if helpers.exists('Reticen8.ZabbixAgent.settings.features.encryptionpsk') and Reticen8.ZabbixAgent.settings.features.encryptionpsk != '' %}
-{{ Reticen8.ZabbixAgent.settings.features.encryptionpsk }}
-{%   endif %}
-{% endif %}

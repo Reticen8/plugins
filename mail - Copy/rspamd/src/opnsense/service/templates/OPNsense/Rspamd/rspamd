@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.Rspamd.general.enabled') and Reticen8.Rspamd.general.enabled == '1' %}
-rspamd_setup="/usr/local/reticen8/scripts/rspamd/setup.sh"
-rspamd_enable="YES"
-{% else %}
-rspamd_enable="NO"
-{% endif %}

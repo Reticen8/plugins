@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.maltrail.sensor.enabled') and Reticen8.maltrail.sensor.enabled == '1' %}
-maltrailsensor_setup="/usr/local/reticen8/scripts/Reticen8/Maltrail/setup.sh"
-maltrailsensor_enable="YES"
-{% else %}
-maltrailsensor_enable="NO"
-{% endif %}

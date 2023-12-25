@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# https://docs.reticen8.com/development/backend/autorun.html
-
-/usr/local/reticen8/scripts/Reticen8/CrowdSec/hub-upgrade.sh

@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.zabbixproxy.general.enabled') and Reticen8.zabbixproxy.general.enabled == '1' %}
-zabbix_proxy_setup="/usr/local/reticen8/scripts/Reticen8/Zabbixproxy/setup.sh"
-zabbix_proxy_enable="YES"
-{% else %}
-zabbix_proxy_enable="NO"
-{% endif %}

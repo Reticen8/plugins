@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.netdata.general.enabled') and Reticen8.netdata.general.enabled == '1' %}
-netdata_setup="/usr/local/reticen8/scripts/Reticen8/Netdata/setup.sh"
-netdata_enable="YES"
-{% else %}
-netdata_enable="NO"
-{% endif %}

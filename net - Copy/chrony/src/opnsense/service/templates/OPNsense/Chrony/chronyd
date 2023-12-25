@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.chrony.general.enabled') and Reticen8.chrony.general.enabled == '1' %}
-chronyd_setup="/usr/local/reticen8/scripts/Reticen8/Chrony/setup.sh"
-chronyd_enable="YES"
-{% else %}
-chronyd_enable="NO"
-{% endif %}

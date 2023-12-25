@@ -1,6 +1,0 @@
-{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
-postfix_setup="/usr/local/reticen8/scripts/Reticen8/Postfix/setup.sh"
-postfix_enable="YES"
-{% else %}
-postfix_enable="NO"
-{% endif %}

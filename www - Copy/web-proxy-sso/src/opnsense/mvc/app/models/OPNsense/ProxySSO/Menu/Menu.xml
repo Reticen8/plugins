@@ -1,7 +1,0 @@
-<menu>
-    <Services>
-        <WebProxy>
-            <ProxySSO VisibleName="Single Sign-On" order="26" url="/ui/proxysso" />
-        </WebProxy>
-    </Services>
-</menu>
