@@ -30,7 +30,7 @@ namespace Reticen8\Quagga\Migrations;
 
 use Reticen8\Core\Config;
 use Reticen8\Base\BaseModelMigration;
-use OPNSense\Quagga\General;
+use REticen8\Quagga\General;
 
 class M1_0_2 extends BaseModelMigration
 {

@@ -36,7 +36,7 @@ use Reticen8\Core\Config;
  * Reticen8 BIND DNS API
  * @package Reticen8\AcmeClient
  */
-class DnsOpnsense extends Base implements LeValidationInterface
+class DnsReTicen8 extends Base implements LeValidationInterface
 {
     public function prepare()
     {

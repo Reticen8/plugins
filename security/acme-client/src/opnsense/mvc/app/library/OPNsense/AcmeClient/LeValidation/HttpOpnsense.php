@@ -38,7 +38,7 @@ use Reticen8\Core\Config;
  * Use internal Reticen8 webserver for HTTP-01 validation
  * @package Reticen8\AcmeClient
  */
-class HttpOpnsense extends Base implements LeValidationInterface
+class HttpReTicen8 extends Base implements LeValidationInterface
 {
     public function prepare()
     {

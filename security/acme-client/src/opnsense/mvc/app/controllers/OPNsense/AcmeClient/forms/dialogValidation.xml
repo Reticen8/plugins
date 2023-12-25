@@ -1029,12 +1029,12 @@
     </field>
     <field>
         <id>validation.dns_reticen8_host</id>
-        <label>OPNSense Server (FQDN)</label>
+        <label>REticen8 Server (FQDN)</label>
         <type>text</type>
     </field>
     <field>
         <id>validation.dns_reticen8_port</id>
-        <label>OPNSense Server Port</label>
+        <label>REticen8 Server Port</label>
         <type>text</type>
     </field>
     <field>
