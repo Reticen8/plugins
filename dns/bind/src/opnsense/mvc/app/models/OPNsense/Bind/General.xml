@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/bind/general</mount>
+    <mount>//Reticen8/bind/general</mount>
     <description>BIND configuration</description>
     <version>1.0.10</version>
     <items>
@@ -86,7 +86,7 @@
         <recursion type="ModelRelationField">
             <Model>
                 <template>
-                    <source>OPNsense.Bind.Acl</source>
+                    <source>Reticen8.Bind.Acl</source>
                     <items>acls.acl</items>
                     <display>name</display>
                 </template>
@@ -98,7 +98,7 @@
         <allowtransfer type="ModelRelationField">
             <Model>
                 <template>
-                    <source>OPNsense.Bind.Acl</source>
+                    <source>Reticen8.Bind.Acl</source>
                     <items>acls.acl</items>
                     <display>name</display>
                 </template>
@@ -109,7 +109,7 @@
         <allowquery type="ModelRelationField">
             <Model>
                 <template>
-                    <source>OPNsense.Bind.Acl</source>
+                    <source>Reticen8.Bind.Acl</source>
                     <items>acls.acl</items>
                     <display>name</display>
                 </template>

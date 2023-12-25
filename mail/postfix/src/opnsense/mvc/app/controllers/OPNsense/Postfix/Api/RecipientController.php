@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class RecipientController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'recipient';
-    protected static $internalModelClass = '\OPNsense\Postfix\Recipient';
+    protected static $internalModelClass = '\Reticen8\Postfix\Recipient';
 
     public function searchRecipientAction()
     {

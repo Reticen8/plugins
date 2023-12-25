@@ -1,6 +1,6 @@
 {#
 
-OPNsense® is Copyright © 2014 – 2017 by Deciso B.V.
+Reticen8® is Copyright © 2014 – 2017 by Deciso B.V.
 Copyright (C) 2017 Fabian Franz
 Copyright (C) 2017 - 2021 Michael Muenz <m.muenz@gmail.com>
 All rights reserved.

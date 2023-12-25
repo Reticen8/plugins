@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Telegraf\Api;
+namespace Reticen8\Telegraf\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Telegraf\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Telegraf\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Telegraf
+ * @package Reticen8\Telegraf
  */
 class ServiceController extends ApiControllerBase
 {
@@ -136,7 +136,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Telegraf');
+            $backend->configdRun('template reload Reticen8/Telegraf');
 
             // (res)start daemon
             if ($mdlGeneral->enabled->__toString() == 1) {

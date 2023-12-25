@@ -1,14 +1,14 @@
 /*
-  PAC file created via OPNsense
+  PAC file created via Reticen8
   To use this file you have to enter its URL into your browsers network settings.
 */
 function FindProxyForURL(url, host) {
-{% if helpers.exists('OPNsense.proxy.pac.rule') %}
+{% if helpers.exists('Reticen8.proxy.pac.rule') %}
 {# define only if needed as because of performance issues #}
 {% set data = {'dl' : '', 'dstip' : '', 'is_resolvable' : '' } %}
 {% set dstip = '' %}
 {% set is_resolvable = '' %}
-{% for match in helpers.toList('OPNsense.proxy.pac.match') %}
+{% for match in helpers.toList('Reticen8.proxy.pac.match') %}
 {%   if match.match_type == 'dns_domain_levels' %}
 {%     do data.update({ 'dl': 'var dl =  dnsDomainLevels(host);'}) %}
 {%   endif %}
@@ -21,8 +21,8 @@ function FindProxyForURL(url, host) {
 {% endfor %}
 {{ data.values()|join("\n") }}
 
-{% if helpers.exists('OPNsense.proxy.pac.rule') %}
-{%   for rule in helpers.toList('OPNsense.proxy.pac.rule') %}
+{% if helpers.exists('Reticen8.proxy.pac.rule') %}
+{%   for rule in helpers.toList('Reticen8.proxy.pac.rule') %}
 {%     if not rule.enabled == '1' %}
 {%       continue %}
 {%     endif %}

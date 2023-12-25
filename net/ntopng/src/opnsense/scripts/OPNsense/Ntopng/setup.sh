@@ -13,4 +13,4 @@ if [ -d /var/tmp/ntopng ]; then
   rm -rf /var/tmp/ntopng
 fi
 
-/usr/local/opnsense/scripts/OPNsense/Ntopng/generate_certs.php
+/usr/local/reticen8/scripts/Reticen8/Ntopng/generate_certs.php

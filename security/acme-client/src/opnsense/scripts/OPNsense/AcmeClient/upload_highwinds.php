@@ -33,19 +33,19 @@ require_once("certs.inc");
 require_once("legacy_bindings.inc");
 require_once("util.inc");
 
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Base;
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Base;
+use Reticen8\AcmeClient\AcmeClient;
 
 $HIGHWINDS_API_URL = 'https://striketracker.highwinds.com/api/v1/accounts';
 
 function find_certificate($acme_cert_id)
 {
-    $modelObj = new OPNsense\AcmeClient\AcmeClient();
+    $modelObj = new Reticen8\AcmeClient\AcmeClient();
     $configObj = Config::getInstance()->object();
-    if (isset($configObj->OPNsense->AcmeClient->certificates) && $configObj->OPNsense->AcmeClient->certificates->count() > 0) {
-        foreach ($configObj->OPNsense->AcmeClient->certificates->children() as $certObj) {
+    if (isset($configObj->Reticen8->AcmeClient->certificates) && $configObj->Reticen8->AcmeClient->certificates->count() > 0) {
+        foreach ($configObj->Reticen8->AcmeClient->certificates->children() as $certObj) {
             $cert_id = (string)$certObj->id;
             $cert_name = (string)$certObj->name;
             if ($cert_id == $acme_cert_id) {
@@ -94,10 +94,10 @@ function export_certificate($cert_refid)
 
 function upload_certificate($cert_name, $cert_refid, $acme_cert_id, $acme_automation_id)
 {
-    $modelObj = new OPNsense\AcmeClient\AcmeClient();
+    $modelObj = new Reticen8\AcmeClient\AcmeClient();
     $configObj = Config::getInstance()->object();
-    if (isset($configObj->OPNsense->AcmeClient->actions) && $configObj->OPNsense->AcmeClient->actions->count() > 0) {
-        foreach ($configObj->OPNsense->AcmeClient->actions->children() as $automObj) {
+    if (isset($configObj->Reticen8->AcmeClient->actions) && $configObj->Reticen8->AcmeClient->actions->count() > 0) {
+        foreach ($configObj->Reticen8->AcmeClient->actions->children() as $automObj) {
             $autom_id = (string)$automObj->id;
             if ($autom_id == $acme_automation_id) {
                 if ($automObj->enabled == 0) {
@@ -138,8 +138,8 @@ function hw_list_certificates($account_hash, $access_token)
         CURLOPT_HTTPHEADER => array(
             "Authorization: Bearer ${access_token}",
             "Content-Type: application/json",
-            "User-Agent: OPNsense Firewall",
-            "X-Application-Id: OPNsense Firewall"
+            "User-Agent: Reticen8 Firewall",
+            "X-Application-Id: Reticen8 Firewall"
         )
     ));
     $response = curl_exec($curl);
@@ -211,8 +211,8 @@ function hw_upload_certificate($account_hash, $access_token, $cert_name, $cert_d
         CURLOPT_HTTPHEADER => array(
             "Authorization: Bearer ${access_token}",
             "Content-Type: application/json",
-            "User-Agent: OPNsense Firewall",
-            "X-Application-Id: OPNsense Firewall",
+            "User-Agent: Reticen8 Firewall",
+            "X-Application-Id: Reticen8 Firewall",
             "Expect:"
         )
     ));

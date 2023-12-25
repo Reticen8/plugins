@@ -32,7 +32,7 @@ const GROUP_OWNER = 'staff';
 require_once('config.inc');
 require_once('certs.inc');
 require_once('util.inc');
-use OPNsense\Nginx\Nginx;
+use Reticen8\Nginx\Nginx;
 
 function export_pem_file($filename, $data, $post_append = null)
 {
@@ -66,7 +66,7 @@ function find_ca($refid)
 }
 
 // export server certificates
-if (!isset($config['OPNsense']['Nginx'])) {
+if (!isset($config['Reticen8']['Nginx'])) {
     die("nginx is not configured");
 }
 openlog("nginx", LOG_ODELAY, LOG_USER);
@@ -83,7 +83,7 @@ if (!isvalidpid('/var/run/nginx.pid') && file_exists($vts_socket)) {
     syslog(LOG_WARNING, "NGINX setup: nginx not running but VTS socket exists. Unlinking.");
     @unlink($vts_socket);
 }
-$nginx = $config['OPNsense']['Nginx'];
+$nginx = $config['Reticen8']['Nginx'];
 if (isset($nginx['http_server'])) {
     if (is_array($nginx['http_server']) && !isset($nginx['http_server']['servername'])) {
         $http_servers = $nginx['http_server'];

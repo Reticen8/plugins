@@ -29,14 +29,14 @@
  *
  */
 
-namespace OPNsense\ZabbixAgent;
+namespace Reticen8\ZabbixAgent;
 
-use OPNsense\Base\BaseModel;
-use OPNsense\Core\Backend;
+use Reticen8\Base\BaseModel;
+use Reticen8\Core\Backend;
 
 /**
  * Class ZabbixAgent
- * @package OPNsense\ZabbixAgent
+ * @package Reticen8\ZabbixAgent
  */
 class ZabbixAgent extends BaseModel
 {

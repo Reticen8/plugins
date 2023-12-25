@@ -27,10 +27,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Bind;
+namespace Reticen8\Bind;
 
-use OPNsense\Base\BaseModel;
-use OPNsense\Core\Backend;
+use Reticen8\Base\BaseModel;
+use Reticen8\Core\Backend;
 use Phalcon\Messages\Message;
 
 class General extends BaseModel

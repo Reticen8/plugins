@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/sslh</mount>
+    <mount>//Reticen8/sslh</mount>
     <version>1.0.0</version>
     <items>
         <enabled type="BooleanField">

@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SendercanonicalController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'sendercanonical';
-    protected static $internalModelClass = '\OPNsense\Postfix\Sendercanonical';
+    protected static $internalModelClass = '\Reticen8\Postfix\Sendercanonical';
 
     public function searchSendercanonicalAction()
     {

@@ -29,21 +29,21 @@
  *
  */
 
-namespace OPNsense\Bind\Api;
+namespace Reticen8\Bind\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Bind\Domain;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Bind\Domain;
+use Reticen8\Core\Config;
 
 class RecordController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'record';
-    protected static $internalModelClass = '\OPNsense\Bind\Record';
+    protected static $internalModelClass = '\Reticen8\Bind\Record';
 
     /**
      * update parent domain serial
      * @param $uuid string
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     private function setDomainSerial($uuid)

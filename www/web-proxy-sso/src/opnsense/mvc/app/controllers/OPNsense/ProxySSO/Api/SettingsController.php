@@ -26,17 +26,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ProxySSO\Api;
+namespace Reticen8\ProxySSO\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Config;
 
 /**
  * Class SettingsController Handles settings related API actions for the ProxySSO
- * @package OPNsense\ProxySSO
+ * @package Reticen8\ProxySSO
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = "ProxySSO";
-    protected static $internalModelClass = "\OPNsense\ProxySSO\ProxySSO";
+    protected static $internalModelClass = "\Reticen8\ProxySSO\ProxySSO";
 }

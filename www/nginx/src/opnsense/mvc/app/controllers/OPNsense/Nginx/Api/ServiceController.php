@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (C) 2017-2018 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2017-2018 Franco Fichtner <franco@reticen8.com>
  * Copyright (C) 2016 IT-assistans Sverige AB
  * Copyright (C) 2015-2016 Deciso B.V.
  * Copyright (C) 2018 Fabian Franz
@@ -29,15 +29,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Nginx\Api;
+namespace Reticen8\Nginx\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Nginx\Nginx';
-    protected static $internalServiceTemplate = 'OPNsense/Nginx';
+    protected static $internalServiceClass = '\Reticen8\Nginx\Nginx';
+    protected static $internalServiceTemplate = 'Reticen8/Nginx';
     protected static $internalServiceEnabled = 'general.enabled';
     protected static $internalServiceName = 'nginx';
 

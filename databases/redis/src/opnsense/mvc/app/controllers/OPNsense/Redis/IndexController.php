@@ -30,17 +30,17 @@
 */
 
 
-namespace OPNsense\Redis;
+namespace Reticen8\Redis;
 
 /**
 * Class IndexController
-* @package OPNsense/Redis
+* @package Reticen8/Redis
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->settings = $this->getForm("settings");
-        $this->view->pick('OPNsense/Redis/index');
+        $this->view->pick('Reticen8/Redis/index');
     }
 }

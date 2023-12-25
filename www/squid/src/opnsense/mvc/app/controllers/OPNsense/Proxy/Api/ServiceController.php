@@ -26,22 +26,22 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Proxy\Api;
+namespace Reticen8\Proxy\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Base\UserException;
-use OPNsense\Core\Backend;
-use OPNsense\Proxy\Proxy;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\UserException;
+use Reticen8\Core\Backend;
+use Reticen8\Proxy\Proxy;
 
 /**
  * Class ServiceController
- * @package OPNsense\Proxy
+ * @package Reticen8\Proxy
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Proxy\Proxy';
+    protected static $internalServiceClass = '\Reticen8\Proxy\Proxy';
     protected static $internalServiceEnabled = 'general.enabled';
-    protected static $internalServiceTemplate = 'OPNsense/Proxy';
+    protected static $internalServiceTemplate = 'Reticen8/Proxy';
     protected static $internalServiceName = 'proxy';
 
     protected function reconfigureForceRestart()
@@ -104,7 +104,7 @@ class ServiceController extends ApiMutableServiceControllerBase
             // close session for long running action
             $this->sessionClose();
             $backend = new Backend();
-            return array('status' => $backend->configdRun('template reload OPNsense/Proxy'));
+            return array('status' => $backend->configdRun('template reload Reticen8/Proxy'));
         } else {
             return array('error' => 'This API endpoint must be called via POST',
                          'status' => 'error');
@@ -123,7 +123,7 @@ class ServiceController extends ApiMutableServiceControllerBase
 
             $backend = new Backend();
             // generate template
-            $backend->configdRun('template reload OPNsense/Proxy');
+            $backend->configdRun('template reload Reticen8/Proxy');
 
             // fetch files
             $response = $backend->configdRun("proxy fetchacls");
@@ -145,7 +145,7 @@ class ServiceController extends ApiMutableServiceControllerBase
 
             $backend = new Backend();
             // generate template
-            $backend->configdRun('template reload OPNsense/Proxy');
+            $backend->configdRun('template reload Reticen8/Proxy');
 
             // download files
             $response = $backend->configdRun("proxy downloadacls");

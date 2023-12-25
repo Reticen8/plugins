@@ -26,16 +26,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Backup;
+namespace Reticen8\Backup;
 
 require_once('phpmailer/PHPMailerAutoload.php');
 
-use OPNsense\Core\Config;
-use OPNsense\Backup\MailerSettings;
+use Reticen8\Core\Config;
+use Reticen8\Backup\MailerSettings;
 
 /**
  * Class mail backup
- * @package OPNsense\Backup
+ * @package Reticen8\Backup
  */
 class Mailer extends Base implements IBackupProvider
 {
@@ -184,7 +184,7 @@ class Mailer extends Base implements IBackupProvider
         $mail->AddAddress($email);
         $mail->Host    = (string)$config->SmtpHost;
         $mail->Port    = (string)$config->SmtpPort;
-        $mail->Subject = $hostname . ' OPNsense config backup ' . $date;
+        $mail->Subject = $hostname . ' Reticen8 config backup ' . $date;
         $mail->Body    = $hostname . ' config backup file';
 
         if ((string)$config->SelfSigned === "1") {

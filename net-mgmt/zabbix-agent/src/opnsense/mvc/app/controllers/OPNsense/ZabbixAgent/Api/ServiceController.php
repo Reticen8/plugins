@@ -29,20 +29,20 @@
  *
  */
 
-namespace OPNsense\ZabbixAgent\Api;
+namespace Reticen8\ZabbixAgent\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\ZabbixAgent\ZabbixAgent;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\ZabbixAgent\ZabbixAgent;
 
 /**
  * Class ServiceController
- * @package OPNsense\ZabbixAgent
+ * @package Reticen8\ZabbixAgent
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\ZabbixAgent\ZabbixAgent';
-    protected static $internalServiceTemplate = 'OPNsense/ZabbixAgent';
+    protected static $internalServiceClass = '\Reticen8\ZabbixAgent\ZabbixAgent';
+    protected static $internalServiceTemplate = 'Reticen8/ZabbixAgent';
     protected static $internalServiceEnabled = 'settings.main.enabled';
     protected static $internalServiceName = 'zabbixagent';
 }

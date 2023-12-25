@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class AvpairController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'avpair';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Avpair';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Avpair';
     public function searchAvpairAction()
     {
         return $this->searchBase('avpairs.avpair', array("enabled", "name", "operator", "value"));

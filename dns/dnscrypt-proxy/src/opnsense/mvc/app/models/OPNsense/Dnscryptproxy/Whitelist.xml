@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/dnscryptproxy/whitelist</mount>
+    <mount>//Reticen8/dnscryptproxy/whitelist</mount>
     <description>dnscrypt-proxy Whitelist configuration</description>
     <version>0.1.0</version>
     <items>

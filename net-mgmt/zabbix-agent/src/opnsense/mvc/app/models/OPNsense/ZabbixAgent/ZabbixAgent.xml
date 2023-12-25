@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/ZabbixAgent</mount>
+    <mount>//Reticen8/ZabbixAgent</mount>
     <version>1.2.4</version>
     <description>Zabbix monitoring agent</description>
     <items>

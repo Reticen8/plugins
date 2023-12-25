@@ -36,7 +36,7 @@ if [ ! -d /var/squid/ssl_crtd ]; then
 fi
 
 # generate SSL bump certificate
-/usr/local/opnsense/scripts/proxy/generate_cert.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/proxy/generate_cert.php > /dev/null 2>&1
 
 # install theme files
-/usr/local/opnsense/scripts/proxy/deploy_error_pages.py > /dev/null 2>&1
+/usr/local/reticen8/scripts/proxy/deploy_error_pages.py > /dev/null 2>&1

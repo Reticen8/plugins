@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 /**
  * Manage ACME CA accounts with acme.sh
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class LeAccount extends LeCommon
 {

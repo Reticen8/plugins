@@ -27,13 +27,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Smart;
+namespace Reticen8\Smart;
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/Smart/index');
+        $this->view->pick('Reticen8/Smart/index');
     }
 }

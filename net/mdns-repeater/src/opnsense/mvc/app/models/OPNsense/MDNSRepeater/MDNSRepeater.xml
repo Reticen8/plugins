@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/MDNSRepeater</mount>
+  <mount>//Reticen8/MDNSRepeater</mount>
   <version>1.0.1</version>
   <description>mdns-repeater settings</description>
   <items>

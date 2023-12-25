@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
- namespace OPNsense\DynDNS;
+ namespace Reticen8\DynDNS;
 
  use Phalcon\Messages\Message;
- use OPNsense\Base\BaseModel;
+ use Reticen8\Base\BaseModel;
 
  /**
   * Class DynDNS
-  * @package OPNsense\DynDNS
+  * @package Reticen8\DynDNS
   */
 class DynDNS extends BaseModel
 {

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/client</mount>
+    <mount>//Reticen8/freeradius/client</mount>
     <description>FreeRADIUS client configuration</description>
     <version>1.0.2</version>
     <items>

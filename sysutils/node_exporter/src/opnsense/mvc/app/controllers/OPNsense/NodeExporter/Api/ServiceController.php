@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\NodeExporter\Api;
+namespace Reticen8\NodeExporter\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\NodeExporter\General';
+    protected static $internalServiceClass = '\Reticen8\NodeExporter\General';
     protected static $internalServiceEnabled = 'enabled';
-    protected static $internalServiceTemplate = 'OPNsense/NodeExporter';
+    protected static $internalServiceTemplate = 'Reticen8/NodeExporter';
     protected static $internalServiceName = 'node_exporter';
 }

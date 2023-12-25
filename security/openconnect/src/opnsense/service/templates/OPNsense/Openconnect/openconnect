@@ -1,10 +1,10 @@
-{% if helpers.exists('OPNsense.openconnect.general.enabled') and OPNsense.openconnect.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.openconnect.general.enabled') and Reticen8.openconnect.general.enabled == '1' %}
 openconnect_enable="YES"
-openconnect_flags="-s /usr/local/opnsense/scripts/OPNsense/Openconnect/vpnc.sh"
-{%   if helpers.exists('OPNsense.openconnect.general.server') and OPNsense.openconnect.general.server != '' %}
-{%     if helpers.exists('OPNsense.openconnect.general.user') and OPNsense.openconnect.general.user != '' %}
-{%       if helpers.exists('OPNsense.openconnect.general.password') and OPNsense.openconnect.general.password != '' %}
-openconnect_flags="${openconnect_flags} --config=/usr/local/etc/openconnect.conf {{ OPNsense.openconnect.general.server }}"
+openconnect_flags="-s /usr/local/reticen8/scripts/Reticen8/Openconnect/vpnc.sh"
+{%   if helpers.exists('Reticen8.openconnect.general.server') and Reticen8.openconnect.general.server != '' %}
+{%     if helpers.exists('Reticen8.openconnect.general.user') and Reticen8.openconnect.general.user != '' %}
+{%       if helpers.exists('Reticen8.openconnect.general.password') and Reticen8.openconnect.general.password != '' %}
+openconnect_flags="${openconnect_flags} --config=/usr/local/etc/openconnect.conf {{ Reticen8.openconnect.general.server }}"
 {%       endif %}
 {%     endif %}
 {%   endif %}

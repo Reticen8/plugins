@@ -26,19 +26,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ClamAV\Api;
+namespace Reticen8\ClamAV\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 /**
  * Class ServiceController
- * @package OPNsense\ClamAV
+ * @package Reticen8\ClamAV
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\ClamAV\General';
-    protected static $internalServiceTemplate = 'OPNsense/ClamAV';
+    protected static $internalServiceClass = '\Reticen8\ClamAV\General';
+    protected static $internalServiceTemplate = 'Reticen8/ClamAV';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'clamav';
 

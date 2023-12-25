@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\DynDNS\Api;
+namespace Reticen8\DynDNS\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'ddclient';
-    protected static $internalModelClass = 'OPNsense\DynDNS\DynDNS';
+    protected static $internalModelClass = 'Reticen8\DynDNS\DynDNS';
 
     public function getAction()
     {

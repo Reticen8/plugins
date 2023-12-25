@@ -29,17 +29,17 @@
  *
  */
 
-namespace OPNsense\HAProxy;
+namespace Reticen8\HAProxy;
 
 /**
  * Class ExportController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
-class ExportController extends \OPNsense\Base\IndexController
+class ExportController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // choose template
-        $this->view->pick('OPNsense/HAProxy/export');
+        $this->view->pick('Reticen8/HAProxy/export');
     }
 }

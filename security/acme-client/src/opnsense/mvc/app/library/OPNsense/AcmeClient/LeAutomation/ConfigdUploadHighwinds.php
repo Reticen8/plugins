@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
  * Upload certificate to Highwinds CDN API
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class ConfigdUploadHighwinds extends Base implements LeAutomationInterface
 {

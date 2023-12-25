@@ -1,12 +1,12 @@
-{% if helpers.exists('OPNsense.dnscryptproxy.general.enabled') and OPNsense.dnscryptproxy.general.enabled == '1' %}
-dnscrypt_proxy_setup="/usr/local/opnsense/scripts/OPNsense/Dnscryptproxy/setup.sh"
+{% if helpers.exists('Reticen8.dnscryptproxy.general.enabled') and Reticen8.dnscryptproxy.general.enabled == '1' %}
+dnscrypt_proxy_setup="/usr/local/reticen8/scripts/Reticen8/Dnscryptproxy/setup.sh"
 dnscrypt_proxy_enable="YES"
-{%   if helpers.exists('OPNsense.dnscryptproxy.general.allowprivileged') and OPNsense.dnscryptproxy.general.allowprivileged == '1' %}
+{%   if helpers.exists('Reticen8.dnscryptproxy.general.allowprivileged') and Reticen8.dnscryptproxy.general.allowprivileged == '1' %}
 dnscrypt_proxy_suexec="YES"
 {%   endif %}
-{%   if helpers.exists('OPNsense.dnscryptproxy.dnsbl.enabled') and OPNsense.dnscryptproxy.dnsbl.enabled == '1' %}
-{%     if helpers.exists('OPNsense.dnscryptproxy.dnsbl.type') and OPNsense.dnscryptproxy.dnsbl.type != '' %}
-dnscrypt_proxy_dnsbl="{{ OPNsense.dnscryptproxy.dnsbl.type }}"
+{%   if helpers.exists('Reticen8.dnscryptproxy.dnsbl.enabled') and Reticen8.dnscryptproxy.dnsbl.enabled == '1' %}
+{%     if helpers.exists('Reticen8.dnscryptproxy.dnsbl.type') and Reticen8.dnscryptproxy.dnsbl.type != '' %}
+dnscrypt_proxy_dnsbl="{{ Reticen8.dnscryptproxy.dnsbl.type }}"
 {%     endif %}
 {%   endif %}
 {% else %}

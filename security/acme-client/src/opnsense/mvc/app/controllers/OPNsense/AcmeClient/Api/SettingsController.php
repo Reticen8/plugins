@@ -29,23 +29,23 @@
  *
  */
 
-namespace OPNsense\AcmeClient\Api;
+namespace Reticen8\AcmeClient\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Cron\Cron;
-use OPNsense\Core\Config;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Cron\Cron;
+use Reticen8\Core\Config;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\AcmeClient\AcmeClient;
 
 /**
  * Class SettingsController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'acmeclient';
-    protected static $internalModelClass = '\OPNsense\AcmeClient\AcmeClient';
+    protected static $internalModelClass = '\Reticen8\AcmeClient\AcmeClient';
 
     /**
      * create new cron job or return already available one
@@ -85,7 +85,7 @@ class SettingsController extends ApiMutableModelControllerBase
                     $mdlAcme->serializeToConfig($validateFullModel = false, $disable_validation = true);
                     Config::getInstance()->save();
                     // Refresh the crontab
-                    $backend->configdRun('template reload OPNsense/Cron');
+                    $backend->configdRun('template reload Reticen8/Cron');
                     // (res)start daemon
                     $backend->configdRun("cron restart");
                     $result['result'] = "new";
@@ -110,7 +110,7 @@ class SettingsController extends ApiMutableModelControllerBase
                     $mdlAcme->serializeToConfig($validateFullModel = false, $disable_validation = true);
                     Config::getInstance()->save();
                     // Regenerate the crontab
-                    $backend->configdRun('template reload OPNsense/Cron');
+                    $backend->configdRun('template reload Reticen8/Cron');
                     // (res)start daemon
                     $backend->configdRun("cron restart");
                     $result['result'] = "deleted";
@@ -147,7 +147,7 @@ class SettingsController extends ApiMutableModelControllerBase
                 (string)$mdlAcme->settings->haproxyIntegration == "1" and
                 (string)$mdlAcme->settings->enabled == "1"
             ) {
-                $mdlHAProxy = new \OPNsense\HAProxy\HAProxy();
+                $mdlHAProxy = new \Reticen8\HAProxy\HAProxy();
                 $backend = new Backend();
 
                 // Get current status of HAProxy integration by running various checks.
@@ -375,7 +375,7 @@ class SettingsController extends ApiMutableModelControllerBase
                     Config::getInstance()->save();
 
                     // Reconfigure HAProxy
-                    $backend->configdRun('template reload OPNsense/HAProxy');
+                    $backend->configdRun('template reload Reticen8/HAProxy');
                     $response = $backend->configdRun("haproxy restart");
                 }
             } else {

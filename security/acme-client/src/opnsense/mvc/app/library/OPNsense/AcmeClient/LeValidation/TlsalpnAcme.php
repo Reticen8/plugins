@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\AcmeClient\LeUtils;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
 
 /**
  * Use acme.sh TLS web server for TLS-ALPN-01 validation
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class TlsalpnAcme extends Base implements LeValidationInterface
 {
@@ -44,7 +44,7 @@ class TlsalpnAcme extends Base implements LeValidationInterface
 
         // Get configured TLS port for acme.sh web server.
         $configObj = Config::getInstance()->object();
-        $local_tls_port = $configObj->OPNsense->AcmeClient->settings->TLSchallengePort;
+        $local_tls_port = $configObj->Reticen8->AcmeClient->settings->TLSchallengePort;
         $this->acme_args[] = LeUtils::execSafe('--tlsport %s', (string)$local_tls_port);
 
         // Collect all IP addresses here, automatic port forward will be applied for each IP
@@ -73,7 +73,7 @@ class TlsalpnAcme extends Base implements LeValidationInterface
 
         // Add IP address from chosen interface
         if (!empty((string)$this->config->tlsalpn_acme_interface)) {
-            $backend = new \OPNsense\Core\Backend();
+            $backend = new \Reticen8\Core\Backend();
             $response = $backend->configdpRun('interface address', [(string)$this->config->tlsalpn_acme_interface]);
             if (!empty($response['address'])) {
                 $iplist[] = $response['address'];
@@ -131,11 +131,11 @@ class TlsalpnAcme extends Base implements LeValidationInterface
 
     public function cleanup()
     {
-        // Flush OPNsense port forward rules.
+        // Flush Reticen8 port forward rules.
         mwexec('/sbin/pfctl -a acme-client -F all');
 
         // Workaround to solve disconnection issues reported by some users.
-        $backend = new \OPNsense\Core\Backend();
+        $backend = new \Reticen8\Core\Backend();
         $response = $backend->configdRun('filter reload');
         return true;
     }

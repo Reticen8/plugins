@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Hwprobe\Api;
+namespace Reticen8\Hwprobe\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Hwprobe\General';
-    protected static $internalServiceTemplate = 'OPNsense/Hwprobe';
+    protected static $internalServiceClass = '\Reticen8\Hwprobe\General';
+    protected static $internalServiceTemplate = 'Reticen8/Hwprobe';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'hwprobe';
 

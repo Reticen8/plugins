@@ -1,7 +1,7 @@
 <model>
-    <mount>//OPNsense/QemuGuestAgent</mount>
+    <mount>//Reticen8/QemuGuestAgent</mount>
     <version>1.0.0</version>
-    <description>QEMU Guest Agent for OPNsense</description>
+    <description>QEMU Guest Agent for Reticen8</description>
     <items>
         <general>
             <Enabled type="BooleanField">

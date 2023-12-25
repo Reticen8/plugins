@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Nrpe\Api;
+namespace Reticen8\Nrpe\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Nrpe\General';
+    protected static $internalModelClass = '\Reticen8\Nrpe\General';
     protected static $internalModelName = 'general';
 }

@@ -31,13 +31,13 @@
 */
 
 
-namespace OPNsense\Nginx;
+namespace Reticen8\Nginx;
 
 /**
 * Class IndexController
-* @package OPNsense/Nginx
+* @package Reticen8/Nginx
 */
-class LogsController extends \OPNsense\Base\IndexController
+class LogsController extends \Reticen8\Base\IndexController
 {
     /**
      * show the configuration page /ui/nginx/logs
@@ -46,7 +46,7 @@ class LogsController extends \OPNsense\Base\IndexController
     public function indexAction()
     {
         $this->view->log = 'global';
-        $this->view->pick('OPNsense/Nginx/logs');
+        $this->view->pick('Reticen8/Nginx/logs');
     }
 
     /**
@@ -55,7 +55,7 @@ class LogsController extends \OPNsense\Base\IndexController
     public function accessesAction()
     {
         $this->view->log = 'accesses';
-        $this->view->pick('OPNsense/Nginx/logs');
+        $this->view->pick('Reticen8/Nginx/logs');
     }
 
     /**
@@ -64,7 +64,7 @@ class LogsController extends \OPNsense\Base\IndexController
     public function errorsAction()
     {
         $this->view->log = 'errors';
-        $this->view->pick('OPNsense/Nginx/logs');
+        $this->view->pick('Reticen8/Nginx/logs');
     }
 
     /**
@@ -73,7 +73,7 @@ class LogsController extends \OPNsense\Base\IndexController
     public function streamaccessesAction()
     {
         $this->view->log = 'stream_accesses';
-        $this->view->pick('OPNsense/Nginx/logs');
+        $this->view->pick('Reticen8/Nginx/logs');
     }
 
     /**
@@ -82,6 +82,6 @@ class LogsController extends \OPNsense\Base\IndexController
     public function streamerrorsAction()
     {
         $this->view->log = 'stream_errors';
-        $this->view->pick('OPNsense/Nginx/logs');
+        $this->view->pick('Reticen8/Nginx/logs');
     }
 }

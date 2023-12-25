@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Vnstat\Api;
+namespace Reticen8\Vnstat\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Vnstat\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Vnstat\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Vnstat
+ * @package Reticen8\Vnstat
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Vnstat\General';
-    protected static $internalServiceTemplate = 'OPNsense/Vnstat';
+    protected static $internalServiceClass = '\Reticen8\Vnstat\General';
+    protected static $internalServiceTemplate = 'Reticen8/Vnstat';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'vnstat';
 

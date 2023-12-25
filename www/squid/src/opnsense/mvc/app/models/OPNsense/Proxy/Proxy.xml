@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/proxy</mount>
+    <mount>//Reticen8/proxy</mount>
     <version>1.0.6</version>
     <description>Squid web proxy settings</description>
     <items>
@@ -11,7 +11,7 @@
             <error_pages type="OptionField">
                 <BlankDesc>Squid</BlankDesc>
                 <OptionValues>
-                    <opnsense>OPNsense</opnsense>
+                    <reticen8>Reticen8</reticen8>
                     <custom>Custom</custom>
                 </OptionValues>
             </error_pages>
@@ -413,7 +413,7 @@
                     <UpdateCron type="ModelRelationField">
                         <Model>
                             <queues>
-                                <source>OPNsense.Cron.Cron</source>
+                                <source>Reticen8.Cron.Cron</source>
                                 <items>jobs.job</items>
                                 <display>description</display>
                                 <filters>
@@ -640,7 +640,7 @@
               <matches type="ModelRelationField">
                   <Model>
                       <queues>
-                          <source>OPNsense.Proxy.Proxy</source>
+                          <source>Reticen8.Proxy.Proxy</source>
                           <items>pac.match</items>
                           <display>name</display>
                       </queues>
@@ -666,7 +666,7 @@
                   <Sorted>Y</Sorted>
                   <Model>
                       <queues>
-                          <source>OPNsense.Proxy.Proxy</source>
+                          <source>Reticen8.Proxy.Proxy</source>
                           <items>pac.proxy</items>
                           <display>name</display>
                       </queues>

@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2020 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2020 Ad Schellevis <ad@reticen8.com>
     Copyright (C) 2020 Starkstromkonsument
     All rights reserved.
 

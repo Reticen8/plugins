@@ -26,11 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Utility class for managing SSH host-keys (known_hosts) and identity keys.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class SSHKeys
 {

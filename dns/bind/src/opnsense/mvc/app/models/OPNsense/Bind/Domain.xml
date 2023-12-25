@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/bind/domain</mount>
+    <mount>//Reticen8/bind/domain</mount>
     <description>BIND domain configuration</description>
     <version>1.1.1</version>
     <items>
@@ -53,7 +53,7 @@
                 <allowtransfer type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.Bind.Acl</source>
+                            <source>Reticen8.Bind.Acl</source>
                             <items>acls.acl</items>
                             <display>name</display>
                         </template>
@@ -64,7 +64,7 @@
                 <allowquery type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.Bind.Acl</source>
+                            <source>Reticen8.Bind.Acl</source>
                             <items>acls.acl</items>
                             <display>name</display>
                         </template>
@@ -111,11 +111,11 @@
                     <ValidationMessage>Set a value between 60 and 86400.</ValidationMessage>
                 </negative>
                 <mailadmin type="TextField">
-                    <default>mail.opnsense.localdomain</default>
+                    <default>mail.reticen8.localdomain</default>
                     <Required>Y</Required>
                 </mailadmin>
                 <dnsserver type="HostnameField">
-                    <default>opnsense.localdomain</default>
+                    <default>reticen8.localdomain</default>
                     <Required>Y</Required>
                 </dnsserver>
             </domain>

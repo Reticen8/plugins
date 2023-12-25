@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/bind/record</mount>
+    <mount>//Reticen8/bind/record</mount>
     <description>BIND record configuration</description>
     <version>1.0.1</version>
     <items>
@@ -13,7 +13,7 @@
                     <Required>Y</Required>
                     <Model>
                         <template>
-                            <source>OPNsense.Bind.Domain</source>
+                            <source>Reticen8.Bind.Domain</source>
                             <items>domains.domain</items>
                             <display>domainname</display>
                         </template>

@@ -1,10 +1,10 @@
-{% if helpers.exists('OPNsense.vnstat.general.enabled') and OPNsense.vnstat.general.enabled == '1' %}
-{% from 'OPNsense/Macros/interface.macro' import physical_interface %}
-vnstat_setup="/usr/local/opnsense/scripts/OPNsense/Vnstat/setup.sh"
+{% if helpers.exists('Reticen8.vnstat.general.enabled') and Reticen8.vnstat.general.enabled == '1' %}
+{% from 'Reticen8/Macros/interface.macro' import physical_interface %}
+vnstat_setup="/usr/local/reticen8/scripts/Reticen8/Vnstat/setup.sh"
 vnstat_enable="YES"
-{%   if helpers.exists('OPNsense.vnstat.general.interface') and OPNsense.vnstat.general.interface != '' %}
+{%   if helpers.exists('Reticen8.vnstat.general.interface') and Reticen8.vnstat.general.interface != '' %}
 {%     set interfaces = [] %}
-{%     for interface in OPNsense.vnstat.general.interface.split(',') %}
+{%     for interface in Reticen8.vnstat.general.interface.split(',') %}
 {%       do interfaces.append(physical_interface(interface)) %}
 {%     endfor %}
 vnstat_additional_ifaces="{{ interfaces|join(' ') }}"

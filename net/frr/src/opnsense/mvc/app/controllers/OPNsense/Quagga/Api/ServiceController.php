@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Quagga\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Quagga\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Quagga
+ * @package Reticen8\Quagga
  */
 class ServiceController extends ApiControllerBase
 {
@@ -134,7 +134,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Quagga');
+            $backend->configdRun('template reload Reticen8/Quagga');
 
             // (res)start daemon
             if ($mdlGeneral->enabled->__toString() == 1) {

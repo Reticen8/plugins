@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Bind\Api;
+namespace Reticen8\Bind\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class DomainController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'domain';
-    protected static $internalModelClass = '\OPNsense\Bind\Domain';
+    protected static $internalModelClass = '\Reticen8\Bind\Domain';
 
     /* XXX backwards-compatibility for 22.7 and below */
     public function searchMasterDomainAction()

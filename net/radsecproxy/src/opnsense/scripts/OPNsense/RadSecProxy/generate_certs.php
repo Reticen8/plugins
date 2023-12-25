@@ -27,7 +27,7 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $outputFolder = "/usr/local/etc/radsecproxy.d/certs/";
 
@@ -73,8 +73,8 @@ if (! function_exists('deleteFilesInFolder')) {
 $configObj = Config::getInstance()->object();
 
 deleteFilesInFolder($outputFolder);
-if (isset($configObj->OPNsense->radsecproxy->tlsConfigs)) {
-    foreach ($configObj->OPNsense->radsecproxy->tlsConfigs->children() as $tlsConfig) {
+if (isset($configObj->Reticen8->radsecproxy->tlsConfigs)) {
+    foreach ($configObj->Reticen8->radsecproxy->tlsConfigs->children() as $tlsConfig) {
         echo "parsing TLS-config \"" . $tlsConfig->name . "\"\n";
 
         $caCertRefId = (string)$tlsConfig->caCertificateRefId;

@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Backup;
+namespace Reticen8\Backup;
 
-use OPNsense\Core\Config;
-use OPNsense\Backup\NextcloudSettings;
+use Reticen8\Core\Config;
+use Reticen8\Backup\NextcloudSettings;
 
 /**
  * Class Nextcloud backup
- * @package OPNsense\Backup
+ * @package Reticen8\Backup
  */
 class Nextcloud extends Base implements IBackupProvider
 {
@@ -83,7 +83,7 @@ class Nextcloud extends Base implements IBackupProvider
                 "name" => "backupdir",
                 "type" => "text",
                 "label" => gettext("Directory Name without leading slash, starting from user's root"),
-                "value" => 'OPNsense-Backup'
+                "value" => 'Reticen8-Backup'
             )
         );
         $nextcloud = new NextcloudSettings();
@@ -106,7 +106,7 @@ class Nextcloud extends Base implements IBackupProvider
      * validate and set configuration
      * @param array $conf configuration array
      * @return array of validation errors when not saved
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function setConfiguration($conf)
@@ -124,7 +124,7 @@ class Nextcloud extends Base implements IBackupProvider
     /**
      * perform backup
      * @return array filelist
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function backup()
@@ -320,7 +320,7 @@ class Nextcloud extends Base implements IBackupProvider
         $method,
         $error_message,
         $postdata = null,
-        $headers = array("User-Agent: OPNsense Firewall")
+        $headers = array("User-Agent: Reticen8 Firewall")
     ) {
         $curl = curl_init();
         curl_setopt_array($curl, array(
@@ -361,7 +361,7 @@ class Nextcloud extends Base implements IBackupProvider
      */
     public function ocs_request($url, $username, $password, $method, $error_message, $postdata = null)
     {
-        $headers = $headers = array("User-Agent: OPNsense Firewall", "OCS-APIRequest: true");
+        $headers = $headers = array("User-Agent: Reticen8 Firewall", "OCS-APIRequest: true");
         $result = $this->curl_request($url, $username, $password, $method, $error_message, $postdata, $headers);
         if (array_key_exists('content_type', $result['info'])) {
             if (stripos($result['info']['content_type'], 'xml') !== false) {
@@ -380,7 +380,7 @@ class Nextcloud extends Base implements IBackupProvider
     /**
      * Is this provider enabled
      * @return boolean enabled status
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function isEnabled()

@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Lldpd\Api;
+namespace Reticen8\Lldpd\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Lldpd\General';
-    protected static $internalServiceTemplate = 'OPNsense/Lldpd';
+    protected static $internalServiceClass = '\Reticen8\Lldpd\General';
+    protected static $internalServiceTemplate = 'Reticen8/Lldpd';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'lldpd';
 

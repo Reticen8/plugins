@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tayga\Api;
+namespace Reticen8\Tayga\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Tayga\General';
+    protected static $internalModelClass = '\Reticen8\Tayga\General';
     protected static $internalModelName = 'general';
 }

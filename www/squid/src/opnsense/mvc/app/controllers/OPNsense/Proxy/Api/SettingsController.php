@@ -1,7 +1,7 @@
 <?php
 
 /**
- *    Copyright (C) 2015 Jos Schellevis <jos@opnsense.org>
+ *    Copyright (C) 2015 Jos Schellevis <jos@reticen8.com>
  *    Copyright (C) 2017 Fabian Franz
  *    All rights reserved.
  *
@@ -27,21 +27,21 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Proxy\Api;
+namespace Reticen8\Proxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Cron\Cron;
-use OPNsense\Core\Config;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Cron\Cron;
+use Reticen8\Core\Config;
+use Reticen8\Base\UIModelGrid;
 
 /**
  * Class SettingsController
- * @package OPNsense\Proxy
+ * @package Reticen8\Proxy
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'proxy';
-    protected static $internalModelClass = '\OPNsense\Proxy\Proxy';
+    protected static $internalModelClass = '\Reticen8\Proxy\Proxy';
 
     /**
      *

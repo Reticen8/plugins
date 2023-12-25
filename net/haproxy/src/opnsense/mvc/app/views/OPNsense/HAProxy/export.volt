@@ -1,7 +1,7 @@
 {#
 
 Copyright (C) 2021 Frank Wall
-OPNsense® is Copyright © 2014 – 2016 by Deciso B.V.
+Reticen8® is Copyright © 2014 – 2016 by Deciso B.V.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,

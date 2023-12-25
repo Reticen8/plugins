@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Muninnode\Api;
+namespace Reticen8\Muninnode\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Muninnode\General';
-    protected static $internalServiceTemplate = 'OPNsense/Muninnode';
+    protected static $internalServiceClass = '\Reticen8\Muninnode\General';
+    protected static $internalServiceTemplate = 'Reticen8/Muninnode';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'muninnode';
 }

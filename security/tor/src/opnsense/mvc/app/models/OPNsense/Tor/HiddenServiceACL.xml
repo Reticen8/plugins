@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/tor/hiddenserviceacl</mount>
+  <mount>//Reticen8/tor/hiddenserviceacl</mount>
   <description>Tor Onion Service ACL</description>
   <items>
     <hiddenserviceacl type="ArrayField">
@@ -10,7 +10,7 @@
       <hiddenservice type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Tor.HiddenService</source>
+            <source>Reticen8.Tor.HiddenService</source>
             <items>service</items>
             <display>name</display>
           </template>

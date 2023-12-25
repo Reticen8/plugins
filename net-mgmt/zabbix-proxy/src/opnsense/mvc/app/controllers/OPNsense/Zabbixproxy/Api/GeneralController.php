@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Zabbixproxy\Api;
+namespace Reticen8\Zabbixproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Zabbixproxy\General';
+    protected static $internalModelClass = '\Reticen8\Zabbixproxy\General';
     protected static $internalModelName = 'general';
 }

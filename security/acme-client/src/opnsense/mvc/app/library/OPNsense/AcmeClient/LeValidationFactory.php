@@ -27,13 +27,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\AcmeClient\AcmeClient;
 
 /**
 * Class LeValidationFactory
-* @package OPNsense\AcmeClient
+* @package Reticen8\AcmeClient
 */
 class LeValidationFactory
 {
@@ -47,7 +47,7 @@ class LeValidationFactory
     public function getValidation(string $uuid)
     {
         // Ensure that the validation method can be found in config.
-        $model = new \OPNsense\AcmeClient\AcmeClient();
+        $model = new \Reticen8\AcmeClient\AcmeClient();
         $obj = $model->getNodeByReference(self::CONFIG_PATH . '.' . $uuid);
         if ($obj == null) {
             LeUtils::log_error("challenge type not found: ${uuid}");
@@ -74,11 +74,11 @@ class LeValidationFactory
         foreach (glob(__DIR__ . "/LeValidation/*.php") as $filename) {
             $srv_found = basename($filename, '.php');
             try {
-                $reflClass = new \ReflectionClass("OPNsense\\AcmeClient\\LeValidation\\{$srv_found}");
+                $reflClass = new \ReflectionClass("Reticen8\\AcmeClient\\LeValidation\\{$srv_found}");
             } catch (\ReflectionException $e) {
                 break;
             }
-            if ($reflClass->implementsInterface('OPNsense\\AcmeClient\\LeValidationInterface')) {
+            if ($reflClass->implementsInterface('Reticen8\\AcmeClient\\LeValidationInterface')) {
                 if ($srv_found == $val_name) {
                     // Create new object
                     $objVal = $reflClass->newInstance();

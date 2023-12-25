@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class RipController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'rip';
-    protected static $internalModelClass = '\OPNsense\Quagga\RIP';
+    protected static $internalModelClass = '\Reticen8\Quagga\RIP';
 }

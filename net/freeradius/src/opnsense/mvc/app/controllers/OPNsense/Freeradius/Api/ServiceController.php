@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Freeradius\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Freeradius\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Freeradius
+ * @package Reticen8\Freeradius
  */
 class ServiceController extends ApiControllerBase
 {
@@ -131,7 +131,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Freeradius');
+            $backend->configdRun('template reload Reticen8/Freeradius');
 
             // (res)start daemon
             if ($mdlGeneral->enabled->__toString() == 1) {

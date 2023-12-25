@@ -11,9 +11,9 @@ for directory in ${ACME_DIRS}; do
 done
 
 # Remove symlink in order to use upstream version
-# see https://github.com/opnsense/plugins/pull/1888
-if [ -L /var/etc/acme-client/home/dns_opnsense.sh ]; then
-    unlink /var/etc/acme-client/home/dns_opnsense.sh
+# see https://github.com/reticen8/plugins/pull/1888
+if [ -L /var/etc/acme-client/home/dns_reticen8.sh ]; then
+    unlink /var/etc/acme-client/home/dns_reticen8.sh
 fi
 
 # Set owner/mode for base and immediate children (non recursive).

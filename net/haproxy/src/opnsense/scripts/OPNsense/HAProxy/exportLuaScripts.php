@@ -33,14 +33,14 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $export_path = '/tmp/haproxy/lua/';
 
 // traverse HAProxy Lua scripts
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->HAProxy->luas)) {
-    foreach ($configObj->OPNsense->HAProxy->luas->children() as $lua) {
+if (isset($configObj->Reticen8->HAProxy->luas)) {
+    foreach ($configObj->Reticen8->HAProxy->luas->children() as $lua) {
         if (!isset($lua->enabled)) {
             continue;
         }

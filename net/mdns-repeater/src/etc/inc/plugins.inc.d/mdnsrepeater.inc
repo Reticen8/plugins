@@ -28,7 +28,7 @@
 
 function mdnsrepeater_enabled()
 {
-    $model = new \OPNsense\MDNSRepeater\MDNSRepeater();
+    $model = new \Reticen8\MDNSRepeater\MDNSRepeater();
     return (string)$model->enabled == '1';
 }
 

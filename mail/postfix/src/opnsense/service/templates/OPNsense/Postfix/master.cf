@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.postfix.general.enabled') and OPNsense.postfix.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
 #
 # Postfix master process configuration file.  For details on the format
 # of the file, see the master(5) manual page (command: "man 5 master" or
@@ -10,7 +10,7 @@
 # service type  private unpriv  chroot  wakeup  maxproc command + args
 #               (yes)   (yes)   (no)    (never) (100)
 # ==========================================================================
-{{ OPNsense.postfix.general.inet_port }}      inet  n       -       n       -       -       smtpd
+{{ Reticen8.postfix.general.inet_port }}      inet  n       -       n       -       -       smtpd
 #smtp      inet  n       -       n       -       1       postscreen
 #smtpd     pass  -       -       n       -       -       smtpd
 #dnsblog   unix  -       -       n       -       0       dnsblog

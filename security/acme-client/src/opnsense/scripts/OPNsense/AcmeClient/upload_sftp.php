@@ -52,7 +52,7 @@ const ABOUT = <<<TXT
 
    Since there is some complexity involved, the script has a rich commandline
    api for testing and integration purposes. It also runs perfectly fine in a
-   local development environment without the opnsense api in place (using
+   local development environment without the reticen8 api in place (using
    "--files=file,..." to specify files to upload directly).
 
    See: EXAMPLES & actions_acmeclient.conf
@@ -135,10 +135,10 @@ if (!function_exists("log_error")) {
 }
 
 // Importing classes
-use OPNsense\AcmeClient\SftpUploader;
-use OPNsense\AcmeClient\SftpClient;
-use OPNsense\AcmeClient\SSHKeys;
-use OPNsense\AcmeClient\Utils;
+use Reticen8\AcmeClient\SftpUploader;
+use Reticen8\AcmeClient\SftpClient;
+use Reticen8\AcmeClient\SSHKeys;
+use Reticen8\AcmeClient\Utils;
 
 // Implementing logic
 function commandShowIdentity(array &$options): int
@@ -464,12 +464,12 @@ function addFilesToUpload(array $options, SftpUploader &$uploader)
 
 function findCertificates(array $certificate_ids_or_names, $load_content = true): array
 {
-    if (!class_exists("OPNsense\\Core\\Config")) {
+    if (!class_exists("Reticen8\\Core\\Config")) {
         return [];
     }
 
-    $config = OPNsense\Core\Config::getInstance()->object();
-    $client = $config->OPNsense->AcmeClient;
+    $config = Reticen8\Core\Config::getInstance()->object();
+    $client = $config->Reticen8->AcmeClient;
 
     $result = [];
     $refids = [];
@@ -519,7 +519,7 @@ function findCertificates(array $certificate_ids_or_names, $load_content = true)
 function exportCertificates(array $cert_refids): array
 {
     $result = [];
-    $config = OPNsense\Core\Config::getInstance()->object();
+    $config = Reticen8\Core\Config::getInstance()->object();
     foreach ($config->cert as $cert) {
         $refid = (string)$cert->refid;
         $item = [];

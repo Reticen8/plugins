@@ -27,12 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Lldpd\Api;
+namespace Reticen8\Lldpd\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Lldpd\General';
+    protected static $internalModelClass = '\Reticen8\Lldpd\General';
     protected static $internalModelName = 'general';
 }

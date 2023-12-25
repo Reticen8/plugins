@@ -3,21 +3,21 @@
 // SPDX-License-Identifier: MIT
 // SPDX-FileCopyrightText: © 2021 CrowdSec <info@crowdsec.net>
 
-namespace OPNsense\CrowdSec\Api;
+namespace Reticen8\CrowdSec\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\CrowdSec\CrowdSec;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\CrowdSec\CrowdSec;
+use Reticen8\Core\Backend;
 
 /**
- * @package OPNsense\CrowdSec
+ * @package Reticen8\CrowdSec
  */
 class ParsersController extends ApiControllerBase
 {
     /**
      * retrieve list of registered parsers
      * @return array of parsers
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function getAction()

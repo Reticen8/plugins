@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/bind/acl</mount>
+    <mount>//Reticen8/bind/acl</mount>
     <description>BIND ACL configuration</description>
     <version>1.0.0</version>
     <items>

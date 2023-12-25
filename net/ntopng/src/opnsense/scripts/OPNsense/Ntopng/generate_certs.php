@@ -33,15 +33,15 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $cert_pem_filename = '/usr/local/share/ntopng/httpdocs/ssl/ntopng-cert.pem';
 $cert_pem_content = '';
 
 // traverse Postfix plugin for certficiates
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->ntopng)) {
-    foreach ($configObj->OPNsense->ntopng->children() as $find_cert) {
+if (isset($configObj->Reticen8->ntopng)) {
+    foreach ($configObj->Reticen8->ntopng->children() as $find_cert) {
         $cert_refid = (string)$find_cert->cert;
         // if httpsport has a certificate attached, search for its contents
         if ($cert_refid != "") {

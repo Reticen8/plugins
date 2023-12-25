@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Nginx\Api;
+namespace Reticen8\Nginx\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Nginx\Nginx';
+    protected static $internalModelClass = '\Reticen8\Nginx\Nginx';
     protected static $internalModelName = 'nginx';
     protected static $internalModelUseSafeDelete = true;
 

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/telegraf/key</mount>
+    <mount>//Reticen8/telegraf/key</mount>
     <description>Telegraf key configuration</description>
     <version>1.0.0</version>
     <items>

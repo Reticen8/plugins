@@ -28,15 +28,15 @@
  *
  */
 
-namespace OPNsense\Backup;
+namespace Reticen8\Backup;
 
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Backup\GitSettings;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Backup\GitSettings;
 
 /**
  * Class Git backup
- * @package OPNsense\Backup
+ * @package Reticen8\Backup
  */
 class Git extends Base implements IBackupProvider
 {

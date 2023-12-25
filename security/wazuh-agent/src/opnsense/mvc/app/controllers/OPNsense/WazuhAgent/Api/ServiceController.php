@@ -28,17 +28,17 @@
  *
  */
 
-namespace OPNsense\WazuhAgent\Api;
+namespace Reticen8\WazuhAgent\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 /**
  * {@inheritdoc}
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\WazuhAgent\WazuhAgent';
+    protected static $internalServiceClass = '\Reticen8\WazuhAgent\WazuhAgent';
     protected static $internalServiceEnabled = 'general.enabled';
-    protected static $internalServiceTemplate = 'OPNsense/WazuhAgent';
+    protected static $internalServiceTemplate = 'Reticen8/WazuhAgent';
     protected static $internalServiceName = 'wazuh_agent';
 }

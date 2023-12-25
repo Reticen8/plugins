@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Rspamd\Api;
+namespace Reticen8\Rspamd\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Rspamd\RSpamd';
+    protected static $internalModelClass = '\Reticen8\Rspamd\RSpamd';
     protected static $internalModelName = 'rspamd';
 }

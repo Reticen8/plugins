@@ -22,9 +22,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Siproxd;
+namespace Reticen8\Siproxd;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Domain extends BaseModel
 {

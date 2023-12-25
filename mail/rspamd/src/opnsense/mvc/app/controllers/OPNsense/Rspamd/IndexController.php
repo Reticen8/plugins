@@ -30,16 +30,16 @@
 */
 
 
-namespace OPNsense\Rspamd;
+namespace Reticen8\Rspamd;
 
-use OPNsense\Core\Backend;
-use OPNsense\Rspamd\RSpamd;
+use Reticen8\Core\Backend;
+use Reticen8\Rspamd\RSpamd;
 
 /**
 * Class IndexController
-* @package OPNsense/Rspamd
+* @package Reticen8/Rspamd
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -48,6 +48,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->redis_installed = (trim($backend->configdRun('firmware plugin redis')) == '1');
         $this->view->redis_plugin_enabled = ((string)((new RSpamd())->general->enable_redis_plugin)) == '1';
         $this->view->settings = $this->getForm("settings");
-        $this->view->pick('OPNsense/Rspamd/index');
+        $this->view->pick('Reticen8/Rspamd/index');
     }
 }

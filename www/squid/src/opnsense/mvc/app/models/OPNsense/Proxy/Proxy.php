@@ -27,13 +27,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Proxy;
+namespace Reticen8\Proxy;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class Proxy
- * @package OPNsense\Proxy
+ * @package Reticen8\Proxy
  */
 class Proxy extends BaseModel
 {

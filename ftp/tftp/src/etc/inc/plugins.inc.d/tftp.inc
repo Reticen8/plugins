@@ -32,7 +32,7 @@ function tftp_services()
 
     $services = array();
 
-    if (isset($config['OPNsense']['tftp']['general']['enabled']) && $config['OPNsense']['tftp']['general']['enabled'] == 1) {
+    if (isset($config['Reticen8']['tftp']['general']['enabled']) && $config['Reticen8']['tftp']['general']['enabled'] == 1) {
         $services[] = array(
             'description' => gettext('tftp daemon'),
             'configd' => array(

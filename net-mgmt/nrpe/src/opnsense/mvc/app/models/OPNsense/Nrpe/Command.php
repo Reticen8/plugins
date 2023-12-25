@@ -22,9 +22,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Nrpe;
+namespace Reticen8\Nrpe;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Command extends BaseModel
 {

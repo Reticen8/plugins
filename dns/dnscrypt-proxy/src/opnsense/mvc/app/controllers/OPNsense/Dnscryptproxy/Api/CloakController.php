@@ -28,15 +28,15 @@
  *
  */
 
-namespace OPNsense\Dnscryptproxy\Api;
+namespace Reticen8\Dnscryptproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class CloakController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'cloak';
-    protected static $internalModelClass = '\OPNsense\Dnscryptproxy\Cloak';
+    protected static $internalModelClass = '\Reticen8\Dnscryptproxy\Cloak';
 
     public function searchCloakAction()
     {

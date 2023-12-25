@@ -28,7 +28,7 @@
 
 function ntopng_enabled()
 {
-    $model = new \OPNsense\Ntopng\General();
+    $model = new \Reticen8\Ntopng\General();
     return (string)$model->enabled == '1';
 }
 

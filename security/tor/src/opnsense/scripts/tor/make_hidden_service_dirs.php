@@ -32,7 +32,7 @@
 
 require_once("config.inc");
 require_once('tor_helper.php');
-use OPNsense\Tor\HiddenService;
+use Reticen8\Tor\HiddenService;
 
 $services = new HiddenService();
 foreach ($services->service->iterateItems() as $service) {

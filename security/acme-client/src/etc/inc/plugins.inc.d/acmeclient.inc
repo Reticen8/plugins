@@ -30,8 +30,8 @@ function acmeclient_enabled()
 {
     global $config;
 
-    return isset($config['OPNsense']['AcmeClient']['settings']['enabled']) &&
-    $config['OPNsense']['AcmeClient']['settings']['enabled'] == 1;
+    return isset($config['Reticen8']['AcmeClient']['settings']['enabled']) &&
+    $config['Reticen8']['AcmeClient']['settings']['enabled'] == 1;
 }
 
 function acmeclient_firewall($fw)

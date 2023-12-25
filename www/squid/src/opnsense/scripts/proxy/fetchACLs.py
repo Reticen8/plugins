@@ -1,8 +1,8 @@
 #!/usr/local/bin/python3
 
 """
-    Copyright (c) 2016-2019 Ad Schellevis <ad@opnsense.org>
-    Copyright (c) 2015 Jos Schellevis <jos@opnsense.org>
+    Copyright (c) 2016-2019 Ad Schellevis <ad@reticen8.com>
+    Copyright (c) 2015 Jos Schellevis <jos@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -282,7 +282,7 @@ def filename_in_ignorelist(bfilename, filename_ext):
 
 
 def main():
-    # parse OPNsense external ACLs config
+    # parse Reticen8 external ACLs config
     if os.path.exists(acl_config_fn):
         # create acl directory (if new)
         if not os.path.exists(acl_target_dir):

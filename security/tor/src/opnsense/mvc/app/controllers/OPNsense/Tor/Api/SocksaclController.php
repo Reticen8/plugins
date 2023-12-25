@@ -26,14 +26,14 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tor\Api;
+namespace Reticen8\Tor\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SocksaclController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'policy';
-    protected static $internalModelClass = '\OPNsense\Tor\ACLSocksPolicy';
+    protected static $internalModelClass = '\Reticen8\Tor\ACLSocksPolicy';
     public function searchaclAction()
     {
         return $this->searchBase('policy', array('enabled', 'type', 'network', 'action'));

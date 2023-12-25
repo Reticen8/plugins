@@ -28,7 +28,7 @@
 
 function vnstat_enabled()
 {
-    $model = new \OPNsense\Vnstat\General();
+    $model = new \Reticen8\Vnstat\General();
     return (string)$model->enabled == '1';
 }
 

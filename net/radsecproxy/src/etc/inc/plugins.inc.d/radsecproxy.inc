@@ -28,7 +28,7 @@
 
 function radsecproxy_enabled()
 {
-    return (string)(new \OPNsense\RadSecProxy\RadSecProxy())->general->enabled == '1';
+    return (string)(new \Reticen8\RadSecProxy\RadSecProxy())->general->enabled == '1';
 }
 
 function radsecproxy_syslog()

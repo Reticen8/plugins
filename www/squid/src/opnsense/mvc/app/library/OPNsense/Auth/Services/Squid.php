@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Auth\Services;
+namespace Reticen8\Auth\Services;
 
-use OPNsense\Core\ACL;
-use OPNsense\Core\Config;
-use OPNsense\Auth\IService;
+use Reticen8\Core\ACL;
+use Reticen8\Core\Config;
+use Reticen8\Auth\IService;
 
 /**
  * Proxy service
- * @package OPNsense\Auth
+ * @package Reticen8\Auth
  */
 class Squid implements IService
 {
@@ -59,8 +59,8 @@ class Squid implements IService
         $result = array();
         $configObj = Config::getInstance()->object();
 
-        if (!empty((string)$configObj->OPNsense->proxy->forward->authentication->method)) {
-            $result = explode(',', (string)$configObj->OPNsense->proxy->forward->authentication->method);
+        if (!empty((string)$configObj->Reticen8->proxy->forward->authentication->method)) {
+            $result = explode(',', (string)$configObj->Reticen8->proxy->forward->authentication->method);
         } else {
             $result[] = 'Local Database';
         }
@@ -89,8 +89,8 @@ class Squid implements IService
     public function checkConstraints()
     {
         $configObj = Config::getInstance()->object();
-        if (!empty((string)$configObj->OPNsense->proxy->forward->authentication->authEnforceGroup)) {
-            $groups = explode(',', (string)$configObj->OPNsense->proxy->forward->authentication->authEnforceGroup);
+        if (!empty((string)$configObj->Reticen8->proxy->forward->authentication->authEnforceGroup)) {
+            $groups = explode(',', (string)$configObj->Reticen8->proxy->forward->authentication->authEnforceGroup);
             $acl = new ACL();
             foreach ($groups as $local_group) {
                 if ($acl->inGroup($this->getUserName(), $local_group, false)) {

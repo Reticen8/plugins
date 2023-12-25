@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/sendercanonical</mount>
+    <mount>//Reticen8/postfix/sendercanonical</mount>
     <description>Postfix sender_canonical rewrite configuration</description>
     <version>1.0.0</version>
     <items>

@@ -1,7 +1,7 @@
 {#
 
 Copyright (C) 2017-2021 Frank Wall
-OPNsense® is Copyright © 2014-2015 by Deciso B.V.
+Reticen8® is Copyright © 2014-2015 by Deciso B.V.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
@@ -113,7 +113,7 @@ POSSIBILITY OF SUCH DAMAGE.
         }
 
         /**
-         * copy actions for selected items from opnsense_bootgrid_plugin.js
+         * copy actions for selected items from reticen8_bootgrid_plugin.js
          */
         var grid_accounts = $("#grid-accounts").bootgrid(gridopt).on("loaded.rs.jquery.bootgrid", function (e)
         {
@@ -186,7 +186,7 @@ POSSIBILITY OF SUCH DAMAGE.
         });
 
         /**
-         * copy actions for items from opnsense_bootgrid_plugin.js
+         * copy actions for items from reticen8_bootgrid_plugin.js
          */
         grid_accounts.on("loaded.rs.jquery.bootgrid", function(){
 

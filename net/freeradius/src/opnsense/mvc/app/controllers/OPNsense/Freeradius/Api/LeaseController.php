@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class LeaseController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'lease';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Lease';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Lease';
 
     public function searchLeaseAction()
     {

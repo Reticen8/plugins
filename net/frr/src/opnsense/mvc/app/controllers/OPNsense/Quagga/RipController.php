@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class RipController extends \OPNsense\Base\IndexController
+class RipController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->ripForm = $this->getForm("rip");
-        $this->view->pick('OPNsense/Quagga/rip');
+        $this->view->pick('Reticen8/Quagga/rip');
     }
 }

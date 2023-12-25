@@ -22,15 +22,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-class ClientsController extends \OPNsense\Base\IndexController
+class ClientsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         //$this->view->generalForm = $this->getForm("clients");
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/RadSecProxy/clients');
+        $this->view->pick('Reticen8/RadSecProxy/clients');
         $this->view->formDialogClient = $this->getForm("dialogClient");
     }
 }

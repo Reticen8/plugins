@@ -26,14 +26,14 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Nrpe;
+namespace Reticen8\Nrpe;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
         $this->view->formDialogEditNrpeCommand = $this->getForm("dialogEditNrpeCommand");
-        $this->view->pick('OPNsense/Nrpe/general');
+        $this->view->pick('Reticen8/Nrpe/general');
     }
 }

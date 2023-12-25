@@ -26,11 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Utility class to execute shell processes and handle their IO.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class Process
 {

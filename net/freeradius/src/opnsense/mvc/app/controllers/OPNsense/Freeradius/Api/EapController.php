@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Freeradius\Eap;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Freeradius\Eap;
+use Reticen8\Core\Config;
 
 class EapController extends ApiControllerBase
 {

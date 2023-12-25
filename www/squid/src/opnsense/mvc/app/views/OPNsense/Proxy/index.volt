@@ -161,7 +161,7 @@
 
         }
         // when a modal is created, update the
-        $("#DialogEditPACMatch").on("opnsense_bootgrid_mapped", update_pac_match_view);
+        $("#DialogEditPACMatch").on("reticen8_bootgrid_mapped", update_pac_match_view);
         $("#pac\\.match\\.match_type").change(update_pac_match_view);
 
         $('.reload-pac-btn').click(function () {

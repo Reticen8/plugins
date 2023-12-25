@@ -29,16 +29,16 @@
  *
  */
 
-namespace OPNsense\Relayd\Api;
+namespace Reticen8\Relayd\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Relayd\Relayd;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Relayd\Relayd;
 
 /**
  * Class StatusController
- * @package OPNsense\Relayd
+ * @package Reticen8\Relayd
  */
 class StatusController extends ApiControllerBase
 {

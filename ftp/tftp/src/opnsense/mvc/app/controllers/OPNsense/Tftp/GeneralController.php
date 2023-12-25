@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tftp;
+namespace Reticen8\Tftp;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm('general');
-        $this->view->pick('OPNsense/Tftp/general');
+        $this->view->pick('Reticen8/Tftp/general');
     }
 }

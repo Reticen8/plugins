@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Netdata\Api;
+namespace Reticen8\Netdata\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Netdata\General';
-    protected static $internalServiceTemplate = 'OPNsense/Netdata';
+    protected static $internalServiceClass = '\Reticen8\Netdata\General';
+    protected static $internalServiceTemplate = 'Reticen8/Netdata';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'netdata';
 }

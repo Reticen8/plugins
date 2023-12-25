@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Telegraf;
+namespace Reticen8\Telegraf;
 
-class InputController extends \OPNsense\Base\IndexController
+class InputController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->inputForm = $this->getForm("input");
-        $this->view->pick('OPNsense/Telegraf/input');
+        $this->view->pick('Reticen8/Telegraf/input');
     }
 }

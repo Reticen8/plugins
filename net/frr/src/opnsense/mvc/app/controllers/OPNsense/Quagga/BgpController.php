@@ -26,9 +26,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class BgpController extends \OPNsense\Base\IndexController
+class BgpController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -38,6 +38,6 @@ class BgpController extends \OPNsense\Base\IndexController
         $this->view->formDialogEditBGPPrefixLists = $this->getForm("dialogEditBGPPrefixLists");
         $this->view->formDialogEditBGPCommunityLists = $this->getForm("dialogEditBGPCommunityLists");
         $this->view->formDialogEditBGPRouteMaps = $this->getForm("dialogEditBGPRouteMaps");
-        $this->view->pick('OPNsense/Quagga/bgp');
+        $this->view->pick('Reticen8/Quagga/bgp');
     }
 }

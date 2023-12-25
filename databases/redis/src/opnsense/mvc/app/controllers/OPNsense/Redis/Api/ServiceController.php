@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Redis\Api;
+namespace Reticen8\Redis\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Redis\Redis';
-    protected static $internalServiceTemplate = 'OPNsense/Redis';
+    protected static $internalServiceClass = '\Reticen8\Redis\Redis';
+    protected static $internalServiceTemplate = 'Reticen8/Redis';
     protected static $internalServiceEnabled = 'general.enabled';
     protected static $internalServiceName = 'redis';
 

@@ -28,19 +28,19 @@
  *
  */
 
-namespace OPNsense\WazuhAgent;
+namespace Reticen8\WazuhAgent;
 
 /**
  * Class IndexController
- * @package OPNsense\WazuhAgent
+ * @package Reticen8\WazuhAgent
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // link dialogs
         $this->view->formSettings = $this->getForm("settings");
         // choose template
-        $this->view->pick('OPNsense/WazuhAgent/index');
+        $this->view->pick('Reticen8/WazuhAgent/index');
     }
 }

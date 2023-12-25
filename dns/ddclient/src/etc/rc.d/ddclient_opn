@@ -9,7 +9,7 @@
 
 name=ddclient_opn
 rcvar=ddclient_opn_enable
-command=/usr/local/opnsense/scripts/ddclient/ddclient_opn.py
+command=/usr/local/reticen8/scripts/ddclient/ddclient_opn.py
 command_interpreter=/usr/local/bin/python3
 pidfile="/var/run/${name}.pid"
 load_rc_config $name

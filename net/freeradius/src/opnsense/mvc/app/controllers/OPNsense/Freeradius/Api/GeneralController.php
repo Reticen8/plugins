@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Freeradius\General;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Freeradius\General;
+use Reticen8\Core\Config;
 
 class GeneralController extends ApiControllerBase
 {

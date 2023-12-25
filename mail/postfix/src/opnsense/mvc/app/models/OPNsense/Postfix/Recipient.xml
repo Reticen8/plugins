@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/recipient</mount>
+    <mount>//Reticen8/postfix/recipient</mount>
     <description>Postfix recipient configuration</description>
     <version>1.0.0</version>
     <items>

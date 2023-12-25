@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.freeradius.general.enabled') and OPNsense.freeradius.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.enabled') and Reticen8.freeradius.general.enabled == '1' %}
 
 # -*- text -*-
 #

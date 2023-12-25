@@ -36,9 +36,9 @@ require 'rexml/document'
 $TOR_DEBUG = false
 
 config = REXML::Document.new(File.new("/conf/config.xml"))
-$TOR_PASSWORD = config.elements['opnsense/OPNsense/tor/general/control_port_password'].text
+$TOR_PASSWORD = config.elements['reticen8/Reticen8/tor/general/control_port_password'].text
 $TOR_CONTROL_PORT = 9051
-if port = config.elements['opnsense/OPNsense/tor/general/control_port']&.text&.to_i
+if port = config.elements['reticen8/Reticen8/tor/general/control_port']&.text&.to_i
   if port > 0
     $TOR_CONTROL_PORT = port
   else

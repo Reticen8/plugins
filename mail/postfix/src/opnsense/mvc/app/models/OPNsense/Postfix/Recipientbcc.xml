@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/recipientbcc</mount>
+    <mount>//Reticen8/postfix/recipientbcc</mount>
     <description>Postfix Recipient BCC configuration</description>
     <version>1.0.0</version>
     <items>

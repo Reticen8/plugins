@@ -34,21 +34,21 @@
         <type>dropdown</type>
     </field>
     <field>
-        <label>OPNsense Web Service</label>
+        <label>Reticen8 Web Service</label>
         <type>header</type>
-        <style>table_http table_http_opnsense</style>
+        <style>table_http table_http_reticen8</style>
     </field>
     <field>
         <id>validation.http_opn_autodiscovery</id>
         <label>IP Auto-Discovery</label>
         <type>checkbox</type>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose this option to let OPNsense try to auto-discover these IP addresses. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose this option to let Reticen8 try to auto-discover these IP addresses. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
     </field>
     <field>
         <id>validation.http_opn_interface</id>
         <label>Interface</label>
         <type>dropdown</type>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose the interface where this IP address is currently configured. OPNsense will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose the interface where this IP address is currently configured. Reticen8 will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
     </field>
     <field>
         <id>validation.http_opn_ipaddresses</id>
@@ -56,7 +56,7 @@
         <type>select_multiple</type>
         <style>tokenize</style>
         <allownew>true</allownew>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to one or more official IP addresses. Enter the all of these IP addresses here. OPNsense will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with these IP addresses.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to one or more official IP addresses. Enter the all of these IP addresses here. Reticen8 will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with these IP addresses.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
         <hint>Enter IP addresses here. Finish each with TAB.</hint>
     </field>
     <field>
@@ -97,13 +97,13 @@
         <id>validation.tlsalpn_acme_autodiscovery</id>
         <label>IP Auto-Discovery</label>
         <type>checkbox</type>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose this option to let OPNsense try to auto-discover these IP addresses. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose this option to let Reticen8 try to auto-discover these IP addresses. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
     </field>
     <field>
         <id>validation.tlsalpn_acme_interface</id>
         <label>Interface</label>
         <type>dropdown</type>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose the interface where this IP address is currently configured. OPNsense will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to an official IP address. Choose the interface where this IP address is currently configured. Reticen8 will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with this IP address.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
     </field>
     <field>
         <id>validation.tlsalpn_acme_ipaddresses</id>
@@ -111,7 +111,7 @@
         <type>select_multiple</type>
         <style>tokenize</style>
         <allownew>true</allownew>
-        <help><![CDATA[The FQDN's used in your certificate must currently point to one or more official IP addresses. Enter the all of these IP addresses here. OPNsense will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with these IP addresses.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your OPNsense firewall.</div>]]></help>
+        <help><![CDATA[The FQDN's used in your certificate must currently point to one or more official IP addresses. Enter the all of these IP addresses here. Reticen8 will automatically create a temporary port forward to allow the ACME validation to succeed. This will lead to a short downtime of the service that is normally used with these IP addresses.<br/><div class="text-info"><b>NOTE:</b>This will ONLY work if the official IP addresses are LOCALLY configured on your Reticen8 firewall.</div>]]></help>
         <hint>Enter IP addresses here. Finish each with TAB.</hint>
     </field>
     <field>
@@ -1023,40 +1023,40 @@
         <type>text</type>
     </field>
     <field>
-        <label>opnsense</label>
+        <label>reticen8</label>
         <type>header</type>
-        <style>table_dns table_dns_opnsense</style>
+        <style>table_dns table_dns_reticen8</style>
     </field>
     <field>
-        <id>validation.dns_opnsense_host</id>
-        <label>OPNSense Server (FQDN)</label>
+        <id>validation.dns_reticen8_host</id>
+        <label>REticen8 Server (FQDN)</label>
         <type>text</type>
     </field>
     <field>
-        <id>validation.dns_opnsense_port</id>
-        <label>OPNSense Server Port</label>
+        <id>validation.dns_reticen8_port</id>
+        <label>REticen8 Server Port</label>
         <type>text</type>
     </field>
     <field>
-        <id>validation.dns_opnsense_key</id>
+        <id>validation.dns_reticen8_key</id>
         <label>User API key </label>
         <type>text</type>
     </field>
     <field>
-        <id>validation.dns_opnsense_token</id>
+        <id>validation.dns_reticen8_token</id>
         <label>User API token</label>
         <type>text</type>
     </field>
     <field>
-        <id>validation.dns_opnsense_insecure</id>
+        <id>validation.dns_reticen8_insecure</id>
         <label>Disable TLS Verification</label>
         <type>checkbox</type>
-        <help>Uncheck this box if you have a valid certificate for your OPNsense interface.</help>
+        <help>Uncheck this box if you have a valid certificate for your Reticen8 interface.</help>
     </field>
     <field>
         <label>Action required</label>
         <type>header</type>
-        <style>table_dns table_dns_opnsense bind_plugin_warning</style>
+        <style>table_dns table_dns_reticen8 bind_plugin_warning</style>
     </field>
     <field>
         <label><![CDATA[Please manually install the plugin "os-bind" to enable support for it.]]></label>

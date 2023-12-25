@@ -4,7 +4,7 @@ if [ -f /etc/rc.conf.d/haproxy ]; then
 . /etc/rc.conf.d/haproxy
 fi
 
-# NOTE: Keep /var/haproxy on this list, see GH issue opnsense/plugins #39.
+# NOTE: Keep /var/haproxy on this list, see GH issue reticen8/plugins #39.
 HAPROXY_DIRS="/var/haproxy /var/haproxy/sockets /var/haproxy/var/run /tmp/haproxy /tmp/haproxy/ssl /tmp/haproxy/lua /tmp/haproxy/errorfiles /tmp/haproxy/mapfiles /tmp/haproxy/sockets"
 
 for directory in ${HAPROXY_DIRS}; do
@@ -17,14 +17,14 @@ done
 find /var/haproxy -type d -exec chmod 550 {} \;
 
 # export required data to filesystem
-/usr/local/opnsense/scripts/OPNsense/HAProxy/exportCerts.php > /dev/null 2>&1
-/usr/local/opnsense/scripts/OPNsense/HAProxy/exportLuaScripts.php > /dev/null 2>&1
-/usr/local/opnsense/scripts/OPNsense/HAProxy/exportErrorFiles.php > /dev/null 2>&1
-/usr/local/opnsense/scripts/OPNsense/HAProxy/exportMapFiles.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/Reticen8/HAProxy/exportCerts.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/Reticen8/HAProxy/exportLuaScripts.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/Reticen8/HAProxy/exportErrorFiles.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/Reticen8/HAProxy/exportMapFiles.php > /dev/null 2>&1
 
 # update OCSP data
 if [ "${haproxy_ocsp}" == "YES" ]; then
-  /usr/local/opnsense/scripts/OPNsense/HAProxy/updateOcsp.sh > /dev/null 2>&1
+  /usr/local/reticen8/scripts/Reticen8/HAProxy/updateOcsp.sh > /dev/null 2>&1
 fi
 
 # deploy new config

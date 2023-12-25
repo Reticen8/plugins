@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\FtpProxy;
+namespace Reticen8\FtpProxy;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class FtpProxy
- * @package OPNsense\FtpProxy
+ * @package Reticen8\FtpProxy
  */
 class FtpProxy extends BaseModel
 {

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/nrpe/general</mount>
+    <mount>//Reticen8/nrpe/general</mount>
     <description>NRPE configuration</description>
     <version>0.0.1</version>
     <items>

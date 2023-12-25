@@ -27,20 +27,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Zerotier\Api;
+namespace Reticen8\Zerotier\Api;
 
 require_once 'plugins.inc.d/zerotier.inc';
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Zerotier\Zerotier;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Zerotier\Zerotier;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'Zerotier';
-    protected static $internalModelClass = '\OPNsense\Zerotier\Zerotier';
+    protected static $internalModelClass = '\Reticen8\Zerotier\Zerotier';
 
     public function getAction()
     {
@@ -96,7 +96,7 @@ class SettingsController extends ApiMutableModelControllerBase
     private function toggleZerotierService($enabled)
     {
         $backend = new Backend();
-        $backend->configdRun("template reload OPNsense/zerotier");
+        $backend->configdRun("template reload Reticen8/zerotier");
         $action = $enabled ? "start" : "stop";
         return trim($backend->configdRun("zerotier $action"));
     }

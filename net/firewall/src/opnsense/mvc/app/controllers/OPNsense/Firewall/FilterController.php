@@ -25,13 +25,13 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-namespace OPNsense\Firewall;
+namespace Reticen8\Firewall;
 
-class FilterController extends \OPNsense\Base\IndexController
+class FilterController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Firewall/filter');
+        $this->view->pick('Reticen8/Firewall/filter');
         $this->view->ruleController = "filter";
         $this->view->formDialogFilterRule = $this->getForm("dialogFilterRule");
     }

@@ -1,5 +1,5 @@
-{% if helpers.exists('OPNsense.zabbixproxy.general.enabled') and OPNsense.zabbixproxy.general.enabled == '1' %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.encryption') and OPNsense.zabbixproxy.general.encryption == '1' %}
-{{ OPNsense.zabbixproxy.general.encryptionpsk }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.enabled') and Reticen8.zabbixproxy.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.encryption') and Reticen8.zabbixproxy.general.encryption == '1' %}
+{{ Reticen8.zabbixproxy.general.encryptionpsk }}
 {% endif %}
 {% endif %}

@@ -30,17 +30,17 @@
  *
  */
 
-namespace OPNsense\Bind;
+namespace Reticen8\Bind;
 
 /**
  * Class LogsController
- * @package OPNsense\Bind
+ * @package Reticen8\Bind
  */
-class LogsController extends \OPNsense\Base\IndexController
+class LogsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // choose template
-        $this->view->pick('OPNsense/Bind/logs');
+        $this->view->pick('Reticen8/Bind/logs');
     }
 }

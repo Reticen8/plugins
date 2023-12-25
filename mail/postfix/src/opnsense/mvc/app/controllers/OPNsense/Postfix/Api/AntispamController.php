@@ -27,12 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class AntispamController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'antispam';
-    protected static $internalModelClass = '\OPNsense\Postfix\Antispam';
+    protected static $internalModelClass = '\Reticen8\Postfix\Antispam';
 }

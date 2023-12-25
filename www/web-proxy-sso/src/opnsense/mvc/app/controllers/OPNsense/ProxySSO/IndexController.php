@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ProxySSO;
+namespace Reticen8\ProxySSO;
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/ProxySSO/index');
+        $this->view->pick('Reticen8/ProxySSO/index');
         $this->view->generalForm = $this->getForm("general");
         $this->view->testingCreateForm = $this->getForm("testing_create");
         $this->view->testingTestForm = $this->getForm("testing_test");

@@ -26,11 +26,11 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\MDNSRepeater\Api;
+namespace Reticen8\MDNSRepeater\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\MDNSRepeater\MDNSRepeater;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\MDNSRepeater\MDNSRepeater;
 
 class ServiceController extends ApiControllerBase
 {
@@ -58,7 +58,7 @@ class ServiceController extends ApiControllerBase
     {
         $backend = new Backend();
         $result = array('result' => 'failed');
-        $backend->configdRun('template reload OPNsense/MDNSRepeater');
+        $backend->configdRun('template reload Reticen8/MDNSRepeater');
         $result['result'] = $backend->configdRun('mdnsrepeater start');
         return $result;
     }

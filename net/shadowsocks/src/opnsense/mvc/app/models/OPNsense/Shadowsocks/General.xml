@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/shadowsocks/general</mount>
+    <mount>//Reticen8/shadowsocks/general</mount>
     <description>Shadowsocks configuration</description>
     <version>1.0.0</version>
     <items>

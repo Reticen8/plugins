@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Siproxd\Api;
+namespace Reticen8\Siproxd\Api;
 
-use OPNsense\Siproxd\User;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Siproxd\User;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class UserController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'User';
-    protected static $internalModelClass = '\OPNsense\Siproxd\User';
+    protected static $internalModelClass = '\Reticen8\Siproxd\User';
 
     public function getAction()
     {

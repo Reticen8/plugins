@@ -29,7 +29,7 @@
 
 function zerotier_enabled()
 {
-    $mdlZerotier = new \OPNsense\Zerotier\Zerotier();
+    $mdlZerotier = new \Reticen8\Zerotier\Zerotier();
     return isEnabled($mdlZerotier);
 }
 

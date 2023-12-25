@@ -22,9 +22,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class RadSecProxy extends BaseModel
 {

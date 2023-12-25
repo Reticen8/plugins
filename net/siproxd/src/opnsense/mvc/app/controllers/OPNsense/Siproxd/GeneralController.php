@@ -26,15 +26,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Siproxd;
+namespace Reticen8\Siproxd;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
         $this->view->formDialogEditSiproxdUser = $this->getForm("dialogEditSiproxdUser");
         $this->view->formDialogEditSiproxdDomain = $this->getForm("dialogEditSiproxdDomain");
-        $this->view->pick('OPNsense/Siproxd/general');
+        $this->view->pick('Reticen8/Siproxd/general');
     }
 }

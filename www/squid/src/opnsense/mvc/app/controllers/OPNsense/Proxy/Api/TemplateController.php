@@ -26,19 +26,19 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Proxy\Api;
+namespace Reticen8\Proxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 /**
  * Class TemplateController
- * @package OPNsense\Proxy
+ * @package Reticen8\Proxy
  */
 class TemplateController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'proxy';
-    protected static $internalModelClass = '\OPNsense\Proxy\Proxy';
+    protected static $internalModelClass = '\Reticen8\Proxy\Proxy';
 
     /**
      * save template
@@ -82,13 +82,13 @@ class TemplateController extends ApiMutableModelControllerBase
     }
 
     /**
-     * retrieve error pages template, overlay provided template zip file on top of OPNsense error pages
+     * retrieve error pages template, overlay provided template zip file on top of Reticen8 error pages
      * using configd calls
      */
     public function getAction()
     {
         $backend = new Backend();
-        $backend->configdRun("template reload OPNsense/Proxy");
+        $backend->configdRun("template reload Reticen8/Proxy");
         $result = json_decode($backend->configdRun("proxy download_error_pages"), true);
         if ($result != null) {
             $this->response->setRawHeader("Content-Type: application/octet-stream");

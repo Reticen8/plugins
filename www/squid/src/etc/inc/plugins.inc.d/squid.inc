@@ -33,8 +33,8 @@ function squid_services()
     $services = array();
 
     if (
-        isset($config['OPNsense']['proxy']['general']['enabled']) &&
-        $config['OPNsense']['proxy']['general']['enabled'] == 1
+        isset($config['Reticen8']['proxy']['general']['enabled']) &&
+        $config['Reticen8']['proxy']['general']['enabled'] == 1
     ) {
         $services[] = array(
             'description' => gettext('Squid Web Proxy'),
@@ -57,7 +57,7 @@ function squid_xmlrpc_sync()
 
     $result[] = array(
         'description' => gettext('Squid Web Proxy'),
-        'section' => 'OPNsense.proxy',
+        'section' => 'Reticen8.proxy',
         'id' => 'squid',
         'services' => ["squid"],
     );

@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\DynDNS;
+namespace Reticen8\DynDNS;
 
 /**
  * Class IndexController
- * @package OPNsense\DynDNS
+ * @package Reticen8\DynDNS
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -42,6 +42,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->formDialogAccount = $this->getForm("dialogAccount");
         $this->view->formSettings = $this->getForm("settings");
         // choose template
-        $this->view->pick('OPNsense/DynDNS/index');
+        $this->view->pick('Reticen8/DynDNS/index');
     }
 }

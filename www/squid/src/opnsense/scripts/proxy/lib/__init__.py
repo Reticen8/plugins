@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2020 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2020 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -50,7 +50,7 @@ class ProxyTemplates:
         """
         if os.path.isfile(self.error_config):
             error_cfg = ujson.loads(open(self.error_config, 'rb').read())
-            self._install_overlay = 'install' not in error_cfg or error_cfg['install'] != 'opnsense'
+            self._install_overlay = 'install' not in error_cfg or error_cfg['install'] != 'reticen8'
             self._overlay_data = error_cfg['content'] if 'content' in error_cfg else None
 
     def load(self):
@@ -59,8 +59,8 @@ class ProxyTemplates:
         self._overlay_status = None
         self._all_src_files = dict()
         self._all_ovl_files = dict()
-        # base (OPNsense) template
-        for filename in glob.glob("/usr/local/opnsense/data/proxy/template_error_pages/*"):
+        # base (Reticen8) template
+        for filename in glob.glob("/usr/local/reticen8/data/proxy/template_error_pages/*"):
             bfilename = os.path.basename(filename)
             with open(filename, "rb") as f_in:
                 self._all_src_files[bfilename] = f_in.read()

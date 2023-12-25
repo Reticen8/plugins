@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\Sslh\Api;
+namespace Reticen8\Sslh\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 /**
  * An ApiMutableModelControllerBase class used to perform settings related
@@ -51,7 +51,7 @@ use OPNsense\Base\ApiMutableModelControllerBase;
  *   toggle
  * ```
  *
- * @package OPNsense\Sslh
+ * @package Reticen8\Sslh
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
@@ -61,7 +61,7 @@ class SettingsController extends ApiMutableModelControllerBase
      * this controller's name, "Settings".
      * In this case, it is the model XML file:
      *
-     * `model/OPNsense/Sslh/Settings.xml`
+     * `model/Reticen8/Sslh/Settings.xml`
      *
      * The model name is then used as the name of the array returned by setBase()
      * and getBase(). In the form XMLs, the prefix used on the field IDs must
@@ -89,9 +89,9 @@ class SettingsController extends ApiMutableModelControllerBase
      *
      * In this case, these are the model XML file, and class definition file:
      *
-     * `model/OPNsense/Sslh/Settings.xml`
+     * `model/Reticen8/Sslh/Settings.xml`
      *
-     * `model/OPNsense/Sslh/Settings.php`
+     * `model/Reticen8/Sslh/Settings.php`
      *
      * These together will establish several API endpoints on this Controller's
      * endpoint including:
@@ -108,7 +108,7 @@ class SettingsController extends ApiMutableModelControllerBase
      *
      * @var string $internalModelClass
      */
-    protected static $internalModelClass = 'OPNsense\Sslh\Settings';
+    protected static $internalModelClass = 'Reticen8\Sslh\Settings';
 
     /**
      * An API endpoint to call when no parameters are

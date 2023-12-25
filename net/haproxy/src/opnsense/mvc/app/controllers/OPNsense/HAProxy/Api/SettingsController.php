@@ -29,21 +29,21 @@
  *
  */
 
-namespace OPNsense\HAProxy\Api;
+namespace Reticen8\HAProxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\Core\Config;
-use OPNsense\HAProxy\HAProxy;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\Core\Config;
+use Reticen8\HAProxy\HAProxy;
 
 /**
  * Class SettingsController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'haproxy';
-    protected static $internalModelClass = '\OPNsense\HAProxy\HAProxy';
+    protected static $internalModelClass = '\Reticen8\HAProxy\HAProxy';
     protected static $internalModelUseSafeDelete = true;
 
     public function getFrontendAction($uuid = null)

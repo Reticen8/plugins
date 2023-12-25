@@ -29,13 +29,13 @@
  *
  */
 
-namespace OPNsense\ZabbixAgent;
+namespace Reticen8\ZabbixAgent;
 
 /**
  * Class IndexController
- * @package OPNsense\ZabbixAgent
+ * @package Reticen8\ZabbixAgent
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * zabbix agent index page
@@ -50,6 +50,6 @@ class IndexController extends \OPNsense\Base\IndexController
         // link alias dialog
         $this->view->formDialogAlias = $this->getForm("dialogAlias");
         // pick the template to serve
-        $this->view->pick('OPNsense/ZabbixAgent/index');
+        $this->view->pick('Reticen8/ZabbixAgent/index');
     }
 }

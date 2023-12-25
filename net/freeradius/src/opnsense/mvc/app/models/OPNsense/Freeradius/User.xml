@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/user</mount>
+    <mount>//Reticen8/freeradius/user</mount>
     <description>FreeRADIUS user configuration</description>
     <version>1.0.3</version>
     <items>
@@ -115,7 +115,7 @@
                 <linkedAVPair type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.Freeradius.Avpair</source>
+                            <source>Reticen8.Freeradius.Avpair</source>
                             <items>avpairs.avpair</items>
                             <display>name</display>
                         </template>

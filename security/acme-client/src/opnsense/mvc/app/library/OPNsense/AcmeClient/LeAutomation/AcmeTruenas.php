@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
  * Run acme.sh deploy hook truenas
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class AcmeTruenas extends Base implements LeAutomationInterface
 {

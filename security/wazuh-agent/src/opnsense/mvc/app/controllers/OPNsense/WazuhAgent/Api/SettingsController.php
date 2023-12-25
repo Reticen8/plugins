@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\WazuhAgent\Api;
+namespace Reticen8\WazuhAgent\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'agent';
-    protected static $internalModelClass = 'OPNsense\WazuhAgent\WazuhAgent';
+    protected static $internalModelClass = 'Reticen8\WazuhAgent\WazuhAgent';
 }

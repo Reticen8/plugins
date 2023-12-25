@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2018-2019 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2018-2019 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -32,7 +32,7 @@ from .log import reverse_log_reader
 
 class Stats:
     def __init__(self):
-        self._suricata_default_rule_path = '/usr/local/etc/suricata/opnsense.rules'
+        self._suricata_default_rule_path = '/usr/local/etc/suricata/reticen8.rules'
         self._suricata_installed_rules = '/usr/local/etc/suricata/installed_rules.yaml'
         self._our_sids = telemetry_sids()
         self._installed_sids = self._fetch_installed_sids()
@@ -59,7 +59,7 @@ class Stats:
 
     @staticmethod
     def software_version():
-        return subprocess.run(['/usr/local/sbin/opnsense-version', '-v'], capture_output=True, text=True).stdout.strip()
+        return subprocess.run(['/usr/local/sbin/reticen8-version', '-v'], capture_output=True, text=True).stdout.strip()
 
     @staticmethod
     def suricata_version():
@@ -82,7 +82,7 @@ class Stats:
         if os.path.isfile('/usr/local/etc/suricata/rules/telemetry_version.json'):
             with open('/usr/local/etc/suricata/rules/telemetry_version.json') as f_in:
                 data = f_in.read()
-                if data.startswith('#@opnsense_downlo'):
+                if data.startswith('#@reticen8_downlo'):
                     # strip download hash line
                     data = data[data.find('\n')+1:]
                 data = ujson.loads(data)

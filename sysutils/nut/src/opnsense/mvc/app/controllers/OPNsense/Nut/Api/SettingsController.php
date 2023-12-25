@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Nut\Api;
+namespace Reticen8\Nut\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Nut\Nut';
+    protected static $internalModelClass = '\Reticen8\Nut\Nut';
     protected static $internalModelName = 'nut';
 }

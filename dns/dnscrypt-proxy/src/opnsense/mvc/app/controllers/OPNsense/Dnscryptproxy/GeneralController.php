@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Dnscryptproxy;
+namespace Reticen8\Dnscryptproxy;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -38,6 +38,6 @@ class GeneralController extends \OPNsense\Base\IndexController
         $this->view->formDialogEditDnscryptproxyWhitelist = $this->getForm("dialogEditDnscryptproxyWhitelist");
         $this->view->formDialogEditDnscryptproxyServer = $this->getForm("dialogEditDnscryptproxyServer");
         $this->view->dnsblForm = $this->getForm("dnsbl");
-        $this->view->pick('OPNsense/Dnscryptproxy/general');
+        $this->view->pick('Reticen8/Dnscryptproxy/general');
     }
 }

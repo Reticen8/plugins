@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class UserController extends \OPNsense\Base\IndexController
+class UserController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditFreeRADIUSUser = $this->getForm("dialogEditFreeRADIUSUser");
         $this->view->formDialogEditFreeRADIUSAvpair = $this->getForm("dialogEditFreeRADIUSAvpair");
-        $this->view->pick('OPNsense/Freeradius/user');
+        $this->view->pick('Reticen8/Freeradius/user');
     }
 }

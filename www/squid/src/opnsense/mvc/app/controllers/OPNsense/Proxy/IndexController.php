@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\Proxy;
+namespace Reticen8\Proxy;
 
 /**
  * Class IndexController
- * @package OPNsense\Proxy
+ * @package Reticen8\Proxy
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * proxy index page
@@ -47,6 +47,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->formDialogEditPACRule = $this->getForm("dialogEditPACRule");
         $this->view->formDialogEditPACProxy = $this->getForm("dialogEditPACProxy");
         $this->view->formDialogEditBlacklist = $this->getForm("dialogEditBlacklist");
-        $this->view->pick('OPNsense/Proxy/index');
+        $this->view->pick('Reticen8/Proxy/index');
     }
 }

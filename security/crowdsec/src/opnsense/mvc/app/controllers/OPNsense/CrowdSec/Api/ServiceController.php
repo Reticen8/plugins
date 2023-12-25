@@ -3,14 +3,14 @@
 // SPDX-License-Identifier: MIT
 // SPDX-FileCopyrightText: © 2021 CrowdSec <info@crowdsec.net>
 
-namespace OPNsense\CrowdSec\Api;
+namespace Reticen8\CrowdSec\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
 
 /**
  * Class ServiceController
- * @package OPNsense\CrowdSec
+ * @package Reticen8\CrowdSec
  */
 class ServiceController extends ApiControllerBase
 {
@@ -22,7 +22,7 @@ class ServiceController extends ApiControllerBase
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
-            $bckresult = trim($backend->configdRun('template reload OPNsense/CrowdSec'));
+            $bckresult = trim($backend->configdRun('template reload Reticen8/CrowdSec'));
             if ($bckresult == "OK") {
                 $bckresult = trim($backend->configdRun('crowdsec reconfigure'));
                 if ($bckresult == "OK") {

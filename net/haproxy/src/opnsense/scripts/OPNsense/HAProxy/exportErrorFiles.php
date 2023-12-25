@@ -33,14 +33,14 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $export_path = '/tmp/haproxy/errorfiles/';
 
 // traverse HAProxy error files
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->HAProxy->errorfiles)) {
-    foreach ($configObj->OPNsense->HAProxy->errorfiles->children() as $errorfile) {
+if (isset($configObj->Reticen8->HAProxy->errorfiles)) {
+    foreach ($configObj->Reticen8->HAProxy->errorfiles->children() as $errorfile) {
         $ef_name = (string)$errorfile->name;
         $ef_id = (string)$errorfile->id;
         if ($ef_id != "") {

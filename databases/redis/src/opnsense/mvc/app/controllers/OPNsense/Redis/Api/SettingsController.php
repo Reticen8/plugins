@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Redis\Api;
+namespace Reticen8\Redis\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Redis\Redis';
+    protected static $internalModelClass = '\Reticen8\Redis\Redis';
     protected static $internalModelName = 'redis';
 }

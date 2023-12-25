@@ -31,7 +31,7 @@
        * create status and start/stop buttons
        **/
       function getControlButtons(status, id, nodeType) {
-          let status_btn = $('<button class="label label-opnsense label-opnsense-xs"/>').css('cursor', 'auto');
+          let status_btn = $('<button class="label label-reticen8 label-reticen8-xs"/>').css('cursor', 'auto');
           let action_btn = $('<button class="btn btn-xs btn-default" data-toggle="tooltip"/>').attr('data-nodeid', id).attr('data-nodetype', nodeType);
           let action_btn_remove = action_btn.clone(true);
           let response = [];
@@ -76,7 +76,7 @@
 
           if (nodeType == 'host' && response.length == 2) {
               response.push(
-                $('<button class="label label-opnsense label-opnsense-xs"/>').css('cursor', 'auto').css('opacity', '0').append(
+                $('<button class="label label-reticen8 label-reticen8-xs"/>').css('cursor', 'auto').css('opacity', '0').append(
                     $("<i class='fa fa-fw'/>")
                 )
               );

@@ -3,17 +3,17 @@
 // SPDX-License-Identifier: MIT
 // SPDX-FileCopyrightText: © 2021 CrowdSec <info@crowdsec.net>
 
-namespace OPNsense\CrowdSec;
+namespace Reticen8\CrowdSec;
 
 /**
  * Class GeneralController
- * @package OPNsense\CrowdSec
+ * @package Reticen8\CrowdSec
  */
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/CrowdSec/general');
+        $this->view->pick('Reticen8/CrowdSec/general');
         $this->view->generalForm = $this->getForm("general");
     }
 }

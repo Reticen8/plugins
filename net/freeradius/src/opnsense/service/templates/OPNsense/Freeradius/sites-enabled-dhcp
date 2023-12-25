@@ -1,19 +1,19 @@
-{% if helpers.exists('OPNsense.freeradius.general.dhcpenabled') and OPNsense.freeradius.general.dhcpenabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.dhcpenabled') and Reticen8.freeradius.general.dhcpenabled == '1' %}
 
 server dhcp {
 
 listen {
         type = dhcp
-        ipaddr = {{ OPNsense.freeradius.general.dhcplistenip }}
-        src_ipaddr = {{ OPNsense.freeradius.general.dhcplistenip }}
+        ipaddr = {{ Reticen8.freeradius.general.dhcplistenip }}
+        src_ipaddr = {{ Reticen8.freeradius.general.dhcplistenip }}
         port = 67
         broadcast = no
 }
 
 dhcp DHCP-Discover {
 
-{% if helpers.exists('OPNsense.freeradius.dhcp.dhcps.dhcp') %}
-{%   for dhcp_list in helpers.toList('OPNsense.freeradius.dhcp.dhcps.dhcp') %}
+{% if helpers.exists('Reticen8.freeradius.dhcp.dhcps.dhcp') %}
+{%   for dhcp_list in helpers.toList('Reticen8.freeradius.dhcp.dhcps.dhcp') %}
 {%     if dhcp_list.enabled == '1' %}
 if(DHCP-Gateway-IP-Address == {{ dhcp_list.gatewayip }}) {
         update reply {
@@ -40,8 +40,8 @@ if(DHCP-Gateway-IP-Address == {{ dhcp_list.gatewayip }}) {
 
 dhcp DHCP-Request {
 
-{% if helpers.exists('OPNsense.freeradius.dhcp.dhcps.dhcp') %}
-{%   for dhcp_list in helpers.toList('OPNsense.freeradius.dhcp.dhcps.dhcp') %}
+{% if helpers.exists('Reticen8.freeradius.dhcp.dhcps.dhcp') %}
+{%   for dhcp_list in helpers.toList('Reticen8.freeradius.dhcp.dhcps.dhcp') %}
 {%     if dhcp_list.enabled == '1' %}
 if(DHCP-Gateway-IP-Address == {{ dhcp_list.gatewayip }}) {
         update reply {

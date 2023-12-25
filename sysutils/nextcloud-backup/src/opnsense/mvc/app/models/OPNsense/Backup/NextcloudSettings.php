@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\Backup;
+namespace Reticen8\Backup;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class Nextcloud

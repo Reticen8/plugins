@@ -29,9 +29,9 @@
  *
  */
 
-namespace OPNsense\NodeExporter;
+namespace Reticen8\NodeExporter;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

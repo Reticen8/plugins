@@ -29,15 +29,15 @@
  *
  */
 
-namespace OPNsense\HAProxy\Api;
+namespace Reticen8\HAProxy\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\HAProxy\HAProxy;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\HAProxy\HAProxy;
 
 /**
  * Class StatisticsController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
 class StatisticsController extends ApiControllerBase
 {

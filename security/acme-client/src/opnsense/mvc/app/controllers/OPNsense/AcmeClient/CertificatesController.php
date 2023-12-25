@@ -29,22 +29,22 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Class CertificatesController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-class CertificatesController extends \OPNsense\Base\IndexController
+class CertificatesController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // include form definitions
         $this->view->formDialogCertificate = $this->getForm("dialogCertificate");
         // set additional view parameters
-        $mdlAcme = new \OPNsense\AcmeClient\AcmeClient();
+        $mdlAcme = new \Reticen8\AcmeClient\AcmeClient();
         $this->view->showIntro = (string)$mdlAcme ->settings->showIntro;
         // choose template
-        $this->view->pick('OPNsense/AcmeClient/certificates');
+        $this->view->pick('Reticen8/AcmeClient/certificates');
     }
 }

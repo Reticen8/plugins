@@ -29,17 +29,17 @@
  *
  */
 
-namespace OPNsense\Zerotier;
+namespace Reticen8\Zerotier;
 
 require_once 'plugins.inc.d/zerotier.inc';
 
-use OPNsense\Core\Backend;
+use Reticen8\Core\Backend;
 
-class OverviewController extends \OPNsense\Base\IndexController
+class OverviewController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Zerotier/overview');
+        $this->view->pick('Reticen8/Zerotier/overview');
         $this->view->information = $this->information();
         $this->view->networks = $this->listNetworks();
         $this->view->peers = $this->listPeers();

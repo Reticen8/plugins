@@ -26,16 +26,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Chrony\Api;
+namespace Reticen8\Chrony\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Chrony\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Chrony\General;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Chrony\General';
-    protected static $internalServiceTemplate = 'OPNsense/Chrony';
+    protected static $internalServiceClass = '\Reticen8\Chrony\General';
+    protected static $internalServiceTemplate = 'Reticen8/Chrony';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'chrony';
 

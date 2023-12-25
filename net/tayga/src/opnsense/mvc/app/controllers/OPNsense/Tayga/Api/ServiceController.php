@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tayga\Api;
+namespace Reticen8\Tayga\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Tayga\General';
-    protected static $internalServiceTemplate = 'OPNsense/Tayga';
+    protected static $internalServiceClass = '\Reticen8\Tayga\General';
+    protected static $internalServiceTemplate = 'Reticen8/Tayga';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'tayga';
 

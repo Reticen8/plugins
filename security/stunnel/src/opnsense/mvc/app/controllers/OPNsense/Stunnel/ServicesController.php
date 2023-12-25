@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Stunnel;
+namespace Reticen8\Stunnel;
 
-use OPNsense\Base\{IndexController};
+use Reticen8\Base\{IndexController};
 
 class ServicesController extends IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Stunnel/services');
+        $this->view->pick('Reticen8/Stunnel/services');
         $this->view->formDialogService = $this->getForm("dialogService");
         $this->view->formGeneral = $this->getForm("general");
     }

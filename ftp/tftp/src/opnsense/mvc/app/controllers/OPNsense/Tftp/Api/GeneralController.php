@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tftp\Api;
+namespace Reticen8\Tftp\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Tftp\General';
+    protected static $internalModelClass = '\Reticen8\Tftp\General';
     protected static $internalModelName = 'general';
 }

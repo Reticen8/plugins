@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (C) 2018 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2018 Franco Fichtner <franco@reticen8.com>
  * Copyright (C) 2017 Fabian Franz
  * All rights reserved.
  *
@@ -29,13 +29,13 @@
 
 function frr_enabled()
 {
-    $model = new \OPNsense\Quagga\General();
+    $model = new \Reticen8\Quagga\General();
     return (string)$model->enabled == '1';
 }
 
 function frr_carp_enabled()
 {
-    $model = new \OPNsense\Quagga\General();
+    $model = new \Reticen8\Quagga\General();
     return (string)$model->enabled == '1' &&
         (string)$model->enablecarp == '1';
 }
@@ -43,11 +43,11 @@ function frr_carp_enabled()
 function frr_firewall($fw)
 {
     global $config;
-    if (empty((string)(new \OPNsense\Quagga\General())->fwrules)) {
+    if (empty((string)(new \Reticen8\Quagga\General())->fwrules)) {
         // automatic rules disabled
         return;
     }
-    $ospf = new \OPNsense\Quagga\OSPF();
+    $ospf = new \Reticen8\Quagga\OSPF();
 
     if ((string)$ospf->enabled == '1') {
         $ospf_default = [
@@ -106,7 +106,7 @@ function frr_firewall($fw)
         }
     }
 
-    $ospf6 = new \OPNsense\Quagga\OSPF6();
+    $ospf6 = new \Reticen8\Quagga\OSPF6();
 
     if ((string)$ospf6->enabled == '1') {
         $ospf6_default = [
@@ -217,7 +217,7 @@ function frr_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'quagga';
-    $result['section'] = 'OPNsense.quagga';
+    $result['section'] = 'Reticen8.quagga';
     $result['description'] = gettext('FRR');
     $result['services'] = ['frr'];
     return array($result);

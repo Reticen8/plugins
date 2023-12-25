@@ -6,7 +6,7 @@ PLUGIN_DEPENDS=		php${PLUGIN_PHP}-pear-PHP_CodeSniffer \
 			phpunit9-php${PLUGIN_PHP} \
 			py${PLUGIN_PYTHON}-pycodestyle \
 			p5-File-Slurp git
-PLUGIN_MAINTAINER=	franco@opnsense.org
+PLUGIN_MAINTAINER=	franco@reticen8.com
 PLUGIN_TIER=		2
 
 .include "../../Mk/plugins.mk"

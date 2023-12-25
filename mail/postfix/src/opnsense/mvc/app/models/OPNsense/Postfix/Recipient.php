@@ -1,8 +1,8 @@
 <?php
 
-namespace OPNsense\Postfix;
+namespace Reticen8\Postfix;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /*
     Copyright (C) 2017 Michael Muenz <m.muenz@gmail.com>

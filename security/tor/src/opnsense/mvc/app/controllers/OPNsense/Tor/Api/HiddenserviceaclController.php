@@ -26,14 +26,14 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tor\Api;
+namespace Reticen8\Tor\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class HiddenserviceaclController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'hiddenserviceacl';
-    protected static $internalModelClass = '\OPNsense\Tor\HiddenServiceACL';
+    protected static $internalModelClass = '\Reticen8\Tor\HiddenServiceACL';
     public function searchaclAction()
     {
         return $this->searchBase('hiddenserviceacl', array('enabled', 'hiddenservice', 'port', 'target_host', 'target_port'));

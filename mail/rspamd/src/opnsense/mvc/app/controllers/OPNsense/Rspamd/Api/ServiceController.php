@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Rspamd\Api;
+namespace Reticen8\Rspamd\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Rspamd\RSpamd';
-    protected static $internalServiceTemplate = 'OPNsense/Rspamd';
+    protected static $internalServiceClass = '\Reticen8\Rspamd\RSpamd';
+    protected static $internalServiceTemplate = 'Reticen8/Rspamd';
     protected static $internalServiceEnabled = 'general.enabled';
     protected static $internalServiceName = 'rspamd';
 }

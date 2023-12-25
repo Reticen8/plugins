@@ -47,4 +47,4 @@ else
 fi
 
 
-/usr/local/opnsense/scripts/OPNsense/Postfix/generate_certs.php
+/usr/local/reticen8/scripts/Reticen8/Postfix/generate_certs.php

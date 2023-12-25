@@ -26,17 +26,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Wol\Api;
+namespace Reticen8\Wol\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Wol\Wol;
-use OPNsense\Core\Config;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Wol\Wol;
+use Reticen8\Core\Config;
+use Reticen8\Core\Backend;
 
 class WolController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'wol';
-    protected static $internalModelClass = '\OPNsense\Wol\Wol';
+    protected static $internalModelClass = '\Reticen8\Wol\Wol';
 
     public function setAction()
     {

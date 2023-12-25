@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\PuppetAgent\Api;
+namespace Reticen8\PuppetAgent\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\PuppetAgent\PuppetAgent;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\PuppetAgent\PuppetAgent;
+use Reticen8\Core\Config;
 
 /**
  * Class SettingsController Handles settings related API actions for the PuppetAgent module
- * @package OPNsense\PuppetAgent
+ * @package Reticen8\PuppetAgent
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'puppetagent';
-    protected static $internalModelClass = 'OPNsense\PuppetAgent\PuppetAgent';
+    protected static $internalModelClass = 'Reticen8\PuppetAgent\PuppetAgent';
 }

@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\Relayd;
+namespace Reticen8\Relayd;
 
 /**
  * Class StatusController
- * @package OPNsense\Relayd
+ * @package Reticen8\Relayd
  */
-class StatusController extends \OPNsense\Base\IndexController
+class StatusController extends \Reticen8\Base\IndexController
 {
     /**
      * relayd status page
@@ -42,6 +42,6 @@ class StatusController extends \OPNsense\Base\IndexController
      */
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Relayd/status');
+        $this->view->pick('Reticen8/Relayd/status');
     }
 }

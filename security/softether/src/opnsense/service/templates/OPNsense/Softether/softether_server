@@ -1,7 +1,7 @@
-{% if helpers.exists('OPNsense.softether.general.enabled') and OPNsense.softether.general.enabled == '1' %}
-softether_server_setup="/usr/local/opnsense/scripts/OPNsense/Softether/setup.sh"
+{% if helpers.exists('Reticen8.softether.general.enabled') and Reticen8.softether.general.enabled == '1' %}
+softether_server_setup="/usr/local/reticen8/scripts/Reticen8/Softether/setup.sh"
 softether_server_enable="YES"
-{% if helpers.exists('OPNsense.softether.general.enablecarp') and OPNsense.softether.general.enablecarp == '1' %}
+{% if helpers.exists('Reticen8.softether.general.enablecarp') and Reticen8.softether.general.enablecarp == '1' %}
 required_files="/var/run/softether/CARP_MASTER"
 {% endif %}
 {% else %}

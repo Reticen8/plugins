@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Tinc\Api;
+namespace Reticen8\Tinc\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\Core\Backend;
 
 /**
  * Class SettingsController Handles settings related API actions for Tinc VPN
- * @package OPNsense\Tinc
+ * @package Reticen8\Tinc
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'tinc';
-    protected static $internalModelClass = '\OPNsense\Tinc\Tinc';
+    protected static $internalModelClass = '\Reticen8\Tinc\Tinc';
 
     /**
      * get network action

@@ -26,11 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Bind\Migrations;
+namespace Reticen8\Bind\Migrations;
 
-use OPNsense\Base\BaseModelMigration;
-use OPNsense\Core\Config;
-use OPNsense\Bind\Domain;
+use Reticen8\Base\BaseModelMigration;
+use Reticen8\Core\Config;
+use Reticen8\Bind\Domain;
 
 class M1_1_0 extends BaseModelMigration
 {
@@ -44,11 +44,11 @@ class M1_1_0 extends BaseModelMigration
             $config = Config::getInstance()->object();
 
             /* checks to see if there is a bind config section, otherwise skips the rest of the migration */
-            if (empty($config->OPNsense->bind)) {
+            if (empty($config->Reticen8->bind)) {
                 return;
             }
 
-            $bindConfig = $config->OPNsense->bind;
+            $bindConfig = $config->Reticen8->bind;
 
             /* loops through the domains in the config */
             foreach ($bindConfig->domain->domains->domain as $domain) {

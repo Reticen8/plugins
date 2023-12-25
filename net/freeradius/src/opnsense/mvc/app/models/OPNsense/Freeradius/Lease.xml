@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/lease</mount>
+    <mount>//Reticen8/freeradius/lease</mount>
     <description>FreeRADIUS DHCP Lease configuration</description>
     <version>1.0.0</version>
     <items>

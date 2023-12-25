@@ -3,15 +3,15 @@
 // SPDX-License-Identifier: MIT
 // SPDX-FileCopyrightText: © 2021 CrowdSec <info@crowdsec.net>
 
-namespace OPNsense\CrowdSec\Api;
+namespace Reticen8\CrowdSec\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 /**
- * @package OPNsense\CrowdSec
+ * @package Reticen8\CrowdSec
  */
 class GeneralController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'general';
-    protected static $internalModelClass = '\OPNsense\CrowdSec\General';
+    protected static $internalModelClass = '\Reticen8\CrowdSec\General';
 }

@@ -26,7 +26,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 // Optional include to get "log_error"
 @include_once("util.inc");
@@ -37,7 +37,7 @@ const SYSLOG_INFO_LEVEL = LOG_INFO;
 
 /**
  * Interface for logging.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 interface ILogger
 {
@@ -48,7 +48,7 @@ interface ILogger
 
 /**
  * Shared utilities.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class Utils
 {
@@ -166,8 +166,8 @@ class Utils
      */
     public static function getAutomationActionById($automation_id)
     {
-        $config = \OPNsense\Core\Config::getInstance()->object();
-        $client = $config->OPNsense->AcmeClient;
+        $config = \Reticen8\Core\Config::getInstance()->object();
+        $client = $config->Reticen8->AcmeClient;
 
         foreach ($client->actions->children() as $action) {
             if (
