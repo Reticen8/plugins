@@ -36,7 +36,7 @@ function stunnel_configure()
 function stunnel_services()
 {
     $services = array();
-    $mdl = new \OPNsense\Stunnel\Stunnel();
+    $mdl = new \Reticen8\Stunnel\Stunnel();
     if ($mdl->general->enabled == '1') {
         $services[] = array(
             'description' => gettext('Stunnel'),
@@ -68,8 +68,8 @@ function stunnel_services()
 
 function stunnel_refresh_crls()
 {
-    $stunnel = new OPNsense\Stunnel\Stunnel();
-    $configObj = OPNsense\Core\Config::getInstance()->object();
+    $stunnel = new Reticen8\Stunnel\Stunnel();
+    $configObj = Reticen8\Core\Config::getInstance()->object();
     foreach ($stunnel->services->service->iterateItems() as $service) {
         if (!empty((string)$service->enabled) && !empty((string)$service->enableCRL)) {
             foreach (explode(",", (string)$service->cacert) as $cacert) {
@@ -123,7 +123,7 @@ function stunnel_xmlrpc_sync()
     $result = array();
     $result[] = array(
         'description' => gettext('Stunnel'),
-        'section' => 'OPNsense.Stunnel',
+        'section' => 'Reticen8.Stunnel',
         'id' => 'stunnel',
         'services' => ['stunnel', 'identd_stunnel'],
     );

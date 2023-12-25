@@ -26,11 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Wrapper around the 'sftp' commandline client.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class SftpClient
 {

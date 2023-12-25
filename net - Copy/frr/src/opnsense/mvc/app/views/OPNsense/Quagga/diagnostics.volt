@@ -1,6 +1,6 @@
 {#
 
-OPNsense® is Copyright © 2014 – 2023 by Deciso B.V.
+Reticen8® is Copyright © 2014 – 2023 by Deciso B.V.
 Copyright (C) 2023 Marc Bartelt
 Copyright (C) 2017 Fabian Franz
 Copyright (C) 2017 Michael Muenz <m.muenz@gmail.com>
@@ -47,7 +47,7 @@ POSSIBILITY OF SUCH DAMAGE.
         }
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="{{ cache_safe(theme_file_or_default('/css/jqtree.css', ui_theme|default('opnsense'))) }}">
+  <link rel="stylesheet" type="text/css" href="{{ cache_safe(theme_file_or_default('/css/jqtree.css', ui_theme|default('reticen8'))) }}">
   <script src="{{ cache_safe('/ui/js/tree.jquery.min.js') }}"></script>
 
 <script>

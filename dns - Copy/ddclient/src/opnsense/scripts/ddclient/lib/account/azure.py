@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2023 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2023 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -23,7 +23,7 @@
     ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     POSSIBILITY OF SUCH DAMAGE.
     ----------------------------------------------------------------------------------------------------
-    Azure DNS provider, inspired by https://github.com/opnsense/plugins/pull/1547
+    Azure DNS provider, inspired by https://github.com/reticen8/plugins/pull/1547
 
     List DNS zones using Azure cloud shell
 
@@ -122,7 +122,7 @@ class Azure(BaseAccount):
                     'client_secret': self.settings.get('password')
                 },
                 'headers': {
-                    'User-Agent': 'OPNsense-dyndns'
+                    'User-Agent': 'Reticen8-dyndns'
                 }
             }
             req = requests.post(**req_opts)

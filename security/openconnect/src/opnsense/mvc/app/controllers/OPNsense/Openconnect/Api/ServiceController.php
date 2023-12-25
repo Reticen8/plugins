@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Openconnect\Api;
+namespace Reticen8\Openconnect\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Openconnect\General';
-    protected static $internalServiceTemplate = 'OPNsense/Openconnect';
+    protected static $internalServiceClass = '\Reticen8\Openconnect\General';
+    protected static $internalServiceTemplate = 'Reticen8/Openconnect';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'openconnect';
 

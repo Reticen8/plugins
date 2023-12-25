@@ -1,5 +1,5 @@
 <model>
-   <mount>//OPNsense/relayd</mount>
+   <mount>//Reticen8/relayd</mount>
    <version>1.0.5</version>
    <description>Relayd settings</description>
    <items>
@@ -88,7 +88,7 @@
          <hosts type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>host</items>
                   <display>name</display>
                </template>
@@ -217,7 +217,7 @@
          <transport_table type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>table</items>
                   <display>name</display>
                </template>
@@ -255,7 +255,7 @@
          <transport_tablecheck type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>tablecheck</items>
                   <display>name</display>
                </template>
@@ -266,7 +266,7 @@
          <backuptransport_table type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>table</items>
                   <display>name</display>
                </template>
@@ -287,7 +287,7 @@
          <backuptransport_tablecheck type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>tablecheck</items>
                   <display>name</display>
                </template>
@@ -325,7 +325,7 @@
          <protocol type="ModelRelationField">
             <Model>
                <template>
-                  <source>OPNsense.relayd.relayd</source>
+                  <source>Reticen8.relayd.relayd</source>
                   <items>protocol</items>
                   <display>name</display>
                </template>

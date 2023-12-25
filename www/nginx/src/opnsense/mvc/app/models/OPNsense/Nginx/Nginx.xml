@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/Nginx</mount>
+  <mount>//Reticen8/Nginx</mount>
   <version>1.32.1</version>
   <description>nginx web server, reverse proxy and waf</description>
   <items>
@@ -77,7 +77,7 @@
       <users type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>credential</items>
             <display>username</display>
           </template>
@@ -104,7 +104,7 @@
       <serverentries type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>upstream_server</items>
             <display>description</display>
           </template>
@@ -236,7 +236,7 @@
       <secrules_errorpage type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>errorpage</items>
             <display>name</display>
             <filters>
@@ -257,7 +257,7 @@
       <custom_policy type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>custom_policy</items>
             <display>name</display>
           </template>
@@ -269,7 +269,7 @@
       <upstream type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>upstream</items>
             <display>description</display>
           </template>
@@ -285,7 +285,7 @@
       <cache_path type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>cache_path</items>
             <display>path</display>
           </template>
@@ -347,7 +347,7 @@
       <rewrites type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>http_rewrite</items>
             <display>description</display>
           </template>
@@ -368,7 +368,7 @@
       <authbasicuserfile type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>userlist</items>
             <display>name</display>
           </template>
@@ -394,7 +394,7 @@
       <limit_request_connections type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>limit_request_connection</items>
             <display>description</display>
           </template>
@@ -484,7 +484,7 @@
       <ip_acl type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>ip_acl</items>
             <display>description</display>
           </template>
@@ -511,7 +511,7 @@
       <errorpages type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>errorpage</items>
             <display>name</display>
           </template>
@@ -529,7 +529,7 @@
       <naxsi_rules type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>naxsi_rule</items>
             <display>description</display>
           </template>
@@ -682,7 +682,7 @@
       <syslog_targets type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>syslog_target</items>
             <display>description</display>
           </template>
@@ -735,7 +735,7 @@
       <trusted_proxies_alias type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Firewall.Alias</source>
+            <source>Reticen8.Firewall.Alias</source>
             <items>aliases.alias</items>
             <display>name</display>
             <filters>
@@ -759,7 +759,7 @@
       <locations type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>location</items>
             <display>description</display>
           </template>
@@ -771,7 +771,7 @@
       <rewrites type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>http_rewrite</items>
             <display>description</display>
           </template>
@@ -910,7 +910,7 @@
       <security_header type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>security_header</items>
             <display>description</display>
           </template>
@@ -922,7 +922,7 @@
       <limit_request_connections type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>limit_request_connection</items>
             <display>description</display>
           </template>
@@ -944,7 +944,7 @@
       <ip_acl type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>ip_acl</items>
             <display>description</display>
           </template>
@@ -972,7 +972,7 @@
       <errorpages type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>errorpage</items>
             <display>name</display>
           </template>
@@ -993,7 +993,7 @@
       <syslog_targets type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>syslog_target</items>
             <display>description</display>
           </template>
@@ -1068,7 +1068,7 @@
       <upstream type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>upstream</items>
             <display>description</display>
           </template>
@@ -1088,7 +1088,7 @@
       <sni_upstream_map type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>sni_hostname_upstream_map</items>
             <display>description</display>
           </template>
@@ -1108,7 +1108,7 @@
       <ip_acl type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>ip_acl</items>
             <display>description</display>
           </template>
@@ -1131,7 +1131,7 @@
         <!-- sorry, the model relation field is broken here
           <Model>
             <template>
-              <source>OPNsense.Nginx.Nginx</source>
+              <source>Reticen8.Nginx.Nginx</source>
               <items>sni_hostname_upstream_map_items</items>
               <display>hostname</display>
             </template>
@@ -1149,7 +1149,7 @@
       <upstream type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>upstream</items>
             <display>description</display>
           </template>
@@ -1167,7 +1167,7 @@
         <!-- sorry, the model relation field is broken here
           <Model>
             <template>
-              <source>OPNsense.Nginx.Nginx</source>
+              <source>Reticen8.Nginx.Nginx</source>
               <items>ip_acl_item</items>
               <display>description</display>
             </template>
@@ -1784,7 +1784,7 @@
       <limit_zone type="ModelRelationField">
         <Model>
           <template>
-            <source>OPNsense.Nginx.Nginx</source>
+            <source>Reticen8.Nginx.Nginx</source>
             <items>limit_zone</items>
             <display>description</display>
           </template>

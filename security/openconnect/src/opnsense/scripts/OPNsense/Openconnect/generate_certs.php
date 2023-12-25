@@ -33,7 +33,7 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $cert_pem_filename = '/usr/local/etc/openconnect_cert.pem';
 $cert_pem_content = '';
@@ -43,8 +43,8 @@ $key_pem_content = '';
 
 // traverse Openconnect plugin for certficiates
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->openconnect)) {
-    foreach ($configObj->OPNsense->openconnect->children() as $find_cert) {
+if (isset($configObj->Reticen8->openconnect)) {
+    foreach ($configObj->Reticen8->openconnect->children() as $find_cert) {
         $cert_refid = (string)$find_cert->clientcertificate;
         if ($cert_refid != "") {
             foreach ($configObj->cert as $cert) {

@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\ClamAV\Api;
+namespace Reticen8\ClamAV\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class UrlController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'list';
-    protected static $internalModelClass = '\OPNsense\ClamAV\Url';
+    protected static $internalModelClass = '\Reticen8\ClamAV\Url';
 
     public function searchUrlAction()
     {

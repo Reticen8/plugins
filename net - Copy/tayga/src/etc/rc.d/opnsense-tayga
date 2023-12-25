@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PROVIDE: opnsense-tayga
+# PROVIDE: reticen8-tayga
 # REQUIRE: SERVERS
 # KEYWORD: shutdown
 
@@ -12,7 +12,7 @@ start_cmd=tayga_start
 stop_cmd=tayga_stop
 rcvar=tayga_enable
 
-load_rc_config opnsense-tayga
+load_rc_config reticen8-tayga
 pidfile=/var/run/${name}.pid
 command=/usr/local/sbin/${name}
 command_args="-p ${pidfile}"

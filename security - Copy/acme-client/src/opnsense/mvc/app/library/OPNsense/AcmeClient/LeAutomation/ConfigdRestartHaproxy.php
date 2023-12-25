@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
  * Restart local HAProxy service
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class ConfigdRestartHaproxy extends Base implements LeAutomationInterface
 {

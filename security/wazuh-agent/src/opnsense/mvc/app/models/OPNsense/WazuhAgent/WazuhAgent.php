@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
- namespace OPNsense\WazuhAgent;
+ namespace Reticen8\WazuhAgent;
 
  use Phalcon\Messages\Message;
- use OPNsense\Base\BaseModel;
+ use Reticen8\Base\BaseModel;
 
  /**
   * Class WazuhAgent
-  * @package OPNsense\WazuhAgent
+  * @package Reticen8\WazuhAgent
   */
 class WazuhAgent extends BaseModel
 {

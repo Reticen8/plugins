@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\QemuGuestAgent;
+namespace Reticen8\QemuGuestAgent;
 
 /**
  * Class IndexController
- * @package OPNsense\QemuGuestAgent
+ * @package Reticen8\QemuGuestAgent
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve
-        $this->view->pick('OPNsense/QemuGuestAgent/index');
+        $this->view->pick('Reticen8/QemuGuestAgent/index');
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
     }

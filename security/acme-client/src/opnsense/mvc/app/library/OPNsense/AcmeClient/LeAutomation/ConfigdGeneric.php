@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
-use OPNsense\AcmeClient\LeUtils;
+use Reticen8\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeUtils;
 
 /**
  * Run selected configd command
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class ConfigdGeneric extends Base implements LeAutomationInterface
 {

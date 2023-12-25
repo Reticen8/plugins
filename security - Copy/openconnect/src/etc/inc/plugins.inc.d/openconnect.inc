@@ -28,7 +28,7 @@
 
 function openconnect_enabled()
 {
-    $model = new \OPNsense\Openconnect\General();
+    $model = new \Reticen8\Openconnect\General();
 
     return (string)$model->enabled == '1';
 }
@@ -76,7 +76,7 @@ function openconnect_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'openconnectvpn';
-    $result['section'] = 'OPNsense.openconnect';
+    $result['section'] = 'Reticen8.openconnect';
     $result['description'] = gettext('OpenConnect');
     $result['services'] = ['openconnect'];
     return array($result);

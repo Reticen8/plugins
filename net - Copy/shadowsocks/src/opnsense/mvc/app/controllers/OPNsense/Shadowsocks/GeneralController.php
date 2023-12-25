@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Shadowsocks;
+namespace Reticen8\Shadowsocks;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
-        $this->view->pick('OPNsense/Shadowsocks/general');
+        $this->view->pick('Reticen8/Shadowsocks/general');
     }
 }

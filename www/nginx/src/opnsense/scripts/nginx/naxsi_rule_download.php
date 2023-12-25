@@ -30,8 +30,8 @@
  */
 
 require_once('config.inc');
-use OPNsense\Core\Config;
-use OPNsense\Nginx\Nginx;
+use Reticen8\Core\Config;
+use Reticen8\Nginx\Nginx;
 
 function download_rules()
 {
@@ -45,7 +45,7 @@ function download_rules()
         CURLOPT_TIMEOUT => 10,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_HTTPHEADER => array(
-            "User-Agent: OPNsense Firewall"
+            "User-Agent: Reticen8 Firewall"
         )
     ));
     $response = curl_exec($curl);

@@ -28,8 +28,8 @@
 {#- /usr/local/etc/sslh.conf -#}
 {% set plugin_name = 'sslh' %}
 {# Prevent configd reload from erroring out if node doesn't exist #}
-{%  if OPNsense[plugin_name] is defined %}
-{%      set cfg = OPNsense[plugin_name] %}
+{%  if Reticen8[plugin_name] is defined %}
+{%      set cfg = Reticen8[plugin_name] %}
 ################################################################################
 #                                                                              #
 #       sslh configuration file for v1.21c                                     #

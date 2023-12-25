@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class IsisController extends \OPNsense\Base\IndexController
+class IsisController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("isis");
-        $this->view->pick('OPNsense/Quagga/isis');
+        $this->view->pick('Reticen8/Quagga/isis');
     }
 }

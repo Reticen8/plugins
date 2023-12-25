@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/dnscryptproxy/general</mount>
+    <mount>//Reticen8/dnscryptproxy/general</mount>
     <description>dnscrypt-proxy configuration</description>
     <version>0.1.2</version>
     <items>

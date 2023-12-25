@@ -29,17 +29,17 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Quagga\OSPF6;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Quagga\OSPF6;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class Ospf6settingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'ospf6';
-    protected static $internalModelClass = '\OPNsense\Quagga\OSPF6';
+    protected static $internalModelClass = '\Reticen8\Quagga\OSPF6';
     public function searchInterfaceAction()
     {
         return $this->searchBase('interfaces.interface', array("enabled", "interfacename", "area", "networktype"));

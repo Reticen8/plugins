@@ -183,7 +183,7 @@
     <id>location.advanced_acl</id>
     <label>Enable Advanced ACLs</label>
     <type>checkbox</type>
-    <help>Send an authentication request to the OPNsense backend for advanced access control.</help>
+    <help>Send an authentication request to the Reticen8 backend for advanced access control.</help>
   </field>
   <field>
     <id>location.ip_acl</id>

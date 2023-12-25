@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/eap</mount>
+    <mount>//Reticen8/freeradius/eap</mount>
     <description>EAP configuration</description>
     <version>1.9.17</version>
     <items>

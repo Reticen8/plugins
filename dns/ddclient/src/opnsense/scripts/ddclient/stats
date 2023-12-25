@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 
 """
-    Copyright (c) 2022 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2022 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -34,7 +34,7 @@ filename_new = '/var/tmp/ddclient_opn.status'
 
 result = {"hosts": {}}
 
-# both ddclient and "opnsense" ddclient exist, only use old when currently in use
+# both ddclient and "reticen8" ddclient exist, only use old when currently in use
 if os.path.isfile(filename) and os.path.isfile(filename_new):
     if os.path.getmtime(filename) < os.path.getmtime(filename_new):
         filename = None

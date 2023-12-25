@@ -28,15 +28,15 @@
  *
  */
 
-namespace OPNsense\Dnscryptproxy\Api;
+namespace Reticen8\Dnscryptproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class ForwardController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'forward';
-    protected static $internalModelClass = '\OPNsense\Dnscryptproxy\Forward';
+    protected static $internalModelClass = '\Reticen8\Dnscryptproxy\Forward';
 
     public function searchForwardAction()
     {

@@ -26,9 +26,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Hwprobe;
+namespace Reticen8\Hwprobe;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

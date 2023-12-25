@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/quagga/general</mount>
+    <mount>//Reticen8/quagga/general</mount>
     <description>Quagga Routing configuration</description>
     <version>1.0.3</version>
     <items>

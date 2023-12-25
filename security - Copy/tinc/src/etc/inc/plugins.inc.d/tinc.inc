@@ -28,7 +28,7 @@
 
 function tinc_enabled()
 {
-    $mdl = new \OPNsense\Tinc\Tinc();
+    $mdl = new \Reticen8\Tinc\Tinc();
 
     foreach ($mdl->networks->network->iterateItems() as $network) {
         if ($network->enabled == '1') {
@@ -47,7 +47,7 @@ function tinc_syslog()
         'facility' => ['tincd'],
     ];
 
-    $mdl = new \OPNsense\Tinc\Tinc();
+    $mdl = new \Reticen8\Tinc\Tinc();
 
     foreach ($mdl->networks->network->iterateItems() as $network) {
         if ($network->enabled == '1') {
@@ -102,7 +102,7 @@ function tinc_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'tincvpn';
-    $result['section'] = 'OPNsense.Tinc';
+    $result['section'] = 'Reticen8.Tinc';
     $result['description'] = gettext('Tinc VPN');
     $result['services'] = ['tincd'];
     return array($result);

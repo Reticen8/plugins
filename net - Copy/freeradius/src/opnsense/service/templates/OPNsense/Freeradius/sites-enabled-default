@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.freeradius.general.enabled') and OPNsense.freeradius.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.enabled') and Reticen8.freeradius.general.enabled == '1' %}
 
 server default {
 
@@ -55,12 +55,12 @@ authorize {
                 ok = return
         }
         files
-{% if helpers.exists('OPNsense.freeradius.general.sqlite') and OPNsense.freeradius.general.sqlite == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sqlite') and Reticen8.freeradius.general.sqlite == '1' %}
         sql
 {% else %}
         -sql
 {% endif %}
-{% if helpers.exists('OPNsense.freeradius.general.ldap_enabled') and OPNsense.freeradius.general.ldap_enabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.ldap_enabled') and Reticen8.freeradius.general.ldap_enabled == '1' %}
         ldap
         if ((ok || updated) && User-Password) {
             update control {
@@ -70,7 +70,7 @@ authorize {
 {% else %}
         -ldap
 {% endif %}
-{% if helpers.exists('OPNsense.freeradius.general.sessionlimit') and OPNsense.freeradius.general.sessionlimit == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sessionlimit') and Reticen8.freeradius.general.sessionlimit == '1' %}
         daily
 {% endif %}
 
@@ -89,7 +89,7 @@ authenticate {
         Auth-Type MS-CHAP {
                 mschap
         }
-{% if helpers.exists('OPNsense.freeradius.general.ldap_enabled') and OPNsense.freeradius.general.ldap_enabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.ldap_enabled') and Reticen8.freeradius.general.ldap_enabled == '1' %}
         Auth-Type LDAP {
                 ldap
         }
@@ -109,12 +109,12 @@ preacct {
 
 accounting {
         detail
-{% if helpers.exists('OPNsense.freeradius.general.sessionlimit') and OPNsense.freeradius.general.sessionlimit == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sessionlimit') and Reticen8.freeradius.general.sessionlimit == '1' %}
         daily
         sradutmp
 {% endif %}
         unix
-{% if helpers.exists('OPNsense.freeradius.general.sqlite') and OPNsense.freeradius.general.sqlite == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sqlite') and Reticen8.freeradius.general.sqlite == '1' %}
         sql
 {% else %}
         -sql
@@ -124,7 +124,7 @@ accounting {
 }
 
 session {
-{% if helpers.exists('OPNsense.freeradius.general.sqlite') and OPNsense.freeradius.general.sqlite == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sqlite') and Reticen8.freeradius.general.sqlite == '1' %}
         sql
 {% endif %}
 }

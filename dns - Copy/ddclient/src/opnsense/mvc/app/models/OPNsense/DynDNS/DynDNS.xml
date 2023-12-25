@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/DynDNS</mount>
+    <mount>//Reticen8/DynDNS</mount>
     <version>1.5.1</version>
     <description>Dynamic DNS client</description>
     <items>
@@ -24,11 +24,11 @@
             </daemon_delay>
             <backend type="OptionField">
                 <Required>Y</Required>
-                <Default>opnsense</Default>
+                <Default>reticen8</Default>
                 <ValidationMessage>A backend is required.</ValidationMessage>
                 <OptionValues>
                     <ddclient>ddclient</ddclient>
-                    <opnsense>native</opnsense>
+                    <reticen8>native</reticen8>
                 </OptionValues>
             </backend>
         </general>

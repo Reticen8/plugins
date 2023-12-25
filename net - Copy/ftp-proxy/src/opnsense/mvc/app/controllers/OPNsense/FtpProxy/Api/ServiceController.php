@@ -26,15 +26,15 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\FtpProxy\Api;
+namespace Reticen8\FtpProxy\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\FtpProxy\FtpProxy;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\FtpProxy\FtpProxy;
 
 /**
  * Class ServiceController
- * @package OPNsense\FtpProxy
+ * @package Reticen8\FtpProxy
  */
 class ServiceController extends ApiControllerBase
 {
@@ -160,7 +160,7 @@ class ServiceController extends ApiControllerBase
             return trim($backend->configdpRun('ftpproxy', array($action, $instance)));
         }
         if ($action == 'template') {
-            return trim($backend->configdRun('template reload OPNsense/FtpProxy'));
+            return trim($backend->configdRun('template reload Reticen8/FtpProxy'));
         }
         if ($action == 'reload') {
             $ret = trim($backend->configdRun('ftpproxy reload'));

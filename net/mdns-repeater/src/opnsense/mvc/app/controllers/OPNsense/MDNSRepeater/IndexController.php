@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\MDNSRepeater;
+namespace Reticen8\MDNSRepeater;
 
 /**
  * Class IndexController
- * @package OPNsense\MDNSRepeater
+ * @package Reticen8\MDNSRepeater
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * mDNS Repeater index page
@@ -43,6 +43,6 @@ class IndexController extends \OPNsense\Base\IndexController
     public function indexAction()
     {
         $this->view->general = $this->getForm("general");
-        $this->view->pick('OPNsense/MDNSRepeater/index');
+        $this->view->pick('Reticen8/MDNSRepeater/index');
     }
 }

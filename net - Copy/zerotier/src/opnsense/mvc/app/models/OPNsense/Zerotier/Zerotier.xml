@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/zerotier</mount>
+    <mount>//Reticen8/zerotier</mount>
     <description>
         Zerotier - Virtual Networks That Just Work.
     </description>

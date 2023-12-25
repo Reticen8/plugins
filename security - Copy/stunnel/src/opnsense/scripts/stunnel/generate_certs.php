@@ -33,8 +33,8 @@ require_once('config.inc');
 require_once('certs.inc');
 require_once("legacy_bindings.inc");
 
-use OPNsense\Stunnel\Stunnel;
-use OPNsense\Core\Config;
+use Reticen8\Stunnel\Stunnel;
+use Reticen8\Core\Config;
 
 $base_path = "/usr/local/etc/stunnel/certs";
 $stunnel = new Stunnel();

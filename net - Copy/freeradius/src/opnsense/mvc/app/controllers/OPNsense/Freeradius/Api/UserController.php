@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Freeradius\User;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Freeradius\User;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class UserController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'User';
-    protected static $internalModelClass = '\OPNsense\Freeradius\User';
+    protected static $internalModelClass = '\Reticen8\Freeradius\User';
 
     public function getAction()
     {

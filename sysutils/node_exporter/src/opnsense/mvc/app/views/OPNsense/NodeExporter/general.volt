@@ -1,7 +1,7 @@
 {#
 
 Copyright (C) 2018 David Harrigan
-OPNsense® is Copyright © 2015 – 2017 by Deciso B.V.
+Reticen8® is Copyright © 2015 – 2017 by Deciso B.V.
 
 All rights reserved.
 

@@ -27,21 +27,21 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Relayd\Api;
+namespace Reticen8\Relayd\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Relayd\Relayd;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Relayd\Relayd;
 
 /**
  * Class ServiceController
- * @package OPNsense\relayd
+ * @package Reticen8\relayd
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Relayd\Relayd';
+    protected static $internalServiceClass = '\Reticen8\Relayd\Relayd';
     protected static $internalServiceEnabled = 'general.enabled';
-    protected static $internalServiceTemplate = 'OPNsense/Relayd';
+    protected static $internalServiceTemplate = 'Reticen8/Relayd';
     protected static $internalServiceName = 'relayd';
     private $internalLockHandle = null;
 
@@ -76,7 +76,7 @@ class ServiceController extends ApiMutableServiceControllerBase
             $backend = new Backend();
 
             $result['function'] = "configtest";
-            $result['template'] = trim($backend->configdRun('template reload OPNsense/Relayd'));
+            $result['template'] = trim($backend->configdRun('template reload Reticen8/Relayd'));
             if ($result['template'] != 'OK') {
                 $result['result'] = "Template error: " . $result['template'];
                 return $result;

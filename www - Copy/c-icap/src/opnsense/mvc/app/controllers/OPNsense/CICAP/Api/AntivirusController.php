@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\CICAP\Api;
+namespace Reticen8\CICAP\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class AntivirusController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\CICAP\Antivirus';
+    protected static $internalModelClass = '\Reticen8\CICAP\Antivirus';
     protected static $internalModelName = 'antivirus';
 }

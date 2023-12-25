@@ -1,6 +1,6 @@
-{% if helpers.exists('OPNsense.postfix.general.enabled') and OPNsense.postfix.general.enabled == '1' %}
-{%   if helpers.exists('OPNsense.postfix.senderbcc.senderbccs.senderbcc') %}
-{%     for sender_list in helpers.toList('OPNsense.postfix.senderbcc.senderbccs.senderbcc') %}
+{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
+{%   if helpers.exists('Reticen8.postfix.senderbcc.senderbccs.senderbcc') %}
+{%     for sender_list in helpers.toList('Reticen8.postfix.senderbcc.senderbccs.senderbcc') %}
 {%       if sender_list.enabled == '1' %}
 {{ sender_list.from }} {{ sender_list.to }}
 {%       endif %}

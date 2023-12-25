@@ -27,9 +27,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Backup\Api;
+namespace Reticen8\Backup\Api;
 
-use OPNsense\Base\ApiControllerBase;
+use Reticen8\Base\ApiControllerBase;
 
 class BackupController extends ApiControllerBase
 {

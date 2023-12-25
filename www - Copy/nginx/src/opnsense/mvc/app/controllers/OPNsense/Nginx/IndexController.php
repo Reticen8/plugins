@@ -30,13 +30,13 @@
 */
 
 
-namespace OPNsense\Nginx;
+namespace Reticen8\Nginx;
 
 /**
 * Class IndexController
-* @package OPNsense/Nginx
+* @package Reticen8/Nginx
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * show the configuration page /ui/nginx
@@ -68,7 +68,7 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->show_naxsi_download_button =
             count(iterator_to_array($nginx->custom_policy->iterateItems())) == 0 &&
             count(iterator_to_array($nginx->naxsi_rule->iterateItems())) == 0;
-        $this->view->pick('OPNsense/Nginx/index');
+        $this->view->pick('Reticen8/Nginx/index');
     }
 
     /**
@@ -76,7 +76,7 @@ class IndexController extends \OPNsense\Base\IndexController
      */
     public function tlsHandshakesAction()
     {
-        $this->view->pick('OPNsense/Nginx/tls_handshakes');
+        $this->view->pick('Reticen8/Nginx/tls_handshakes');
     }
 
     /**
@@ -84,7 +84,7 @@ class IndexController extends \OPNsense\Base\IndexController
      */
     public function banAction()
     {
-        $this->view->pick('OPNsense/Nginx/ban');
+        $this->view->pick('Reticen8/Nginx/ban');
     }
 
     /**
@@ -92,6 +92,6 @@ class IndexController extends \OPNsense\Base\IndexController
      */
     public function vtsAction()
     {
-        $this->view->pick('OPNsense/Nginx/vts');
+        $this->view->pick('Reticen8/Nginx/vts');
     }
 }

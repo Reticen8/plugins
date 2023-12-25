@@ -28,15 +28,15 @@
  *
  */
 
-namespace OPNsense\Dnscryptproxy\Api;
+namespace Reticen8\Dnscryptproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class WhitelistController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'whitelist';
-    protected static $internalModelClass = '\OPNsense\Dnscryptproxy\Whitelist';
+    protected static $internalModelClass = '\Reticen8\Dnscryptproxy\Whitelist';
 
     public function searchWhitelistAction()
     {

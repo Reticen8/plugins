@@ -26,11 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Handles file uploads via SFTP.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class SftpUploader
 {

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/quagga/rip</mount>
+    <mount>//Reticen8/quagga/rip</mount>
     <description>RIP Routing configuration</description>
     <version>1.0.3</version>
     <items>

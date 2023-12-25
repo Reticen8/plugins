@@ -1,8 +1,8 @@
-{% if helpers.exists('OPNsense.postfix.general.enabled') and OPNsense.postfix.general.enabled == '1' %}
-{%   if helpers.exists('OPNsense.postfix.general.smtpauth_enabled') and OPNsense.postfix.general.smtpauth_enabled == '1' %}
-{%     if helpers.exists('OPNsense.postfix.general.smtpauth_user') and OPNsense.postfix.general.smtpauth_user != '' %}
-{%       if helpers.exists('OPNsense.postfix.general.smtpauth_password') and OPNsense.postfix.general.smtpauth_password != '' %}
-{{ OPNsense.postfix.general.relayhost }} {{ OPNsense.postfix.general.smtpauth_user }}:{{ OPNsense.postfix.general.smtpauth_password }}
+{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
+{%   if helpers.exists('Reticen8.postfix.general.smtpauth_enabled') and Reticen8.postfix.general.smtpauth_enabled == '1' %}
+{%     if helpers.exists('Reticen8.postfix.general.smtpauth_user') and Reticen8.postfix.general.smtpauth_user != '' %}
+{%       if helpers.exists('Reticen8.postfix.general.smtpauth_password') and Reticen8.postfix.general.smtpauth_password != '' %}
+{{ Reticen8.postfix.general.relayhost }} {{ Reticen8.postfix.general.smtpauth_user }}:{{ Reticen8.postfix.general.smtpauth_password }}
 {%       endif %}
 {%     endif %}
 {%   endif %}

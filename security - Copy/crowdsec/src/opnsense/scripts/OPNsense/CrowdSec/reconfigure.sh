@@ -7,14 +7,14 @@
 
 set -e
 
-# apply configuration options specific to opnsense
-/usr/local/opnsense/scripts/OPNsense/CrowdSec/reconfigure.py
+# apply configuration options specific to reticen8
+/usr/local/reticen8/scripts/Reticen8/CrowdSec/reconfigure.py
 
 # enable pf anchor here - the tables and rules will be created by the bouncer
 /usr/local/sbin/configctl filter reload >/dev/null
 
 # the hub is upgraded by cron too
-/usr/local/opnsense/scripts/OPNsense/CrowdSec/hub-upgrade.sh
+/usr/local/reticen8/scripts/Reticen8/CrowdSec/hub-upgrade.sh
 
 # crowdsec was already restarted by hub-upgrade.sh
 if service crowdsec_firewall enabled; then
@@ -27,6 +27,6 @@ if service crowdsec_firewall enabled; then
 fi
 
 # left from v0.0.8
-rm -f /usr/local/etc/crowdsec/opnsense-settings.json
+rm -f /usr/local/etc/crowdsec/reticen8-settings.json
 
 echo "OK"

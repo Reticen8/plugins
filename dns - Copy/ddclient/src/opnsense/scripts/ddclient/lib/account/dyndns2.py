@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2023 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2023 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -74,7 +74,7 @@ class DynDNS2(BaseAccount):
                 req = requests.request(
                     method=protocol,
                     url=url,
-                    headers={'User-Agent': 'OPNsense-dyndns'},
+                    headers={'User-Agent': 'Reticen8-dyndns'},
                     auth=HTTPBasicAuth(self.settings.get('username'), self.settings.get('password'))
                 )
             else:
@@ -93,7 +93,7 @@ class DynDNS2(BaseAccount):
                     },
                     'auth': HTTPBasicAuth(self.settings.get('username'), self.settings.get('password')),
                     'headers': {
-                        'User-Agent': 'OPNsense-dyndns'
+                        'User-Agent': 'Reticen8-dyndns'
                     }
                 }
                 req = requests.get(**req_opts)

@@ -6,8 +6,8 @@ test -x /usr/local/bin/cscli || exit 0
 
 upgraded=$(/usr/local/bin/cscli --error hub upgrade)
 
-if [ ! -e "/usr/local/etc/crowdsec/collections/opnsense.yaml" ]; then
-    /usr/local/bin/cscli --error collections install crowdsecurity/opnsense
+if [ ! -e "/usr/local/etc/crowdsec/collections/reticen8.yaml" ]; then
+    /usr/local/bin/cscli --error collections install crowdsecurity/reticen8
 fi
 
 if [ -n "$upgraded" ]; then

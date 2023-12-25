@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Stunnel\Api;
+namespace Reticen8\Stunnel\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class ServicesController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'stunnel';
-    protected static $internalModelClass = 'OPNsense\Stunnel\Stunnel';
+    protected static $internalModelClass = 'Reticen8\Stunnel\Stunnel';
 
     protected function save()
     {

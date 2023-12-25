@@ -33,14 +33,14 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $export_path = '/tmp/haproxy/mapfiles/';
 
 // traverse HAProxy map files
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->HAProxy->mapfiles)) {
-    foreach ($configObj->OPNsense->HAProxy->mapfiles->children() as $mapfile) {
+if (isset($configObj->Reticen8->HAProxy->mapfiles)) {
+    foreach ($configObj->Reticen8->HAProxy->mapfiles->children() as $mapfile) {
         $mf_name = (string)$mapfile->name;
         $mf_id = (string)$mapfile->id;
         if ($mf_id != "") {

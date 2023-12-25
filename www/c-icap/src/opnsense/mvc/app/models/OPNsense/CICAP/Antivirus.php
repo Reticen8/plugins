@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\CICAP;
+namespace Reticen8\CICAP;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Antivirus extends BaseModel
 {

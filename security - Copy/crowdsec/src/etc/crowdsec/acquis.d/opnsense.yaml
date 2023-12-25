@@ -1,5 +1,5 @@
 #
-# Before 22.1, OPNsense used circular logs under /var/log/*.log that
+# Before 22.1, Reticen8 used circular logs under /var/log/*.log that
 # can still be around. They are old, in binary format and are not needed by crowdsec.
 #
 # For this reason we don't scan /var/log/*.log, but some plugins can write
@@ -12,12 +12,12 @@ filenames:
 
   # collection: crowdsecurity/sshd
   - /var/log/audit/latest.log
-  # collection: crowdsecurity/opnsense-gui (web admin)
+  # collection: crowdsecurity/reticen8-gui (web admin)
   - /var/log/lighttpd/latest.log
   # collection: firewallservices/pf
   - /var/log/filter/latest.log
 
-# When OPNsense is configured with /var/log in a RAM disk,
+# When Reticen8 is configured with /var/log in a RAM disk,
 # the log directories are created after crowdsec is run.
 # We force crowdsec to watch over directory creation as well
 # as file creation. FreeBSD has kqueue instead of inotify

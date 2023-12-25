@@ -3,7 +3,7 @@
 /*
  * Copyright (C) 2020-2021 Frank Wall
  * Copyright (C) 2018 Deciso B.V.
- * Copyright (C) 2018 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2018 Franco Fichtner <franco@reticen8.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -28,18 +28,18 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\AcmeClient\LeAccount;
-use OPNsense\AcmeClient\LeUtils;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\AcmeClient\LeAccount;
+use Reticen8\AcmeClient\LeUtils;
 
 /**
  * LeAutomation stub file, contains shared logic for all automations.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-abstract class Base extends \OPNsense\AcmeClient\LeCommon
+abstract class Base extends \Reticen8\AcmeClient\LeCommon
 {
     public const CONFIG_PATH = 'actions.action';
 
@@ -193,7 +193,7 @@ abstract class Base extends \OPNsense\AcmeClient\LeCommon
     public function runConfigd()
     {
         LeUtils::log('running automation (configd): ' . $this->config->name);
-        $backend = new \OPNsense\Core\Backend();
+        $backend = new \Reticen8\Core\Backend();
         $response = $backend->configdRun((string)$this->command, $this->command_args);
         return true;
     }

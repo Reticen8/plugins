@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Netsnmp\Api;
+namespace Reticen8\Netsnmp\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class UserController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'user';
-    protected static $internalModelClass = '\OPNsense\Netsnmp\User';
+    protected static $internalModelClass = '\Reticen8\Netsnmp\User';
 
     public function searchUserAction()
     {

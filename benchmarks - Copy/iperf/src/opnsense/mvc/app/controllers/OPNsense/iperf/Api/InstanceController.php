@@ -28,16 +28,16 @@
  *
  */
 
-namespace OPNsense\iperf\Api;
+namespace Reticen8\iperf\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Iperf\FakeInstance;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Iperf\FakeInstance;
 
 class InstanceController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\iperf\FakeInstance';
+    protected static $internalModelClass = '\Reticen8\iperf\FakeInstance';
     protected static $internalModelName = 'instance';
     private static $SOCKET_PATH = "unix:///var/run/iperf-manager.sock";
 

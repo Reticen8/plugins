@@ -1,5 +1,5 @@
 <model>
-<mount>//OPNsense/ProxySSO</mount>
+<mount>//Reticen8/ProxySSO</mount>
 <description>
     Web-proxy Single Sign-On plugin
 </description>

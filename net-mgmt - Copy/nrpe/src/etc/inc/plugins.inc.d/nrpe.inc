@@ -28,7 +28,7 @@
 
 function nrpe_enabled()
 {
-    $model = new \OPNsense\Nrpe\General();
+    $model = new \Reticen8\Nrpe\General();
     return (string)$model->enabled == '1';
 }
 

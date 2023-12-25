@@ -29,22 +29,22 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Class ValidationsController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-class ValidationsController extends \OPNsense\Base\IndexController
+class ValidationsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // include form definitions
         $this->view->formDialogValidation = $this->getForm("dialogValidation");
         // set additional view parameters
-        $mdlAcme = new \OPNsense\AcmeClient\AcmeClient();
+        $mdlAcme = new \Reticen8\AcmeClient\AcmeClient();
         $this->view->showIntro = (string)$mdlAcme ->settings->showIntro;
         // choose template
-        $this->view->pick('OPNsense/AcmeClient/validations');
+        $this->view->pick('Reticen8/AcmeClient/validations');
     }
 }

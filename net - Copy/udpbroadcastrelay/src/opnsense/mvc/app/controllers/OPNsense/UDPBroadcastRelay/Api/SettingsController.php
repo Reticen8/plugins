@@ -26,27 +26,27 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\UDPBroadcastRelay\Api;
+namespace Reticen8\UDPBroadcastRelay\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Config;
-use OPNsense\UDPBroadcastRelay\UDPBroadcastRelay;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Config;
+use Reticen8\UDPBroadcastRelay\UDPBroadcastRelay;
+use Reticen8\Base\UIModelGrid;
 
 /**
  * Class SettingsController Handles settings related API actions for the UDPBroadcastRelay
- * @package OPNsense\UDPBroadcastRelay
+ * @package Reticen8\UDPBroadcastRelay
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'udpbroadcastrelay';
-    protected static $internalModelClass = '\OPNsense\UDPBroadcastRelay\UDPBroadcastRelay;';
+    protected static $internalModelClass = '\Reticen8\UDPBroadcastRelay\UDPBroadcastRelay;';
     protected static $internalModelUseSafeDelete = true;
 
 
 /**
  * Class SettingsController
- * @package OPNsense\UDPBroadcastRelay
+ * @package Reticen8\UDPBroadcastRelay
  */
 
     /**

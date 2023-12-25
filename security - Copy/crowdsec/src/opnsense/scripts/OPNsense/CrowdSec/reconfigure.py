@@ -80,7 +80,7 @@ def configure_bouncer(settings):
 
 def main():
     try:
-        with open('/usr/local/etc/crowdsec/opnsense/settings.json') as f:
+        with open('/usr/local/etc/crowdsec/reticen8/settings.json') as f:
             settings = json.load(f)
     except FileNotFoundError:
         logging.info("settings.json not found, won't change crowdsec config")

@@ -27,9 +27,9 @@
 */
 
 
-namespace OPNsense\Wol;
+namespace Reticen8\Wol;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Wol extends BaseModel
 {

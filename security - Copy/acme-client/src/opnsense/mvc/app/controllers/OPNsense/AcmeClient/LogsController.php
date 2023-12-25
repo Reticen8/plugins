@@ -29,17 +29,17 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Class LogsController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-class LogsController extends \OPNsense\Base\IndexController
+class LogsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // choose template
-        $this->view->pick('OPNsense/AcmeClient/logs');
+        $this->view->pick('Reticen8/AcmeClient/logs');
     }
 }

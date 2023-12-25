@@ -28,18 +28,18 @@
  *
  */
 
-namespace OPNsense\Nut;
+namespace Reticen8\Nut;
 
-use OPNsense\Nut;
+use Reticen8\Nut;
 
 /**
 * Class DiagnosticsController
-* @package OPNsense/Nut
+* @package Reticen8/Nut
 */
-class DiagnosticsController extends \OPNsense\Base\IndexController
+class DiagnosticsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Nut/diagnostics');
+        $this->view->pick('Reticen8/Nut/diagnostics');
     }
 }

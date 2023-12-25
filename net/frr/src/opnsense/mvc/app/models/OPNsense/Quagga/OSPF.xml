@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/quagga/ospf</mount>
+    <mount>//Reticen8/quagga/ospf</mount>
     <description>OSPF Routing configuration</description>
     <version>1.0.5</version>
     <items>
@@ -64,7 +64,7 @@
         <redistributemap type="ModelRelationField">
                 <Model>
                         <template>
-                                <source>OPNsense.quagga.ospf</source>
+                                <source>Reticen8.quagga.ospf</source>
                                 <items>routemaps.routemap</items>
                                 <display>name</display>
                                 <group>name</group>
@@ -103,7 +103,7 @@
                         <linkedPrefixlistIn type="ModelRelationField">
                                 <Model>
                                         <template>
-                                                <source>OPNsense.quagga.ospf</source>
+                                                <source>Reticen8.quagga.ospf</source>
                                                 <items>prefixlists.prefixlist</items>
                                                 <display>name</display>
                                                 <group>name</group>
@@ -116,7 +116,7 @@
                         <linkedPrefixlistOut type="ModelRelationField">
                                 <Model>
                                         <template>
-                                                <source>OPNsense.quagga.ospf</source>
+                                                <source>Reticen8.quagga.ospf</source>
                                                 <items>prefixlists.prefixlist</items>
                                                 <display>name</display>
                                                 <group>name</group>
@@ -296,7 +296,7 @@
                         <match2 type="ModelRelationField">
                                 <Model>
                                         <template>
-                                                <source>OPNsense.quagga.ospf</source>
+                                                <source>Reticen8.quagga.ospf</source>
                                                 <items>prefixlists.prefixlist</items>
                                                 <display>name</display>
                                         </template>

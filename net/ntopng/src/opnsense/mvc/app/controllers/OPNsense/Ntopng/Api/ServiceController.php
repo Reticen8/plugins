@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Ntopng\Api;
+namespace Reticen8\Ntopng\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Ntopng\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Ntopng\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Ntopng
+ * @package Reticen8\Ntopng
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Ntopng\General';
-    protected static $internalServiceTemplate = 'OPNsense/Ntopng';
+    protected static $internalServiceClass = '\Reticen8\Ntopng\General';
+    protected static $internalServiceTemplate = 'Reticen8/Ntopng';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'ntopng';
 

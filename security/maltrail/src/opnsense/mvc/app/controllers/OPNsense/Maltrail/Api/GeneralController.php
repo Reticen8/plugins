@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail\Api;
+namespace Reticen8\Maltrail\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Maltrail\General';
+    protected static $internalModelClass = '\Reticen8\Maltrail\General';
     protected static $internalModelName = 'general';
 }

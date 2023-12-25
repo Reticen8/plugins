@@ -26,9 +26,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Dnscryptproxy;
+namespace Reticen8\Dnscryptproxy;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Server extends BaseModel
 {

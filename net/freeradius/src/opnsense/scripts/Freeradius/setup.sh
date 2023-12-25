@@ -16,4 +16,4 @@ for FILE in ${RADIUS_FILES}; do
 	chmod 700 ${FILE}
 done
 
-/usr/local/opnsense/scripts/Freeradius/generate_certs.php
+/usr/local/reticen8/scripts/Freeradius/generate_certs.php

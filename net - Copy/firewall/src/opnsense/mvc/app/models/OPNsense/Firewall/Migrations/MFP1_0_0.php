@@ -28,30 +28,30 @@
  *
  */
 
-namespace OPNsense\Firewall\Migrations;
+namespace Reticen8\Firewall\Migrations;
 
-use OPNsense\Core\Config;
-use OPNsense\Base\BaseModelMigration;
+use Reticen8\Core\Config;
+use Reticen8\Base\BaseModelMigration;
 
 class MFP1_0_0 extends BaseModelMigration
 {
     public function post($model)
     {
-        // Move OPNsense->Firewall->FilterRule ---> OPNsense->Firewall->Filter
+        // Move Reticen8->Firewall->FilterRule ---> Reticen8->Firewall->Filter
         $cfgObj = Config::getInstance()->object();
         if (
-            !empty($cfgObj->OPNsense) && !empty($cfgObj->OPNsense->Firewall)
-                && !empty($cfgObj->OPNsense->Firewall->FilterRule)
+            !empty($cfgObj->Reticen8) && !empty($cfgObj->Reticen8->Firewall)
+                && !empty($cfgObj->Reticen8->Firewall->FilterRule)
         ) {
             // model migration created a new, empty rules section
-            if (empty($cfgObj->OPNsense->Firewall->Filter->rules)) {
-                unset($cfgObj->OPNsense->Firewall->Filter->rules);
-                $targetdom = dom_import_simplexml($cfgObj->OPNsense->Firewall->Filter);
-                foreach ($cfgObj->OPNsense->Firewall->FilterRule->children() as $child) {
+            if (empty($cfgObj->Reticen8->Firewall->Filter->rules)) {
+                unset($cfgObj->Reticen8->Firewall->Filter->rules);
+                $targetdom = dom_import_simplexml($cfgObj->Reticen8->Firewall->Filter);
+                foreach ($cfgObj->Reticen8->Firewall->FilterRule->children() as $child) {
                     $sourcedom = dom_import_simplexml($child);
                     $targetdom->appendChild($sourcedom);
                 }
-                unset($cfgObj->OPNsense->Firewall->FilterRule);
+                unset($cfgObj->Reticen8->Firewall->FilterRule);
                 Config::getInstance()->save();
             }
         }

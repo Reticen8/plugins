@@ -29,9 +29,9 @@
  *
  */
 
-namespace OPNsense\Zerotier;
+namespace Reticen8\Zerotier;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Zerotier extends BaseModel
 {

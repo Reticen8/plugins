@@ -27,15 +27,15 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\HAProxy;
+namespace Reticen8\HAProxy;
 
-use OPNsense\HAProxy\HAProxy;
+use Reticen8\HAProxy\HAProxy;
 
 /**
  * Class IndexController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * haproxy index page
@@ -67,9 +67,9 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->generalStatsForm = $this->getForm("generalStats");
         $this->view->generalTuningForm = $this->getForm("generalTuning");
         // set additional view parameters
-        $mdlHAProxy = new \OPNsense\HAProxy\HAProxy();
+        $mdlHAProxy = new \Reticen8\HAProxy\HAProxy();
         $this->view->showIntro = (string)$mdlHAProxy->general->showIntro;
         // pick the template to serve
-        $this->view->pick('OPNsense/HAProxy/index');
+        $this->view->pick('Reticen8/HAProxy/index');
     }
 }

@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2018-2019 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2018-2019 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -35,7 +35,7 @@ import netaddr
 import ujson
 
 
-BASE_URL = 'https://opnsense.emergingthreats.net'
+BASE_URL = 'https://reticen8.emergingthreats.net'
 RELATED_SIDS_FILE = '/usr/local/etc/suricata/rules/telemetry_sids.txt'
 UNFILTERED_OUTPUT_FIELDS = [
         'timestamp', 'flow_id', 'in_iface', 'event_type', 'vlan',
@@ -49,9 +49,9 @@ CLEANUP_OUTPUT_FIELDS = [
 
 def get_config(rule_update_config):
     """
-    retrieve device token, since we align our telemetry data to the existing rule download feature in OPNsense
+    retrieve device token, since we align our telemetry data to the existing rule download feature in Reticen8
     it should be safe to assume rule-updater.config contains the token that is used.
-    :param rule_update_config: path to OPNsense rule update configuration
+    :param rule_update_config: path to Reticen8 rule update configuration
     :return: token id or None if not found
     """
     response = collections.namedtuple('sensor', 'token')

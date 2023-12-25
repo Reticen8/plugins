@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\Core\Config;
-use OPNsense\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
+use Reticen8\AcmeClient\LeUtils;
 
 /**
  * Common constants and functions for all ACME classes
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 abstract class LeCommon
 {
@@ -123,7 +123,7 @@ abstract class LeCommon
     public function loadConfig(string $path, string $uuid)
     {
         // Get config object
-        $model = new \OPNsense\AcmeClient\AcmeClient();
+        $model = new \Reticen8\AcmeClient\AcmeClient();
         $obj = $model->getNodeByReference("${path}.${uuid}");
         if ($obj == null) {
             LeUtils::log_error("config of type ${path} not found: ${uuid}");
@@ -151,7 +151,7 @@ abstract class LeCommon
     public function setCa(string $uuid)
     {
         // Get account config object
-        $model = new \OPNsense\AcmeClient\AcmeClient();
+        $model = new \Reticen8\AcmeClient\AcmeClient();
         $obj = $model->getNodeByReference("accounts.account.${uuid}");
         if (empty($obj) || $obj == null) {
             LeUtils::log_error("unable to set CA, account not found: ${uuid}");

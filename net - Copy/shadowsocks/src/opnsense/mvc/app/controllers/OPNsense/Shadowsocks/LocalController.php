@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Shadowsocks;
+namespace Reticen8\Shadowsocks;
 
-class LocalController extends \OPNsense\Base\IndexController
+class LocalController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->localForm = $this->getForm("local");
-        $this->view->pick('OPNsense/Shadowsocks/local');
+        $this->view->pick('Reticen8/Shadowsocks/local');
     }
 }

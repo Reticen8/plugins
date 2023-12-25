@@ -29,20 +29,20 @@
  *
  */
 
-namespace OPNsense\PuppetAgent\Api;
+namespace Reticen8\PuppetAgent\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\PuppetAgent\PuppetAgent;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\PuppetAgent\PuppetAgent;
 
 /**
  * Class ServiceController
- * @package OPNsense\PuppetAgent
+ * @package Reticen8\PuppetAgent
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\PuppetAgent\PuppetAgent';
-    protected static $internalServiceTemplate = 'OPNsense/PuppetAgent';
+    protected static $internalServiceClass = '\Reticen8\PuppetAgent\PuppetAgent';
+    protected static $internalServiceTemplate = 'Reticen8/PuppetAgent';
     protected static $internalServiceEnabled = 'general.Enabled';
     protected static $internalServiceName = 'puppetagent';
 }

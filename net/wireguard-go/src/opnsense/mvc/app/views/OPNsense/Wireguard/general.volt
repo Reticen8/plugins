@@ -1,6 +1,6 @@
 {#
- # OPNsense (c) 2014-2018 by Deciso B.V.
- # OPNsense (c) 2018 Michael Muenz <m.muenz@gmail.com>
+ # Reticen8 (c) 2014-2018 by Deciso B.V.
+ # Reticen8 (c) 2018 Michael Muenz <m.muenz@gmail.com>
  # All rights reserved.
  #
  # Redistribution and use in source and binary forms, with or without modification,

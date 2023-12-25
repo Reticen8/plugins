@@ -1,9 +1,9 @@
-{% if helpers.exists('OPNsense.telegraf.general.enabled') and OPNsense.telegraf.general.enabled == '1' %}
-{%   if OPNsense.telegraf.general.wheelgroup == '1' %}
+{% if helpers.exists('Reticen8.telegraf.general.enabled') and Reticen8.telegraf.general.enabled == '1' %}
+{%   if Reticen8.telegraf.general.wheelgroup == '1' %}
 telegraf_user="root"
 telegraf_group="wheel"
 {%   endif %}
-telegraf_setup="/usr/local/opnsense/scripts/OPNsense/Telegraf/setup.sh"
+telegraf_setup="/usr/local/reticen8/scripts/Reticen8/Telegraf/setup.sh"
 telegraf_enable="YES"
 telegraf_confdir="/usr/local/etc/telegraf.d"
 {% else %}

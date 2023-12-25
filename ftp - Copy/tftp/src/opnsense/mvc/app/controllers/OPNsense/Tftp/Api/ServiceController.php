@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tftp\Api;
+namespace Reticen8\Tftp\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Tftp\General';
-    protected static $internalServiceTemplate = 'OPNsense/Tftp';
+    protected static $internalServiceClass = '\Reticen8\Tftp\General';
+    protected static $internalServiceTemplate = 'Reticen8/Tftp';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'tftp';
 }

@@ -28,15 +28,15 @@
  *
  */
 
-namespace OPNsense\DynDNS\Api;
+namespace Reticen8\DynDNS\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
 
 class AccountsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'account';
-    protected static $internalModelClass = 'OPNsense\DynDNS\DynDNS';
+    protected static $internalModelClass = 'Reticen8\DynDNS\DynDNS';
 
     public function searchItemAction()
     {

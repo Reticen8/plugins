@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/muninnode/general</mount>
+    <mount>//Reticen8/muninnode/general</mount>
     <description>Munin-Node configuration</description>
     <version>0.0.2</version>
     <items>
@@ -8,7 +8,7 @@
             <Required>Y</Required>
         </enabled>
         <hostname type="TextField">
-            <default>OPNsense</default>
+            <default>Reticen8</default>
             <Required>Y</Required>
         </hostname>
         <port type="PortField">

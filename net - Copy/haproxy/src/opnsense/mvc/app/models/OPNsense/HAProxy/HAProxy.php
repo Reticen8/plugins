@@ -29,13 +29,13 @@
  *
  */
 
-namespace OPNsense\HAProxy;
+namespace Reticen8\HAProxy;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class HAProxy
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
 class HAProxy extends BaseModel
 {

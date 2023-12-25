@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Telegraf\Api;
+namespace Reticen8\Telegraf\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Telegraf\Input;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Telegraf\Input;
+use Reticen8\Core\Config;
 
 class InputController extends ApiControllerBase
 {

@@ -28,7 +28,7 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Nginx;
+namespace Reticen8\Nginx;
 
 class StreamAccessLogParser extends LogParserBase
 {

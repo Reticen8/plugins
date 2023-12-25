@@ -28,22 +28,22 @@
  *
  */
 
-namespace OPNsense\HelloWorld\Api;
+namespace Reticen8\HelloWorld\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\HelloWorld\HelloWorld;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\HelloWorld\HelloWorld;
+use Reticen8\Core\Config;
 
 /**
  * Class SettingsController Handles settings related API actions for the HelloWorld module
- * @package OPNsense\Helloworld
+ * @package Reticen8\Helloworld
  */
 class SettingsController extends ApiControllerBase
 {
     /**
      * retrieve HelloWorld general settings
      * @return array general settings
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function getAction()
@@ -60,7 +60,7 @@ class SettingsController extends ApiControllerBase
     /**
      * update HelloWorld settings
      * @return array status
-     * @throws \OPNsense\Base\ModelException
+     * @throws \Reticen8\Base\ModelException
      * @throws \ReflectionException
      */
     public function setAction()

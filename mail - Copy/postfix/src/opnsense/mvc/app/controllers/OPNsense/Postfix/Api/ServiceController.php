@@ -27,20 +27,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Postfix\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Postfix\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Postfix
+ * @package Reticen8\Postfix
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Postfix\General';
-    protected static $internalServiceTemplate = 'OPNsense/Postfix';
+    protected static $internalServiceClass = '\Reticen8\Postfix\General';
+    protected static $internalServiceTemplate = 'Reticen8/Postfix';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'postfix';
 
@@ -76,7 +76,7 @@ class ServiceController extends ApiMutableServiceControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Postfix');
+            $backend->configdRun('template reload Reticen8/Postfix');
             $backend->configdRun('postfix make-transport');
 
             // (res)start daemon

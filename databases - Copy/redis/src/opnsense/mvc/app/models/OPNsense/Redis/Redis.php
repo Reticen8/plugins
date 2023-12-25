@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Redis;
+namespace Reticen8\Redis;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Redis extends BaseModel
 {

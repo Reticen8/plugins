@@ -33,7 +33,7 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $cert_pem_filename = '/usr/local/etc/postfix/cert_opn.pem';
 $cert_pem_content = '';
@@ -43,8 +43,8 @@ $ca_pem_content = '';
 
 // traverse Postfix plugin for certficiates
 $configObj = Config::getInstance()->object();
-if (isset($configObj->OPNsense->postfix)) {
-    foreach ($configObj->OPNsense->postfix->children() as $find_cert) {
+if (isset($configObj->Reticen8->postfix)) {
+    foreach ($configObj->Reticen8->postfix->children() as $find_cert) {
         $cert_refid = (string)$find_cert->certificate;
         // if eap has a certificate attached, search for its contents
         if ($cert_refid != "") {

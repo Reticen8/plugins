@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\HAProxy;
+namespace Reticen8\HAProxy;
 
 /**
  * Class MaintenanceController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
-class MaintenanceController extends \OPNsense\Base\IndexController
+class MaintenanceController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // choose template
-        $this->view->pick('OPNsense/HAProxy/maintenance');
+        $this->view->pick('Reticen8/HAProxy/maintenance');
         $this->view->maintenanceCronjobsForm = $this->getForm("maintenanceCronjobs");
     }
 }

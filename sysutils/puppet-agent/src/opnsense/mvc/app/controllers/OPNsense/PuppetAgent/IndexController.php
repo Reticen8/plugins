@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\PuppetAgent;
+namespace Reticen8\PuppetAgent;
 
 /**
  * Class IndexController
- * @package OPNsense\PuppetAgent
+ * @package Reticen8\PuppetAgent
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/PuppetAgent/index');
+        $this->view->pick('Reticen8/PuppetAgent/index');
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
     }

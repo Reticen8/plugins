@@ -22,13 +22,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-class TlsController extends \OPNsense\Base\IndexController
+class TlsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/RadSecProxy/tls');
+        $this->view->pick('Reticen8/RadSecProxy/tls');
         $this->view->formDialogTls = $this->getForm("dialogTls");
     }
 }

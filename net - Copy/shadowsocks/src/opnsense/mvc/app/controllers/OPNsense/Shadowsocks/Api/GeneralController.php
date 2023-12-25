@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Shadowsocks\Api;
+namespace Reticen8\Shadowsocks\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Shadowsocks\General';
+    protected static $internalModelClass = '\Reticen8\Shadowsocks\General';
     protected static $internalModelName = 'general';
 }

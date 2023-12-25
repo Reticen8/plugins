@@ -28,16 +28,16 @@
  *
  */
 
-namespace OPNsense\Sslh\Api;
+namespace Reticen8\Sslh\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Sslh;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Sslh;
 
 /**
  * An ApiMutableServiceControllerBase based class which is used to control
  * the sslh service.
  *
- * @package OPNsense\Sslh
+ * @package Reticen8\Sslh
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
@@ -47,16 +47,16 @@ class ServiceController extends ApiMutableServiceControllerBase
      *
      * @var string $internalServiceClass
      */
-    protected static $internalServiceClass = '\OPNsense\Sslh\Settings';
+    protected static $internalServiceClass = '\Reticen8\Sslh\Settings';
 
     /**
      * Before starting the service it will call configd to generate configuration
      * data, in this case it would execute the equivalent of configctl template
-     * reload OPNsense/Sslh on the console
+     * reload Reticen8/Sslh on the console
      *
      * @var string $internalServiceTemplate
      */
-    protected static $internalServiceTemplate = 'OPNsense/Sslh';
+    protected static $internalServiceTemplate = 'Reticen8/Sslh';
 
     /**
      * Which section of the model contains a boolean defining if the service is
@@ -69,7 +69,7 @@ class ServiceController extends ApiMutableServiceControllerBase
     /**
      * Refers to the actions configuraiton file, where it can find
      * start/stop/restart/status/reload actions:
-     * src/opnsense/service/actions.d/actions_sslh.conf
+     * src/reticen8/service/actions.d/actions_sslh.conf
      * @var string $internalServiceName
      */
     protected static $internalServiceName = 'sslh';

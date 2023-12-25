@@ -27,14 +27,14 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class OspfsettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'ospf';
-    protected static $internalModelClass = '\OPNsense\Quagga\OSPF';
+    protected static $internalModelClass = '\Reticen8\Quagga\OSPF';
 
     public function searchNetworkAction()
     {

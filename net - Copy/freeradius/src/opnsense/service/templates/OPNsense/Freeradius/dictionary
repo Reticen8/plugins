@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.freeradius.general.sessionlimit') and OPNsense.freeradius.general.sessionlimit == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.sessionlimit') and Reticen8.freeradius.general.sessionlimit == '1' %}
 #ATTRIBUTE       Daily-Session-Time      3000    integer
 ATTRIBUTE       Max-Daily-Session       3001    integer
 {% endif %}

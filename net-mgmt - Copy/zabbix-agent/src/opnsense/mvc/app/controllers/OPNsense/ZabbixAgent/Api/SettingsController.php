@@ -29,21 +29,21 @@
  *
  */
 
-namespace OPNsense\ZabbixAgent\Api;
+namespace Reticen8\ZabbixAgent\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\Core\Config;
-use OPNsense\ZabbixAgent\ZabbixAgent;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\Core\Config;
+use Reticen8\ZabbixAgent\ZabbixAgent;
 
 /**
  * Class SettingsController
- * @package OPNsense\ZabbixAgent
+ * @package Reticen8\ZabbixAgent
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'zabbixagent';
-    protected static $internalModelClass = '\OPNsense\ZabbixAgent\ZabbixAgent';
+    protected static $internalModelClass = '\Reticen8\ZabbixAgent\ZabbixAgent';
 
     public function searchUserparametersAction()
     {

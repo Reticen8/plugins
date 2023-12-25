@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Bind\Api;
+namespace Reticen8\Bind\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class DnsblController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Bind\Dnsbl';
+    protected static $internalModelClass = '\Reticen8\Bind\Dnsbl';
     protected static $internalModelName = 'dnsbl';
 }

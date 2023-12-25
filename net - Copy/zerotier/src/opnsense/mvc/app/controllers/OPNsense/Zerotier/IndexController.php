@@ -29,13 +29,13 @@
  *
  */
 
-namespace OPNsense\Zerotier;
+namespace Reticen8\Zerotier;
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/Zerotier/index');
+        $this->view->pick('Reticen8/Zerotier/index');
         $this->view->settingsForm = $this->getForm("settings");
         $this->view->dialogNetworkForm = $this->getForm("dialogNetwork");
     }

@@ -29,20 +29,20 @@
  *
  */
 
-namespace OPNsense\HAProxy\Api;
+namespace Reticen8\HAProxy\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\HAProxy\HAProxy;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\HAProxy\HAProxy;
 
 /**
  * Class ServiceController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\HAProxy\HAProxy';
-    protected static $internalServiceTemplate = 'OPNsense/HAProxy';
+    protected static $internalServiceClass = '\Reticen8\HAProxy\HAProxy';
+    protected static $internalServiceTemplate = 'Reticen8/HAProxy';
     protected static $internalServiceEnabled = 'general.enabled';
     protected static $internalServiceName = 'haproxy';
 
@@ -55,7 +55,7 @@ class ServiceController extends ApiMutableServiceControllerBase
     {
         $backend = new Backend();
         // first generate template based on current configuration
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
         // finally run the syntax check
         $response = $backend->configdRun("haproxy configtest");
         return array("result" => $response);

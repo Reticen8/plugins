@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\GridExample;
+namespace Reticen8\GridExample;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class GridExample extends BaseModel
 {

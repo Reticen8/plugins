@@ -26,15 +26,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\ClamAV;
+namespace Reticen8\ClamAV;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
         $this->view->formDialogEditClamavUrl = $this->getForm("dialogEditClamavUrl");
         $this->view->versionForm = $this->getForm("version");
-        $this->view->pick('OPNsense/ClamAV/general');
+        $this->view->pick('Reticen8/ClamAV/general');
     }
 }

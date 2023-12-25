@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\AcmeClient\LeUtils;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
 
 /**
  * Google Cloud DNS API
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class DnsGcloud extends Base implements LeValidationInterface
 {

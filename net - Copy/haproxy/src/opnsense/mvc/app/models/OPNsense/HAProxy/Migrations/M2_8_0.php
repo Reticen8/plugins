@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\HAProxy\Migrations;
+namespace Reticen8\HAProxy\Migrations;
 
-use OPNsense\Base\BaseModelMigration;
+use Reticen8\Base\BaseModelMigration;
 
 class M2_8_0 extends BaseModelMigration
 {

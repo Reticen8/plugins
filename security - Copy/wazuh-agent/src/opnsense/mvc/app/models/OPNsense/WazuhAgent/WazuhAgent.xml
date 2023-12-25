@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/WazuhAgent</mount>
+    <mount>//Reticen8/WazuhAgent</mount>
     <version>1.0.0</version>
     <description>
         Wazuh Agent
@@ -78,7 +78,7 @@
             <fw_alias_ignore type="ModelRelationField">
                 <Model>
                     <alias>
-                        <source>OPNsense.Firewall.Alias</source>
+                        <source>Reticen8.Firewall.Alias</source>
                         <items>aliases.alias</items>
                         <display>name</display>
                         <filters>

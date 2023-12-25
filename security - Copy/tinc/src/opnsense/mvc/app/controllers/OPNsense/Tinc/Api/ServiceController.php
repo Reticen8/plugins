@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Tinc\Api;
+namespace Reticen8\Tinc\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
 
 /**
  * Class ServiceController
- * @package OPNsense\Tinc
+ * @package Reticen8\Tinc
  */
 class ServiceController extends ApiControllerBase
 {
@@ -48,7 +48,7 @@ class ServiceController extends ApiControllerBase
             // close session for long running action
             $this->sessionClose();
             $backend = new Backend();
-            $backend->configdRun('template reload OPNsense/Tinc');
+            $backend->configdRun('template reload Reticen8/Tinc');
             return array("status" => "ok");
         } else {
             return array("status" => "failed");

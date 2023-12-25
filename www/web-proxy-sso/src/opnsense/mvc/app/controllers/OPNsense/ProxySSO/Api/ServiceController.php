@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ProxySSO\Api;
+namespace Reticen8\ProxySSO\Api;
 
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\ProxySSO\ProxySSO;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\ProxySSO\ProxySSO;
 
-class ServiceController extends \OPNsense\Proxy\Api\ServiceController
+class ServiceController extends \Reticen8\Proxy\Api\ServiceController
 {
     /**
      * show Kerberos keytab for Proxy
@@ -114,7 +114,7 @@ class ServiceController extends \OPNsense\Proxy\Api\ServiceController
         $hostname = $cnf->system->hostname . '.' . $cnf->system->domain;
 
         // LDAP
-        $methods = explode(',', $cnf->OPNsense->proxy->forward->authentication->method);
+        $methods = explode(',', $cnf->Reticen8->proxy->forward->authentication->method);
         foreach ($methods as $method) {
             $xpath = $cnf->xpath("//system/authserver[name=\"$method\" and type=\"ldap\"]");
             if (count($xpath)) {

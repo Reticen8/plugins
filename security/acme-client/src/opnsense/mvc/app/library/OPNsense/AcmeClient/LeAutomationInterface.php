@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Interface for ACME Client automations
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 interface LeAutomationInterface
 {

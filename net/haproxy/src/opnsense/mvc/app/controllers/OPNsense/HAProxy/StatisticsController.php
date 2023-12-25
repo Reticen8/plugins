@@ -29,17 +29,17 @@
  *
  */
 
-namespace OPNsense\HAProxy;
+namespace Reticen8\HAProxy;
 
 /**
  * Class StatisticsController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
-class StatisticsController extends \OPNsense\Base\IndexController
+class StatisticsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // choose template
-        $this->view->pick('OPNsense/HAProxy/statistics');
+        $this->view->pick('Reticen8/HAProxy/statistics');
     }
 }

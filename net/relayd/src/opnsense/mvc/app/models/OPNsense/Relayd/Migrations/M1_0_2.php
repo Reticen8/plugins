@@ -26,16 +26,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Relayd\Migrations;
+namespace Reticen8\Relayd\Migrations;
 
-use OPNsense\Base\BaseModelMigration;
+use Reticen8\Base\BaseModelMigration;
 
 class M1_0_2 extends BaseModelMigration
 {
     public function run($model)
     {
         // migrate old protocol definitions; only TCP seems to have worked
-        // see https://github.com/opnsense/plugins/issues/1464
+        // see https://github.com/reticen8/plugins/issues/1464
         foreach ($model->getNodeByReference('protocol')->iterateItems() as $protocol) {
             if ((string)$protocol->type == 'tcp') {
                 $protocol->options = 'tcp { ' . (string)$protocol->options . ' }';

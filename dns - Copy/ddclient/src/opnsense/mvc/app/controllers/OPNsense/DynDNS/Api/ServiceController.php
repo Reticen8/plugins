@@ -28,17 +28,17 @@
  *
  */
 
-namespace OPNsense\DynDNS\Api;
+namespace Reticen8\DynDNS\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 /**
  * {@inheritdoc}
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\DynDNS\DynDNS';
+    protected static $internalServiceClass = '\Reticen8\DynDNS\DynDNS';
     protected static $internalServiceEnabled = 'general.enabled';
-    protected static $internalServiceTemplate = 'OPNsense/ddclient';
+    protected static $internalServiceTemplate = 'Reticen8/ddclient';
     protected static $internalServiceName = 'ddclient';
 }

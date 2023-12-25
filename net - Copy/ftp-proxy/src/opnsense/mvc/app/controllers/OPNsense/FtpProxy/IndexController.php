@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\FtpProxy;
+namespace Reticen8\FtpProxy;
 
 /**
  * Class IndexController
- * @package OPNsense\FtpProxy
+ * @package Reticen8\FtpProxy
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * ftpproxy index page
@@ -44,6 +44,6 @@ class IndexController extends \OPNsense\Base\IndexController
     {
         // include dialog form definitions
         $this->view->formDialogEdit = $this->getForm("dialogEdit");
-        $this->view->pick('OPNsense/FtpProxy/index');
+        $this->view->pick('Reticen8/FtpProxy/index');
     }
 }

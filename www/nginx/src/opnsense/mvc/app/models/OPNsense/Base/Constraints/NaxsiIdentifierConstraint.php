@@ -26,7 +26,7 @@
 * POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Base\Constraints;
+namespace Reticen8\Base\Constraints;
 
 use Phalcon\Messages\Message;
 
@@ -34,7 +34,7 @@ use Phalcon\Messages\Message;
  * a very specific nginx check for Naxsi rule IDs - not reusable
  *
  * Class NaxsiIdentifierConstraint
- * @package OPNsense\Nginx\Constraints
+ * @package Reticen8\Nginx\Constraints
  */
 class NaxsiIdentifierConstraint extends BaseConstraint
 {

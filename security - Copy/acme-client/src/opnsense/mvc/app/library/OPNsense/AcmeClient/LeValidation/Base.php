@@ -3,7 +3,7 @@
 /*
  * Copyright (C) 2020-2021 Frank Wall
  * Copyright (C) 2018 Deciso B.V.
- * Copyright (C) 2018 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2018 Franco Fichtner <franco@reticen8.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -28,17 +28,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\Core\Config;
-use OPNsense\AcmeClient\LeAccount;
-use OPNsense\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
+use Reticen8\AcmeClient\LeAccount;
+use Reticen8\AcmeClient\LeUtils;
 
 /**
  * LeValidation stub file, contains shared logic for all validation methods.
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-abstract class Base extends \OPNsense\AcmeClient\LeCommon
+abstract class Base extends \Reticen8\AcmeClient\LeCommon
 {
     public const CONFIG_PATH = 'validations.validation';
 

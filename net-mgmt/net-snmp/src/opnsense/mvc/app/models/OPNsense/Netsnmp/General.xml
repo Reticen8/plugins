@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/netsnmp/general</mount>
+    <mount>//Reticen8/netsnmp/general</mount>
     <description>Netsnmp configuration</description>
     <version>1.0.4</version>
     <items>

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PROVIDE: opnsense-maltrailsensor
+# PROVIDE: reticen8-maltrailsensor
 # REQUIRE: SERVERS
 # KEYWORD: shutdown
 
@@ -13,7 +13,7 @@ pidfile=/var/run/${name}.pid
 command=/usr/sbin/daemon
 command_args="-f -P /var/run/maltrailsensor.pid python3 /usr/local/share/maltrail/sensor.py"
 
-load_rc_config opnsense-maltrailsensor
+load_rc_config reticen8-maltrailsensor
 
 : ${maltrailsensor_enable="NO"}
 

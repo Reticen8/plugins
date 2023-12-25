@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
-        $this->view->pick('OPNsense/Quagga/general');
+        $this->view->pick('Reticen8/Quagga/general');
     }
 }

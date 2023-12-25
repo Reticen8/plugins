@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/headerchecks</mount>
+    <mount>//Reticen8/postfix/headerchecks</mount>
     <description>Postfix header_checks configuration</description>
     <version>1.0.0</version>
     <items>

@@ -26,13 +26,13 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\UDPBroadcastRelay;
+namespace Reticen8\UDPBroadcastRelay;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class UDPBroadcastRelay
- * @package OPNsense\UDPBroadcastRelay
+ * @package Reticen8\UDPBroadcastRelay
  */
 class UDPBroadcastRelay extends BaseModel
 {

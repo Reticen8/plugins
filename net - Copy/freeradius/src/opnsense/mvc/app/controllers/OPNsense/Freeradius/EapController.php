@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class EapController extends \OPNsense\Base\IndexController
+class EapController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->eapForm = $this->getForm("eap");
-        $this->view->pick('OPNsense/Freeradius/eap');
+        $this->view->pick('Reticen8/Freeradius/eap');
     }
 }

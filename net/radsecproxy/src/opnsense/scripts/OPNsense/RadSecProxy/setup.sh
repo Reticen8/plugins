@@ -10,6 +10,6 @@ done
 
 
 # export required certs to filesystem
-/usr/local/opnsense/scripts/OPNsense/RadSecProxy/generate_certs.php > /dev/null 2>&1
+/usr/local/reticen8/scripts/Reticen8/RadSecProxy/generate_certs.php > /dev/null 2>&1
 
 exit 0

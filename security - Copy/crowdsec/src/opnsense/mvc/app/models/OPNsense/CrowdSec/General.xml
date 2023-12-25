@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/crowdsec/general</mount>
+  <mount>//Reticen8/crowdsec/general</mount>
   <description>CrowdSec general configuration</description>
   <version>1.0.6</version>
   <items>

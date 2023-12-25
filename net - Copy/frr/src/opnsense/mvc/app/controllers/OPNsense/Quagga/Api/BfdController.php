@@ -28,14 +28,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class BfdController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'bfd';
-    protected static $internalModelClass = '\OPNsense\Quagga\BFD';
+    protected static $internalModelClass = '\Reticen8\Quagga\BFD';
 
     public function searchNeighborAction()
     {

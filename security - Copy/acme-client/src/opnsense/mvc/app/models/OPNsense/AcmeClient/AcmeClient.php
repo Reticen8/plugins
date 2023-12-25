@@ -29,14 +29,14 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\Base\BaseModel;
-use OPNsense\Core\Backend;
+use Reticen8\Base\BaseModel;
+use Reticen8\Core\Backend;
 
 /**
  * Class AcmeClient
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class AcmeClient extends BaseModel
 {

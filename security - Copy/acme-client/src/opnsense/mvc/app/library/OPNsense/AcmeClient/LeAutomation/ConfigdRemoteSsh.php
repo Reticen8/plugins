@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
  * Run remote command on arbitrary hosts using SSH
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class ConfigdRemoteSsh extends Base implements LeAutomationInterface
 {

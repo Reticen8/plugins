@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class LeaseController extends \OPNsense\Base\IndexController
+class LeaseController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditFreeRADIUSLease = $this->getForm("dialogEditFreeRADIUSLease");
-        $this->view->pick('OPNsense/Freeradius/lease');
+        $this->view->pick('Reticen8/Freeradius/lease');
     }
 }

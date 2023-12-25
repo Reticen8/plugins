@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Hwprobe\Api;
+namespace Reticen8\Hwprobe\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Hwprobe\General';
+    protected static $internalModelClass = '\Reticen8\Hwprobe\General';
     protected static $internalModelName = 'general';
 }

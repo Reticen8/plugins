@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Api;
+namespace Reticen8\Quagga\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Quagga\General;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Quagga\General;
+use Reticen8\Core\Config;
 
 class GeneralController extends ApiControllerBase
 {

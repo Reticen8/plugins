@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/apcupsd</mount>
+    <mount>//Reticen8/apcupsd</mount>
     <version>0.0.2</version>
     <description>APC UPS configuration</description>
     <items>

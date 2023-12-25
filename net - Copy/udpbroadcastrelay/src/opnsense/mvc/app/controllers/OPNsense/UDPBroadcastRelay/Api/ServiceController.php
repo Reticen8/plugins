@@ -26,20 +26,20 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\UDPBroadcastRelay\Api;
+namespace Reticen8\UDPBroadcastRelay\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\UDPBroadcastRelay\UDPBroadcastRelay;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\UDPBroadcastRelay\UDPBroadcastRelay;
+use Reticen8\Core\Backend;
 
 /**
  * Class ServiceController Handles settings related API actions for the UDPBroadcastRelay
- * @package OPNsense\UDPBroadcastRelay
+ * @package Reticen8\UDPBroadcastRelay
  */
 class ServiceController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'udpbroadcastrelay';
-    protected static $internalModelClass = '\OPNsense\UDPBroadcastRelay\UDPBroadcastRelay';
+    protected static $internalModelClass = '\Reticen8\UDPBroadcastRelay\UDPBroadcastRelay';
     protected static $internalModelUseSafeDelete = true;
 
     public function statusAction($uuid)
@@ -164,7 +164,7 @@ class ServiceController extends ApiMutableModelControllerBase
             return trim($backend->configdpRun('udpbroadcastrelay', array($action, $instance)));
         }
         if ($action == 'template') {
-            return trim($backend->configdRun('template reload OPNsense/UDPBroadcastRelay'));
+            return trim($backend->configdRun('template reload Reticen8/UDPBroadcastRelay'));
         }
         if ($action == 'reload') {
             return trim($backend->configdRun('udpbroadcastrelay reload'));

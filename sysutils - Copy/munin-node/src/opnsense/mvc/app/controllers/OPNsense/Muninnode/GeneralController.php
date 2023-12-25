@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Muninnode;
+namespace Reticen8\Muninnode;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm('general');
-        $this->view->pick('OPNsense/Muninnode/general');
+        $this->view->pick('Reticen8/Muninnode/general');
     }
 }

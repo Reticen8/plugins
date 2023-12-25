@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/tor/relay</mount>
+  <mount>//Reticen8/tor/relay</mount>
   <version>1.0.0</version>
   <description>Tor Relay configuration</description>
   <items>

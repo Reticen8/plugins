@@ -22,13 +22,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-class RealmsController extends \OPNsense\Base\IndexController
+class RealmsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/RadSecProxy/realms');
+        $this->view->pick('Reticen8/RadSecProxy/realms');
         $this->view->formDialogRealm = $this->getForm("dialogRealm");
     }
 }

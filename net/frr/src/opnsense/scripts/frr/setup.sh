@@ -20,4 +20,4 @@ touch /var/log/frr.log
 chown $user:$group /var/log/frr.log
 
 # register Security Associations
-/usr/local/opnsense/scripts/frr/register_sas
+/usr/local/reticen8/scripts/frr/register_sas

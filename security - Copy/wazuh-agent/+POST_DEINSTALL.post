@@ -1,1 +1,1 @@
-rm /var/ossec/active-response/bin/opnsense-fw
+rm /var/ossec/active-response/bin/reticen8-fw

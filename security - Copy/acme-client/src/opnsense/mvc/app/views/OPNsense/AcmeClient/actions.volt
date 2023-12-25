@@ -1,7 +1,7 @@
 {#
 
 Copyright (C) 2017-2021 Frank Wall
-OPNsense® is Copyright © 2014-2015 by Deciso B.V.
+Reticen8® is Copyright © 2014-2015 by Deciso B.V.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
@@ -217,11 +217,11 @@ POSSIBILITY OF SUCH DAMAGE.
             <h1>{{ lang._('Automations') }}</h1>
             <p>{{ lang._('Automations are a completely optional feature, but they can make life much easier, especially when using short-lived certificates. Typically use-cases include:') }}</p>
             <ul>
-              <li>{{ lang._("%sRestart a service%s when a certificate was renewed to ensure that the newest certificate is being used. This is especially useful when using an ACME certificate for the OPNsense WebGUI or in combination with the HAProxy or NGINX plugins. Any OPNsense core service or plugin service may be restarted.") | format('<b>', '</b>') }}</li>
-              <li>{{ lang._("Copy a certificate to one or more other hosts using the %sSFTP/SSH protocol%s. This way OPNsense can be used as a central authority for ACME certificates and secrets for DNS providers can be kept on a secure device.") | format('<b>', '</b>') }}</li>
+              <li>{{ lang._("%sRestart a service%s when a certificate was renewed to ensure that the newest certificate is being used. This is especially useful when using an ACME certificate for the Reticen8 WebGUI or in combination with the HAProxy or NGINX plugins. Any Reticen8 core service or plugin service may be restarted.") | format('<b>', '</b>') }}</li>
+              <li>{{ lang._("Copy a certificate to one or more other hosts using the %sSFTP/SSH protocol%s. This way Reticen8 can be used as a central authority for ACME certificates and secrets for DNS providers can be kept on a secure device.") | format('<b>', '</b>') }}</li>
               <li>{{ lang._("Deploy a certificate to an external service, for example a %sCDN%s provider.") | format('<b>', '</b>') }}</li>
             </ul>
-            <p>{{ lang._("This plugin can theoretically utilize most of %sacme.sh's webhooks%s. However, not all webhooks are currently implemented. Feel free to submit a %sfeature request%s if support for a acme.sh webhook should be added to the plugin.") | format('<a href="https://github.com/acmesh-official/acme.sh/wiki/deployhooks">', '</a>', '<a href="https://github.com/opnsense/plugins/issues">', '</a>') }}</p>
+            <p>{{ lang._("This plugin can theoretically utilize most of %sacme.sh's webhooks%s. However, not all webhooks are currently implemented. Feel free to submit a %sfeature request%s if support for a acme.sh webhook should be added to the plugin.") | format('<a href="https://github.com/acmesh-official/acme.sh/wiki/deployhooks">', '</a>', '<a href="https://github.com/reticen8/plugins/issues">', '</a>') }}</p>
         </div>
     </div>
 

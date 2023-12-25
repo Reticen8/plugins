@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/zabbixproxy/general</mount>
+    <mount>//Reticen8/zabbixproxy/general</mount>
     <description>Zabbix Proxy configuration</description>
     <version>2.0.3</version>
     <items>

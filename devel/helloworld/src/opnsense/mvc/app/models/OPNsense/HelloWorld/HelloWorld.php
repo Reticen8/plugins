@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\HelloWorld;
+namespace Reticen8\HelloWorld;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class HelloWorld extends BaseModel
 {

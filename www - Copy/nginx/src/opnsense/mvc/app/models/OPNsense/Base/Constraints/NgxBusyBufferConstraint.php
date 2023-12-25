@@ -26,7 +26,7 @@
 * POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Base\Constraints;
+namespace Reticen8\Base\Constraints;
 
 use Phalcon\Messages\Message;
 
@@ -34,7 +34,7 @@ use Phalcon\Messages\Message;
  * a very specific nginx check - not reusable
  *
  * Class NgxBusyBufferConstraint
- * @package OPNsense\Nginx\Constraints
+ * @package Reticen8\Nginx\Constraints
  */
 class NgxBusyBufferConstraint extends BaseConstraint
 {

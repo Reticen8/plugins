@@ -26,15 +26,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Sslh;
+namespace Reticen8\Sslh;
 
 /**
  * An IndexController-based class that creates an endpoint to display the Settings
  * page in the UI.
  *
- * @package OPNsense\Sslh
+ * @package Reticen8\Sslh
  */
-class SettingsController extends \OPNsense\Base\IndexController
+class SettingsController extends \Reticen8\Base\IndexController
 {
     /**
      * This function creates an endpoint in the UI for the Settings Controller.
@@ -51,11 +51,11 @@ class SettingsController extends \OPNsense\Base\IndexController
             'plugin_name' => 'sslh',
             'api_name' => 'sslh',
             'this_form' => $this->getForm('settings'),
-            // controllers/OPNsense/Sslh/forms/settings.xml
+            // controllers/Reticen8/Sslh/forms/settings.xml
         ]);
 
         // pick the template as the next view to render
-        $this->view->pick('OPNsense/Sslh/settings');
-        // views/OPNsense/Sslh/settings.volt
+        $this->view->pick('Reticen8/Sslh/settings');
+        // views/Reticen8/Sslh/settings.volt
     }
 }

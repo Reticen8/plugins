@@ -1,6 +1,6 @@
 """
     Copyright (c) 2023 Thomas Cekal <thomas@cekal.org>
-    Copyright (c) 2023 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2023 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -63,7 +63,7 @@ class Cloudflare(BaseAccount):
             url = "https://%s/client/v4/zones" % self._services[self.settings.get('service')]
 
             headers = {
-                'User-Agent': 'OPNsense-dyndns'
+                'User-Agent': 'Reticen8-dyndns'
             }
             # switch between bearer and email/key authentication
             if self.settings.get('username', '').find('@') == -1:

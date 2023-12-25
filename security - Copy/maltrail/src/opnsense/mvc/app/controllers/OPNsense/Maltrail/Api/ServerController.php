@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail\Api;
+namespace Reticen8\Maltrail\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Firewall\Alias;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Firewall\Alias;
 
 class ServerController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Maltrail\Server';
+    protected static $internalModelClass = '\Reticen8\Maltrail\Server';
     protected static $internalModelName = 'server';
 
     protected function setActionHook()

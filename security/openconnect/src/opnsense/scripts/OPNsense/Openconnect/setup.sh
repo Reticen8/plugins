@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/usr/local/opnsense/scripts/OPNsense/Openconnect/generate_certs.php
+/usr/local/reticen8/scripts/Reticen8/Openconnect/generate_certs.php

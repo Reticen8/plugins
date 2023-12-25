@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail;
+namespace Reticen8\Maltrail;
 
-class ServerController extends \OPNsense\Base\IndexController
+class ServerController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->serverForm = $this->getForm('server');
-        $this->view->pick('OPNsense/Maltrail/server');
+        $this->view->pick('Reticen8/Maltrail/server');
     }
 }

@@ -23,9 +23,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class DiagnosticsController extends \OPNsense\Base\IndexController
+class DiagnosticsController extends \Reticen8\Base\IndexController
 {
     public function bgpAction()
     {
@@ -56,7 +56,7 @@ class DiagnosticsController extends \OPNsense\Base\IndexController
             ]
         ];
         $this->view->default_tab = 'routing4';
-        $this->view->pick('OPNsense/Quagga/diagnostics');
+        $this->view->pick('Reticen8/Quagga/diagnostics');
     }
     public function ospfAction()
     {
@@ -93,7 +93,7 @@ class DiagnosticsController extends \OPNsense\Base\IndexController
             ]
         ];
         $this->view->default_tab = 'routing';
-        $this->view->pick('OPNsense/Quagga/diagnostics');
+        $this->view->pick('Reticen8/Quagga/diagnostics');
     }
     public function bfdAction()
     {
@@ -118,7 +118,7 @@ class DiagnosticsController extends \OPNsense\Base\IndexController
             ]
         ];
         $this->view->default_tab = 'summary';
-        $this->view->pick('OPNsense/Quagga/diagnostics');
+        $this->view->pick('Reticen8/Quagga/diagnostics');
     }
     public function ospfv3Action()
     {
@@ -150,7 +150,7 @@ class DiagnosticsController extends \OPNsense\Base\IndexController
             ]
         ];
         $this->view->default_tab = 'overview';
-        $this->view->pick('OPNsense/Quagga/diagnostics');
+        $this->view->pick('Reticen8/Quagga/diagnostics');
     }
     public function generalAction()
     {
@@ -175,6 +175,6 @@ class DiagnosticsController extends \OPNsense\Base\IndexController
             ]
         ];
         $this->view->default_tab = 'routing4';
-        $this->view->pick('OPNsense/Quagga/diagnostics');
+        $this->view->pick('Reticen8/Quagga/diagnostics');
     }
 }

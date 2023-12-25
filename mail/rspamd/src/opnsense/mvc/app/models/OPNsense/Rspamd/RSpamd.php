@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Rspamd;
+namespace Reticen8\Rspamd;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class RSpamd extends BaseModel
 {

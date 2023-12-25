@@ -28,18 +28,18 @@
  *
  */
 
-namespace OPNsense\HelloWorld;
+namespace Reticen8\HelloWorld;
 
 /**
  * Class IndexController
- * @package OPNsense\HelloWorld
+ * @package Reticen8\HelloWorld
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/HelloWorld/index');
+        $this->view->pick('Reticen8/HelloWorld/index');
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
     }

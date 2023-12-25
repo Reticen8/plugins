@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/tayga/general</mount>
+    <mount>//Reticen8/tayga/general</mount>
     <description>Tayga configuration</description>
     <version>1.2.0</version>
     <items>

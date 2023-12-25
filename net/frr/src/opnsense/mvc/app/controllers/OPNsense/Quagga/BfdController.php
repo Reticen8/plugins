@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class BfdController extends \OPNsense\Base\IndexController
+class BfdController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->bfdForm = $this->getForm("bfd");
         $this->view->formDialogEditBFDNeighbor = $this->getForm("dialogEditBFDNeighbor");
-        $this->view->pick('OPNsense/Quagga/bfd');
+        $this->view->pick('Reticen8/Quagga/bfd');
     }
 }

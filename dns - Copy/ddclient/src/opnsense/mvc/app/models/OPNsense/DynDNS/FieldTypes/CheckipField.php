@@ -26,10 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\DynDNS\FieldTypes;
+namespace Reticen8\DynDNS\FieldTypes;
 
-use OPNsense\Base\FieldTypes\BaseListField;
-use OPNsense\Core\Backend;
+use Reticen8\Base\FieldTypes\BaseListField;
+use Reticen8\Core\Backend;
 
 class CheckipField extends BaseListField
 {
@@ -42,12 +42,12 @@ class CheckipField extends BaseListField
             return;
         }
         if (is_array($data)) {
-            $opn_backend = (string)$this->getParentModel()->general->backend == 'opnsense';
+            $opn_backend = (string)$this->getParentModel()->general->backend == 'reticen8';
             foreach ($data as $key => $value) {
                 self::$internalCacheOptionList[$key] = gettext($value);
             }
             if ($opn_backend) {
-                // OPNsense backend, change interface label and add IPv6 option
+                // Reticen8 backend, change interface label and add IPv6 option
                 self::$internalCacheOptionList['if'] = gettext("Interface [IPv4]");
                 self::$internalCacheOptionList['if6'] = gettext("Interface [IPv6]");
             }

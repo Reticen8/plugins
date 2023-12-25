@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
- * Restart OPNsense WebGUI
- * @package OPNsense\AcmeClient
+ * Restart Reticen8 WebGUI
+ * @package Reticen8\AcmeClient
  */
 class ConfigdRestartGui extends Base implements LeAutomationInterface
 {

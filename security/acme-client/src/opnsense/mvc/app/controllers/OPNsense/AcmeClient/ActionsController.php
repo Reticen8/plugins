@@ -29,22 +29,22 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Class ActionsController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-class ActionsController extends \OPNsense\Base\IndexController
+class ActionsController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // include form definitions
         $this->view->formDialogAction = $this->getForm("dialogAction");
         // set additional view parameters
-        $mdlAcme = new \OPNsense\AcmeClient\AcmeClient();
+        $mdlAcme = new \Reticen8\AcmeClient\AcmeClient();
         $this->view->showIntro = (string)$mdlAcme ->settings->showIntro;
         // choose template
-        $this->view->pick('OPNsense/AcmeClient/actions');
+        $this->view->pick('Reticen8/AcmeClient/actions');
     }
 }

@@ -29,7 +29,7 @@
 
 require_once 'config.inc';
 
-use OPNsense\Nginx\Nginx;
+use Reticen8\Nginx\Nginx;
 
 $log_prefix = '/var/log/nginx/';
 $log_suffix = '.log';

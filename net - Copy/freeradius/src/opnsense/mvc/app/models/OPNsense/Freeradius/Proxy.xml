@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/proxy</mount>
+    <mount>//Reticen8/freeradius/proxy</mount>
     <description>Proxy configuration</description>
     <version>0.1</version>
     <items>

@@ -25,8 +25,8 @@ rm -f /etc/rc.conf.d/crowdsec \
 @include_once("certs.inc");
 @include_once("util.inc");
 
-use OPNsense\Firewall\Alias;
-use OPNsense\Core\Config;
+use Reticen8\Firewall\Alias;
+use Reticen8\Core\Config;
 
 function removeAlias($name)
 {

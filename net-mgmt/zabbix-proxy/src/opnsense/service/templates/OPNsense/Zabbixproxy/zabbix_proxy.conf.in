@@ -1,93 +1,93 @@
-{% if helpers.exists('OPNsense.zabbixproxy.general.enabled') and OPNsense.zabbixproxy.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.enabled') and Reticen8.zabbixproxy.general.enabled == '1' %}
 
-{% if helpers.exists('OPNsense.zabbixproxy.general.proxymode') and OPNsense.zabbixproxy.general.proxymode == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.proxymode') and Reticen8.zabbixproxy.general.proxymode == '1' %}
 ProxyMode=1
 {% else %}
 ProxyMode=0
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.remotecommands') and OPNsense.zabbixproxy.general.remotecommands == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.remotecommands') and Reticen8.zabbixproxy.general.remotecommands == '1' %}
 EnableRemoteCommands=1
 {% else %}
 EnableRemoteCommands=0
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.server') and OPNsense.zabbixproxy.general.server != '' %}
-Server={{ OPNsense.zabbixproxy.general.server }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.server') and Reticen8.zabbixproxy.general.server != '' %}
+Server={{ Reticen8.zabbixproxy.general.server }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.serverport') and OPNsense.zabbixproxy.general.serverport != '' %}
-ServerPort={{ OPNsense.zabbixproxy.general.serverport }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.serverport') and Reticen8.zabbixproxy.general.serverport != '' %}
+ServerPort={{ Reticen8.zabbixproxy.general.serverport }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.hostname') and OPNsense.zabbixproxy.general.hostname != '' %}
-Hostname={{ OPNsense.zabbixproxy.general.hostname }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.hostname') and Reticen8.zabbixproxy.general.hostname != '' %}
+Hostname={{ Reticen8.zabbixproxy.general.hostname }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.listenport') and OPNsense.zabbixproxy.general.listenport != '' %}
-ListenPort={{ OPNsense.zabbixproxy.general.listenport }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.listenport') and Reticen8.zabbixproxy.general.listenport != '' %}
+ListenPort={{ Reticen8.zabbixproxy.general.listenport }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.sourceip') and OPNsense.zabbixproxy.general.sourceip != '' %}
-SourceIP={{ OPNsense.zabbixproxy.general.sourceip }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.sourceip') and Reticen8.zabbixproxy.general.sourceip != '' %}
+SourceIP={{ Reticen8.zabbixproxy.general.sourceip }}
 {% endif %}
 LogFile=/var/log/zabbix/zabbix_proxy.log
 PidFile=/var/run/zabbix/zabbix_proxy.pid
 DBName=/var/db/zabbix/%%PLUGIN_VARIANT%%_proxy.db
-{% if helpers.exists('OPNsense.zabbixproxy.general.proxyofflinebuffer') and OPNsense.zabbixproxy.general.proxyofflinebuffer != '' %}
-ProxyOfflineBuffer={{ OPNsense.zabbixproxy.general.proxyofflinebuffer }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.proxyofflinebuffer') and Reticen8.zabbixproxy.general.proxyofflinebuffer != '' %}
+ProxyOfflineBuffer={{ Reticen8.zabbixproxy.general.proxyofflinebuffer }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.configfrequency') and OPNsense.zabbixproxy.general.configfrequency != '' %}
-ConfigFrequency={{ OPNsense.zabbixproxy.general.configfrequency }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.configfrequency') and Reticen8.zabbixproxy.general.configfrequency != '' %}
+ConfigFrequency={{ Reticen8.zabbixproxy.general.configfrequency }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.datasenderfrequency') and OPNsense.zabbixproxy.general.datasenderfrequency != '' %}
-DataSenderFrequency={{ OPNsense.zabbixproxy.general.datasenderfrequency }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.datasenderfrequency') and Reticen8.zabbixproxy.general.datasenderfrequency != '' %}
+DataSenderFrequency={{ Reticen8.zabbixproxy.general.datasenderfrequency }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startpollers') and OPNsense.zabbixproxy.general.startpollers != '' %}
-StartPollers={{ OPNsense.zabbixproxy.general.startpollers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startpollers') and Reticen8.zabbixproxy.general.startpollers != '' %}
+StartPollers={{ Reticen8.zabbixproxy.general.startpollers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startipmipollers') and OPNsense.zabbixproxy.general.startipmipollers != '' %}
-StartIPMIPollers={{ OPNsense.zabbixproxy.general.startipmipollers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startipmipollers') and Reticen8.zabbixproxy.general.startipmipollers != '' %}
+StartIPMIPollers={{ Reticen8.zabbixproxy.general.startipmipollers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startpollersunreachable') and OPNsense.zabbixproxy.general.startpollersunreachable != '' %}
-StartPollersUnreachable={{ OPNsense.zabbixproxy.general.startpollersunreachable }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startpollersunreachable') and Reticen8.zabbixproxy.general.startpollersunreachable != '' %}
+StartPollersUnreachable={{ Reticen8.zabbixproxy.general.startpollersunreachable }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.starttrappers') and OPNsense.zabbixproxy.general.starttrappers != '' %}
-StartTrappers={{ OPNsense.zabbixproxy.general.starttrappers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.starttrappers') and Reticen8.zabbixproxy.general.starttrappers != '' %}
+StartTrappers={{ Reticen8.zabbixproxy.general.starttrappers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startpingers') and OPNsense.zabbixproxy.general.startpingers != '' %}
-StartPingers={{ OPNsense.zabbixproxy.general.startpingers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startpingers') and Reticen8.zabbixproxy.general.startpingers != '' %}
+StartPingers={{ Reticen8.zabbixproxy.general.startpingers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startdiscoverers') and OPNsense.zabbixproxy.general.startdiscoverers != '' %}
-StartDiscoverers={{ OPNsense.zabbixproxy.general.startdiscoverers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startdiscoverers') and Reticen8.zabbixproxy.general.startdiscoverers != '' %}
+StartDiscoverers={{ Reticen8.zabbixproxy.general.startdiscoverers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.startvmwarecollectors') and OPNsense.zabbixproxy.general.startvmwarecollectors != '' %}
-StartVMwareCollectors={{ OPNsense.zabbixproxy.general.startvmwarecollectors }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.startvmwarecollectors') and Reticen8.zabbixproxy.general.startvmwarecollectors != '' %}
+StartVMwareCollectors={{ Reticen8.zabbixproxy.general.startvmwarecollectors }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.starthttppollers') and OPNsense.zabbixproxy.general.starthttppollers != '' %}
-StartHTTPPollers={{ OPNsense.zabbixproxy.general.starthttppollers }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.starthttppollers') and Reticen8.zabbixproxy.general.starthttppollers != '' %}
+StartHTTPPollers={{ Reticen8.zabbixproxy.general.starthttppollers }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.listenip') and OPNsense.zabbixproxy.general.listenip != '' %}
-ListenIP={{ OPNsense.zabbixproxy.general.listenip }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.listenip') and Reticen8.zabbixproxy.general.listenip != '' %}
+ListenIP={{ Reticen8.zabbixproxy.general.listenip }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.cachesize') and OPNsense.zabbixproxy.general.cachesize != '' %}
-CacheSize={{ OPNsense.zabbixproxy.general.cachesize }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.cachesize') and Reticen8.zabbixproxy.general.cachesize != '' %}
+CacheSize={{ Reticen8.zabbixproxy.general.cachesize }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.historycachesize') and OPNsense.zabbixproxy.general.historycachesize != '' %}
-HistoryCacheSize={{ OPNsense.zabbixproxy.general.historycachesize }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.historycachesize') and Reticen8.zabbixproxy.general.historycachesize != '' %}
+HistoryCacheSize={{ Reticen8.zabbixproxy.general.historycachesize }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.historyindexcachesize') and OPNsense.zabbixproxy.general.historyindexcachesize != '' %}
-HistoryIndexCacheSize={{ OPNsense.zabbixproxy.general.historyindexcachesize }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.historyindexcachesize') and Reticen8.zabbixproxy.general.historyindexcachesize != '' %}
+HistoryIndexCacheSize={{ Reticen8.zabbixproxy.general.historyindexcachesize }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.timeout') and OPNsense.zabbixproxy.general.timeout != '' %}
-Timeout={{ OPNsense.zabbixproxy.general.timeout }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.timeout') and Reticen8.zabbixproxy.general.timeout != '' %}
+Timeout={{ Reticen8.zabbixproxy.general.timeout }}
 {% endif %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.statsip') and OPNsense.zabbixproxy.general.statsip != '' %}
-StatsAllowedIP={{ OPNsense.zabbixproxy.general.statsip }}
+{% if helpers.exists('Reticen8.zabbixproxy.general.statsip') and Reticen8.zabbixproxy.general.statsip != '' %}
+StatsAllowedIP={{ Reticen8.zabbixproxy.general.statsip }}
 {% endif %}
 FpingLocation=/usr/local/sbin/fping
 Fping6Location=/usr/local/sbin/fping6
-{% if helpers.exists('OPNsense.zabbixproxy.general.encryption') and OPNsense.zabbixproxy.general.encryption == '1' %}
-{% if helpers.exists('OPNsense.zabbixproxy.general.proxymode') and OPNsense.zabbixproxy.general.proxymode == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.encryption') and Reticen8.zabbixproxy.general.encryption == '1' %}
+{% if helpers.exists('Reticen8.zabbixproxy.general.proxymode') and Reticen8.zabbixproxy.general.proxymode == '1' %}
 TLSAccept=psk
 {% else %}
 TLSConnect=psk
 {% endif %}
 TLSPSKFile=/usr/local/etc/%%PLUGIN_VARIANT%%/zabbix_proxy.psk
-TLSPSKIdentity={{ OPNsense.zabbixproxy.general.encryptionidentity }}
+TLSPSKIdentity={{ Reticen8.zabbixproxy.general.encryptionidentity }}
 {% endif %}
 {% endif %}

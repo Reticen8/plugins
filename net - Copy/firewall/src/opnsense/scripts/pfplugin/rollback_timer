@@ -44,9 +44,9 @@ if (count($argv) >= 2) {
         }
         @unlink($lckfile);
         // no feedback, revert
-        $mdlFilter = new OPNsense\Firewall\Filter();
+        $mdlFilter = new Reticen8\Firewall\Filter();
         if ($mdlFilter->rollback($revision)) {
-            (new OPNsense\Core\Backend())->configdRun('filter reload');
+            (new Reticen8\Core\Backend())->configdRun('filter reload');
         } else {
             syslog(LOG_WARNING, "unable to revert to unexisting revision : {$revision}");
         }

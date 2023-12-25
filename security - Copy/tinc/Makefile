@@ -3,7 +3,7 @@ PLUGIN_VERSION=		1.7
 PLUGIN_REVISION=	1
 PLUGIN_COMMENT=		Tinc VPN
 PLUGIN_DEPENDS=		tinc
-PLUGIN_MAINTAINER=	ad@opnsense.org
+PLUGIN_MAINTAINER=	ad@reticen8.com
 PLUGIN_TIER=		2
 
 .include "../../Mk/plugins.mk"

@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\QemuGuestAgent\Api;
+namespace Reticen8\QemuGuestAgent\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 /**
  * Class ServiceController
- * @package OPNsense\QemuGuestAgent
+ * @package Reticen8\QemuGuestAgent
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\QemuGuestAgent\QemuGuestAgent';
-    protected static $internalServiceTemplate = 'OPNsense/QemuGuestAgent';
+    protected static $internalServiceClass = '\Reticen8\QemuGuestAgent\QemuGuestAgent';
+    protected static $internalServiceTemplate = 'Reticen8/QemuGuestAgent';
     protected static $internalServiceEnabled = 'general.Enabled';
     protected static $internalServiceName = 'qemuguestagent';
 }

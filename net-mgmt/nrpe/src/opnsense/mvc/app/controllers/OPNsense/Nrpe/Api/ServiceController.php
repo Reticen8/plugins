@@ -28,19 +28,19 @@
  *
  */
 
-namespace OPNsense\Nrpe\Api;
+namespace Reticen8\Nrpe\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Nrpe\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Nrpe\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Nrpe
+ * @package Reticen8\Nrpe
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Nrpe\General';
-    protected static $internalServiceTemplate = 'OPNsense/Nrpe';
+    protected static $internalServiceClass = '\Reticen8\Nrpe\General';
+    protected static $internalServiceTemplate = 'Reticen8/Nrpe';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'nrpe';
 }

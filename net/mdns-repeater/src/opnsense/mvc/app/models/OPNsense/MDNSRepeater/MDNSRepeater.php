@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\MDNSRepeater;
+namespace Reticen8\MDNSRepeater;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class MDNSRepeater extends BaseModel
 {

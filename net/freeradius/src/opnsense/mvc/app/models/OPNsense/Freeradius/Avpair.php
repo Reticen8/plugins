@@ -22,9 +22,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Avpair extends BaseModel
 {

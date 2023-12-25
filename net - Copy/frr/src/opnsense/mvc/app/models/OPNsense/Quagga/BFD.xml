@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/quagga/bfd</mount>
+    <mount>//Reticen8/quagga/bfd</mount>
     <description>BFD configuration</description>
     <version>1.0.0</version>
     <items>

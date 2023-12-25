@@ -45,7 +45,7 @@ function nginx_cron()
 {
     return array(
         array(
-            'autocron' => array('/usr/local/opnsense/scripts/nginx/ngx_autoblock.php', '*')
+            'autocron' => array('/usr/local/reticen8/scripts/nginx/ngx_autoblock.php', '*')
         )
     );
 }
@@ -74,7 +74,7 @@ function nginx_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'nginx';
-    $result['section'] = 'OPNsense.Nginx';
+    $result['section'] = 'Reticen8.Nginx';
     $result['description'] = gettext('Nginx Load Balancer');
     $result['services'] = ['nginx'];
     return array($result);

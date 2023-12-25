@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/antispam</mount>
+    <mount>//Reticen8/postfix/antispam</mount>
     <description>Postfix Antispam configuration</description>
     <version>1.0.2</version>
     <items>

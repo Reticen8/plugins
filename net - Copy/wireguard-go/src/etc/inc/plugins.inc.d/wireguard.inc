@@ -28,7 +28,7 @@
 
 function wireguard_enabled()
 {
-    $model = new \OPNsense\Wireguard\General();
+    $model = new \Reticen8\Wireguard\General();
     return (string)$model->enabled == '1';
 }
 
@@ -80,7 +80,7 @@ function wireguard_xmlrpc_sync()
     $result = [];
 
     $result['id'] = 'wireguard';
-    $result['section'] = 'OPNsense.wireguard';
+    $result['section'] = 'Reticen8.wireguard';
     $result['description'] = gettext('WireGuard');
     $result['services'] = ['wireguard-go'];
 
@@ -90,7 +90,7 @@ function wireguard_xmlrpc_sync()
 function wireguard_devices()
 {
     $names = [];
-    foreach ((new OPNsense\Wireguard\Server())->servers->server->iterateItems() as $key => $node) {
+    foreach ((new Reticen8\Wireguard\Server())->servers->server->iterateItems() as $key => $node) {
         if (!empty((string)$node->enabled)) {
             $device = 'wg' . $node->instance;
             $names[$device] = [

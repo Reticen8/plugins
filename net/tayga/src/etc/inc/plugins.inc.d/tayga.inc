@@ -28,7 +28,7 @@
 
 function tayga_enabled()
 {
-    $model = new \OPNsense\Tayga\General();
+    $model = new \Reticen8\Tayga\General();
 
     return (string)$model->enabled == '1';
 }
@@ -57,7 +57,7 @@ function tayga_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'taygavpn';
-    $result['section'] = 'OPNsense.tayga';
+    $result['section'] = 'Reticen8.tayga';
     $result['description'] = gettext('Tayga');
     $result['services'] = ['tayga'];
     return array($result);

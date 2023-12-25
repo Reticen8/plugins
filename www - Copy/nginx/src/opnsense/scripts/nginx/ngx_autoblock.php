@@ -31,10 +31,10 @@ require_once('config.inc');
 require_once('IPv6.inc');
 require_once('util.inc');
 
-use OPNsense\Firewall\Alias;
-use OPNsense\Nginx\AccessLogParser;
-use OPNsense\Core\Config;
-use OPNsense\Nginx\Nginx;
+use Reticen8\Firewall\Alias;
+use Reticen8\Nginx\AccessLogParser;
+use Reticen8\Core\Config;
+use Reticen8\Nginx\Nginx;
 
 function nginx_print_error($msg)
 {
@@ -132,7 +132,7 @@ const PERMANENT_BAN_FILE_WORK = PERMANENT_BAN_FILE . '.work';
 
 const TLS_HANDSHAKE_FILE = '/var/log/nginx/tls_handshake.log';
 const TLS_HANDSHAKE_FILE_WORK = TLS_HANDSHAKE_FILE . '.work';
-const TLS_HANDSHAKE_PROCESSING_TASK = '/usr/local/opnsense/scripts/nginx/tls_ua_fingerprint.php';
+const TLS_HANDSHAKE_PROCESSING_TASK = '/usr/local/reticen8/scripts/nginx/tls_ua_fingerprint.php';
 
 const AUTOBLOCK_ALIAS_NAME = 'nginx_autoblock';
 

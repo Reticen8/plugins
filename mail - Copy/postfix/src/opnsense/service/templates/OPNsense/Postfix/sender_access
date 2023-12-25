@@ -1,6 +1,6 @@
-{% if helpers.exists('OPNsense.postfix.general.enabled') and OPNsense.postfix.general.enabled == '1' %}
-{%   if helpers.exists('OPNsense.postfix.sender.senders.sender') %}
-{%     for sender_list in helpers.toList('OPNsense.postfix.sender.senders.sender') %}
+{% if helpers.exists('Reticen8.postfix.general.enabled') and Reticen8.postfix.general.enabled == '1' %}
+{%   if helpers.exists('Reticen8.postfix.sender.senders.sender') %}
+{%     for sender_list in helpers.toList('Reticen8.postfix.sender.senders.sender') %}
 {%       if sender_list.enabled == '1' %}
 {{ sender_list.address }} {{ sender_list.action }}
 {%       endif %}

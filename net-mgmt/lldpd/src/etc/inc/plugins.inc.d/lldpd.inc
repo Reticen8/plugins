@@ -32,7 +32,7 @@ function lldpd_services()
 
     $services = array();
 
-    if (isset($config['OPNsense']['lldpd']['general']['enabled']) && $config['OPNsense']['lldpd']['general']['enabled'] == 1) {
+    if (isset($config['Reticen8']['lldpd']['general']['enabled']) && $config['Reticen8']['lldpd']['general']['enabled'] == 1) {
         $services[] = array(
             'description' => gettext('lldpd daemon'),
             'configd' => array(

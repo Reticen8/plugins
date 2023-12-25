@@ -28,16 +28,16 @@
  *
  */
 
-namespace OPNsense\FtpProxy\Api;
+namespace Reticen8\FtpProxy\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Config;
-use OPNsense\FtpProxy\FtpProxy;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Config;
+use Reticen8\FtpProxy\FtpProxy;
+use Reticen8\Base\UIModelGrid;
 
 /**
  * Class SettingsController
- * @package OPNsense\FtpProxy
+ * @package Reticen8\FtpProxy
  */
 class SettingsController extends ApiControllerBase
 {

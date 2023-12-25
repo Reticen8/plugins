@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Tor\Api;
+namespace Reticen8\Tor\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class RelayController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Tor\Relay';
+    protected static $internalModelClass = '\Reticen8\Tor\Relay';
     protected static $internalModelName = 'relay';
 }

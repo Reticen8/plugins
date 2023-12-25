@@ -29,18 +29,18 @@
  *
  */
 
-namespace OPNsense\QemuGuestAgent\Api;
+namespace Reticen8\QemuGuestAgent\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Config;
-use OPNsense\ZabbixAgent\ZabbixAgent;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Config;
+use Reticen8\ZabbixAgent\ZabbixAgent;
 
 /**
  * settings controller for QemuGuestAgent
- * @package OPNsense\QemuGuestAgent
+ * @package Reticen8\QemuGuestAgent
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'qemuguestagent';
-    protected static $internalModelClass = 'OPNsense\QemuGuestAgent\QemuGuestAgent';
+    protected static $internalModelClass = 'Reticen8\QemuGuestAgent\QemuGuestAgent';
 }

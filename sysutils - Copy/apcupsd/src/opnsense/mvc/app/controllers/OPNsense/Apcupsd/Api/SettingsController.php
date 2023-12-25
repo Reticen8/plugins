@@ -30,12 +30,12 @@
  *
  */
 
-namespace OPNsense\Apcupsd\Api;
+namespace Reticen8\Apcupsd\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Apcupsd\Apcupsd';
+    protected static $internalModelClass = '\Reticen8\Apcupsd\Apcupsd';
     protected static $internalModelName = 'apcupsd';
 }

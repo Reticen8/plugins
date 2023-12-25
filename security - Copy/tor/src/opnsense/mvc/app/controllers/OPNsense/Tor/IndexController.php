@@ -26,15 +26,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Tor;
+namespace Reticen8\Tor;
 
-use OPNsense\Tor\General;
+use Reticen8\Tor\General;
 
 /**
 * Class IndexController
-* @package OPNsense/Tor
+* @package Reticen8/Tor
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -45,21 +45,21 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->relay = $this->getForm("relay");
         $this->view->hidservauth = $this->getForm("hidservauth");
         $this->view->exitpolicy = $this->getForm("acl_exitpolicy");
-        $this->view->pick('OPNsense/Tor/general');
+        $this->view->pick('Reticen8/Tor/general');
     }
 
     public function infoAction()
     {
-        $this->view->pick('OPNsense/Tor/info');
+        $this->view->pick('Reticen8/Tor/info');
     }
 
     public function diagnosticsAction()
     {
         $general = new General();
         if ($this->is_tor_running() && (int)((string)$general->control_port) > 0) {
-            $this->view->pick('OPNsense/Tor/diagnostics');
+            $this->view->pick('Reticen8/Tor/diagnostics');
         } else {
-            $this->view->pick('OPNsense/Tor/error');
+            $this->view->pick('Reticen8/Tor/error');
         }
     }
 

@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2020 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2020 Ad Schellevis <ad@reticen8.com>
     Copyright (c) 2020 devNan0 <nan0@nan0.dev>
     All rights reserved.
 

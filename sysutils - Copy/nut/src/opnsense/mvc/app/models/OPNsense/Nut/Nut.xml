@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/Nut</mount>
+  <mount>//Reticen8/Nut</mount>
   <description>Network UPS Tools</description>
   <version>1.0.4</version>
   <items>

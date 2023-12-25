@@ -38,7 +38,7 @@ $server_uuid = $_SERVER['SERVER-UUID'];
 
 function password_auth_test($username, $password, $auth_server)
 {
-    $authFactory = new OPNsense\Auth\AuthenticationFactory();
+    $authFactory = new Reticen8\Auth\AuthenticationFactory();
     $authenticator = $authFactory->get($auth_server);
     return $authenticator->authenticate($username, $password);
 }
@@ -61,5 +61,5 @@ if (password_auth($auth_server)) {
     header("HTTP/1.1 200 OK");
 } else {
     header("HTTP/1.1 401 Authorization Required");
-    header('WWW-Authenticate: Basic realm="OPNsense Protected Area - Authentication Required"');
+    header('WWW-Authenticate: Basic realm="Reticen8 Protected Area - Authentication Required"');
 }

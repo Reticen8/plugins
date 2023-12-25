@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail;
+namespace Reticen8\Maltrail;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm('general');
-        $this->view->pick('OPNsense/Maltrail/general');
+        $this->view->pick('Reticen8/Maltrail/general');
     }
 }

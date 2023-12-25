@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Siproxd\Api;
+namespace Reticen8\Siproxd\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Siproxd\General;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Siproxd\General;
+use Reticen8\Core\Config;
 
 class GeneralController extends ApiControllerBase
 {

@@ -29,13 +29,13 @@
  *
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Class IndexController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * acme-client index page
@@ -46,9 +46,9 @@ class IndexController extends \OPNsense\Base\IndexController
         // include form definitions
         $this->view->settingsForm = $this->getForm("settings");
         // set additional view parameters
-        $mdlAcme = new \OPNsense\AcmeClient\AcmeClient();
+        $mdlAcme = new \Reticen8\AcmeClient\AcmeClient();
         $this->view->showIntro = (string)$mdlAcme ->settings->showIntro;
         // pick the template to serve
-        $this->view->pick('OPNsense/AcmeClient/settings');
+        $this->view->pick('Reticen8/AcmeClient/settings');
     }
 }

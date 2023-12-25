@@ -29,9 +29,9 @@
  *
  */
 
-namespace OPNsense\PuppetAgent;
+namespace Reticen8\PuppetAgent;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class PuppetAgent extends BaseModel
 {

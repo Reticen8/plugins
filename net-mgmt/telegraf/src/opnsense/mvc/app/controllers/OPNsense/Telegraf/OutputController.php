@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Telegraf;
+namespace Reticen8\Telegraf;
 
-class OutputController extends \OPNsense\Base\IndexController
+class OutputController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->outputForm = $this->getForm("output");
-        $this->view->pick('OPNsense/Telegraf/output');
+        $this->view->pick('Reticen8/Telegraf/output');
     }
 }

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/siproxd/domain</mount>
+    <mount>//Reticen8/siproxd/domain</mount>
     <description>Siproxd outbound domain configuration</description>
     <version>1.0.0</version>
     <items>

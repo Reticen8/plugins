@@ -62,7 +62,7 @@
         <label>Firewall command ignore</label>
         <type>dropdown</type>
         <help>
-            Select an alias from which the items should be ignored when dropping ip addresses using the opnsense-fw
+            Select an alias from which the items should be ignored when dropping ip addresses using the reticen8-fw
             active-response action.
         </help>
     </field>

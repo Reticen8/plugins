@@ -29,9 +29,9 @@
  *
  */
 
-namespace OPNsense\QemuGuestAgent;
+namespace Reticen8\QemuGuestAgent;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class QemuGuestAgent extends BaseModel
 {

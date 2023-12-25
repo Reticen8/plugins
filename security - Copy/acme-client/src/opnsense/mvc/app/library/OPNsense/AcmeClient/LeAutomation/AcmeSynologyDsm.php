@@ -26,19 +26,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeAutomation;
+namespace Reticen8\AcmeClient\LeAutomation;
 
-use OPNsense\AcmeClient\LeAutomationInterface;
+use Reticen8\AcmeClient\LeAutomationInterface;
 
 /**
  * Run acme.sh deploy hook synology_dsm
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class AcmeSynologyDsm extends Base implements LeAutomationInterface
 {
     public function prepare()
     {
-        $this->acme_env['SYNO_Certificate'] = 'OPNsense ACME cert ' . $this->cert_id;
+        $this->acme_env['SYNO_Certificate'] = 'Reticen8 ACME cert ' . $this->cert_id;
         $this->acme_env['SYNO_Hostname'] = (string)$this->config->acme_synology_dsm_hostname;
         $this->acme_env['SYNO_Port'] = (string)$this->config->acme_synology_dsm_port;
         $this->acme_env['SYNO_Scheme'] = (string)$this->config->acme_synology_dsm_scheme;

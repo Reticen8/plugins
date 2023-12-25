@@ -30,19 +30,19 @@
  *
  */
 
-namespace OPNsense\Apcupsd;
+namespace Reticen8\Apcupsd;
 
 /**
  * Class IndexController
- * @package OPNsense\Apcupsd
+ * @package Reticen8\Apcupsd
  */
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/Apcupsd/index');
+        $this->view->pick('Reticen8/Apcupsd/index');
         $this->view->generalForm = $this->getForm("general");
     }
 }

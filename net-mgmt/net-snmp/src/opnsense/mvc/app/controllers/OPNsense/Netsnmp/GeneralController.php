@@ -26,14 +26,14 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Netsnmp;
+namespace Reticen8\Netsnmp;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
         $this->view->formDialogEditNetsnmpUser = $this->getForm("dialogEditNetsnmpUser");
-        $this->view->pick('OPNsense/Netsnmp/general');
+        $this->view->pick('Reticen8/Netsnmp/general');
     }
 }

@@ -32,7 +32,7 @@
 require_once('script/load_phalcon.php');
 $authd_pass = '/var/ossec/etc/authd.pass';
 
-$mdl = new \OPNsense\WazuhAgent\WazuhAgent();
+$mdl = new \Reticen8\WazuhAgent\WazuhAgent();
 
 /**
  * Configure authentication when needed

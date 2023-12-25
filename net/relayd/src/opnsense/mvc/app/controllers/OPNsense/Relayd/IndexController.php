@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\Relayd;
+namespace Reticen8\Relayd;
 
 /**
  * Class IndexController
- * @package OPNsense\Relayd
+ * @package Reticen8\Relayd
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * relayd index page
@@ -48,6 +48,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->formDialogEditTable         = $this->getForm("table");
         $this->view->formDialogEditProtocol      = $this->getForm("protocol");
         $this->view->formDialogEditVirtualServer = $this->getForm("virtualserver");
-        $this->view->pick('OPNsense/Relayd/index');
+        $this->view->pick('Reticen8/Relayd/index');
     }
 }

@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\Core\Config;
 
 /**
  * online.net API
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class DnsOnline extends Base implements LeValidationInterface
 {

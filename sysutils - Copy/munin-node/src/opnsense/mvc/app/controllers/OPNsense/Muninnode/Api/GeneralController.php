@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Muninnode\Api;
+namespace Reticen8\Muninnode\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Muninnode\General';
+    protected static $internalModelClass = '\Reticen8\Muninnode\General';
     protected static $internalModelName = 'general';
 }

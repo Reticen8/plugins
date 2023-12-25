@@ -26,17 +26,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Stunnel\Api;
+namespace Reticen8\Stunnel\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 /**
  * {@inheritdoc}
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Stunnel\Stunnel';
+    protected static $internalServiceClass = '\Reticen8\Stunnel\Stunnel';
     protected static $internalServiceEnabled = 'general.enabled';
-    protected static $internalServiceTemplate = 'OPNsense/Stunnel';
+    protected static $internalServiceTemplate = 'Reticen8/Stunnel';
     protected static $internalServiceName = 'stunnel';
 }

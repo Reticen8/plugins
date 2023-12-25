@@ -26,15 +26,15 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Nut\Api;
+namespace Reticen8\Nut\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Nut\Nut;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Nut\Nut;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Nut\Nut';
-    protected static $internalServiceTemplate = 'OPNsense/Nut';
+    protected static $internalServiceClass = '\Reticen8\Nut\Nut';
+    protected static $internalServiceTemplate = 'Reticen8/Nut';
     protected static $internalServiceEnabled = 'general.enable';
     protected static $internalServiceName = 'nut';
 }

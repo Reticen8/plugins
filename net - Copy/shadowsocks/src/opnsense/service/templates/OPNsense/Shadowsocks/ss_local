@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.shadowsocks.local.enabled') and OPNsense.shadowsocks.local.enabled == '1' %}
+{% if helpers.exists('Reticen8.shadowsocks.local.enabled') and Reticen8.shadowsocks.local.enabled == '1' %}
 ss_local_enable="YES"
 ss_local_flags=""
 {% else %}

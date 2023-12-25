@@ -1,8 +1,8 @@
 <model>
-    <mount>//OPNsense/Tinc</mount>
+    <mount>//Reticen8/Tinc</mount>
     <version>1.0.4</version>
     <description>
-        OPNsense Tinc VPN
+        Reticen8 Tinc VPN
     </description>
     <items>
         <networks>
@@ -117,7 +117,7 @@
                 <network type="ModelRelationField">
                     <Model>
                         <hosts>
-                            <source>OPNsense.Tinc.Tinc</source>
+                            <source>Reticen8.Tinc.Tinc</source>
                             <items>networks.network</items>
                             <display>name</display>
                         </hosts>

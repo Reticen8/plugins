@@ -34,13 +34,13 @@
 @include_once('util.inc');
 
 // Import classes
-use OPNsense\AcmeClient\LeAccount;
-use OPNsense\AcmeClient\LeCertificate;
+use Reticen8\AcmeClient\LeAccount;
+use Reticen8\AcmeClient\LeCertificate;
 
 // Summary that will be displayed in usage information.
 const ABOUT = <<<TXT
 
-This script acts as a bridge between the OPNsense WebGUI/API and the
+This script acts as a bridge between the Reticen8 WebGUI/API and the
 acme.sh ACME client.
 
 TXT;
@@ -154,8 +154,8 @@ function main()
         // Work on all or only on a single certificate
         if (isset($options['all'])) {
             // Iterate over all certificates
-            $config = OPNsense\Core\Config::getInstance()->object();
-            $acme = $config->OPNsense->AcmeClient;
+            $config = Reticen8\Core\Config::getInstance()->object();
+            $acme = $config->Reticen8->AcmeClient;
 
             // Iterate over all certificates
             foreach ($acme->certificates->children() as $certCfg) {

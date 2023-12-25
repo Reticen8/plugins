@@ -1,5 +1,5 @@
 {% set networks = [] %}
-{% for network in helpers.toList('OPNsense.Tinc.networks.network') %}
+{% for network in helpers.toList('Reticen8.Tinc.networks.network') %}
 {%   if network.enabled == '1' %}
 {%     do networks.append(network) %}
 {%   endif %}

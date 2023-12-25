@@ -22,15 +22,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy\Api;
+namespace Reticen8\RadSecProxy\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\RadSecProxy\RadSecProxy';
-    protected static $internalServiceTemplate = 'OPNsense/RadSecProxy';
+    protected static $internalServiceClass = '\Reticen8\RadSecProxy\RadSecProxy';
+    protected static $internalServiceTemplate = 'Reticen8/RadSecProxy';
     protected static $internalServiceEnabled = 'general.enabled';
     protected static $internalServiceName = 'radsecproxy';
     protected function reconfigureForceRestart()

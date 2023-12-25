@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2022 Franco Fichtner <franco@opnsense.org>
+# Copyright (c) 2016-2022 Franco Fichtner <franco@reticen8.com>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -39,7 +39,7 @@ GITVERSION=	${SCRIPTSDIR}/version.sh
 _PLUGIN_ARCH!=	uname -p
 PLUGIN_ARCH?=	${_PLUGIN_ARCH}
 
-VERSIONBIN=	${LOCALBASE}/sbin/opnsense-version
+VERSIONBIN=	${LOCALBASE}/sbin/reticen8-version
 
 .if exists(${VERSIONBIN})
 _PLUGIN_ABI!=	${VERSIONBIN} -a

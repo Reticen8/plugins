@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/softether/general</mount>
+    <mount>//Reticen8/softether/general</mount>
     <description>Softether configuration</description>
     <version>0.0.1</version>
     <items>

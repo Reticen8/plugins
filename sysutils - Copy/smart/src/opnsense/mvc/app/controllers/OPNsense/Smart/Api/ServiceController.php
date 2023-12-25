@@ -27,10 +27,10 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Smart\Api;
+namespace Reticen8\Smart\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiControllerBase
 {

@@ -27,12 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ClamAV\Api;
+namespace Reticen8\ClamAV\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'general';
-    protected static $internalModelClass = '\OPNsense\ClamAV\General';
+    protected static $internalModelClass = '\Reticen8\ClamAV\General';
 }

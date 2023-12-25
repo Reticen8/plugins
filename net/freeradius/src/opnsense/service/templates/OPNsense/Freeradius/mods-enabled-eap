@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.freeradius.general.enabled') and OPNsense.freeradius.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.freeradius.general.enabled') and Reticen8.freeradius.general.enabled == '1' %}
 
 # -*- text -*-
 ##
@@ -26,8 +26,8 @@ eap {
         #  then that EAP type takes precedence over the
         #  default type configured here.
         #
-{% if helpers.exists('OPNsense.freeradius.eap.default_eap_type') and OPNsense.freeradius.eap.default_eap_type != '' %}
-        default_eap_type = {{ OPNsense.freeradius.eap.default_eap_type }}
+{% if helpers.exists('Reticen8.freeradius.eap.default_eap_type') and Reticen8.freeradius.eap.default_eap_type != '' %}
+        default_eap_type = {{ Reticen8.freeradius.eap.default_eap_type }}
 {% else %}
         default_eap_type = md5
 {% endif %}
@@ -181,8 +181,8 @@ eap {
         #  authenticate via EAP-TLS!  This is likely not what you want.
         #
         tls-config tls-common {
-{% if helpers.exists('OPNsense.freeradius.eap.enable_client_cert') and OPNsense.freeradius.eap.enable_client_cert == '1' %}
-{%   if helpers.exists('OPNsense.freeradius.eap.certificate') and OPNsense.freeradius.eap.certificate != '' %}
+{% if helpers.exists('Reticen8.freeradius.eap.enable_client_cert') and Reticen8.freeradius.eap.enable_client_cert == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.eap.certificate') and Reticen8.freeradius.eap.certificate != '' %}
                 private_key_password =
                 private_key_file = ${certdir}/cert_opn.pem
                 certificate_file = ${certdir}/cert_opn.pem
@@ -238,8 +238,8 @@ eap {
                 #  In that case, this CA file should contain
                 #  *one* CA certificate.
                 #
-{% if helpers.exists('OPNsense.freeradius.eap.enable_client_cert') and OPNsense.freeradius.eap.enable_client_cert == '1' %}
-{%   if helpers.exists('OPNsense.freeradius.eap.ca') and OPNsense.freeradius.eap.ca != '' %}
+{% if helpers.exists('Reticen8.freeradius.eap.enable_client_cert') and Reticen8.freeradius.eap.enable_client_cert == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.eap.ca') and Reticen8.freeradius.eap.ca != '' %}
                 ca_file = ${certdir}/ca_opn.pem
 {%   endif %}
 {% else %}
@@ -333,8 +333,8 @@ eap {
                 #     'c_rehash' is OpenSSL's command.
                 #  3) uncomment the lines below.
                 #  5) Restart radiusd
-{% if helpers.exists('OPNsense.freeradius.eap.enable_client_cert') and OPNsense.freeradius.eap.enable_client_cert == '1' %}
-{%   if helpers.exists('OPNsense.freeradius.eap.crl') and OPNsense.freeradius.eap.crl != '' %}
+{% if helpers.exists('Reticen8.freeradius.eap.enable_client_cert') and Reticen8.freeradius.eap.enable_client_cert == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.eap.crl') and Reticen8.freeradius.eap.crl != '' %}
                 check_crl = yes
 {%   endif %}
 {% else %}
@@ -453,7 +453,7 @@ eap {
                 #
                 #  The values must be in quotes.
                 #
-                tls_min_version = "{{ OPNsense.freeradius.eap.tls_min_version }}"
+                tls_min_version = "{{ Reticen8.freeradius.eap.tls_min_version }}"
                 tls_max_version = "1.2"
 
                 #  Elliptical cryptography configuration
@@ -471,7 +471,7 @@ eap {
                 #
                 #        openssl ecparam -list_curves
                 #
-                ecdh_curve = "{{ OPNsense.freeradius.eap.elliptic_curve }}"
+                ecdh_curve = "{{ Reticen8.freeradius.eap.elliptic_curve }}"
 
                 #  Session resumption / fast reauthentication
                 #  cache.
@@ -721,8 +721,8 @@ eap {
                 #  virtual server has access to these attributes, and can
                 #  be used to accept or reject the request.
                 #
-{% if helpers.exists('OPNsense.freeradius.eap.enable_client_cert') and OPNsense.freeradius.eap.enable_client_cert == '1' %}
-{%   if helpers.exists('OPNsense.freeradius.eap.check_tls_names') and OPNsense.freeradius.eap.check_tls_names == '1' %}
+{% if helpers.exists('Reticen8.freeradius.eap.enable_client_cert') and Reticen8.freeradius.eap.enable_client_cert == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.eap.check_tls_names') and Reticen8.freeradius.eap.check_tls_names == '1' %}
                 virtual_server = check-eap-tls
 {%   endif %}
 {% endif %}
@@ -776,7 +776,7 @@ eap {
                 #  EAP conversation, then this configuration entry is
                 #  ignored.
                 #
-                {% if helpers.exists('OPNsense.freeradius.eap.default_eap_type') and OPNsense.freeradius.eap.default_eap_type == 'ttls-gtc' %}
+                {% if helpers.exists('Reticen8.freeradius.eap.default_eap_type') and Reticen8.freeradius.eap.default_eap_type == 'ttls-gtc' %}
                 default_eap_type = gtc
                 {% else %}
                 default_eap_type = md5
@@ -821,7 +821,7 @@ eap {
                 #
                 #  allowed values: {no, yes}
                 #
-{%   if helpers.exists('OPNsense.freeradius.general.vlanassign') and OPNsense.freeradius.general.vlanassign == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.general.vlanassign') and Reticen8.freeradius.general.vlanassign == '1' %}
                 use_tunneled_reply = yes
 {%   else %}
                 use_tunneled_reply = no
@@ -933,7 +933,7 @@ eap {
                 #  sections of sites-available/default, and of
                 #  sites-available/inner-tunnel
                 #
-{%   if helpers.exists('OPNsense.freeradius.general.vlanassign') and OPNsense.freeradius.general.vlanassign == '1' %}
+{%   if helpers.exists('Reticen8.freeradius.general.vlanassign') and Reticen8.freeradius.general.vlanassign == '1' %}
                 use_tunneled_reply = yes
 {%   else %}
                 use_tunneled_reply = no

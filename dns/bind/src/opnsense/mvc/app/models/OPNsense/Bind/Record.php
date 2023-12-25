@@ -24,9 +24,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Bind;
+namespace Reticen8\Bind;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class Record extends BaseModel
 {

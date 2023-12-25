@@ -1,6 +1,6 @@
 {#
 
-OPNsense® is Copyright © 2014 – 2017 by Deciso B.V.
+Reticen8® is Copyright © 2014 – 2017 by Deciso B.V.
 Copyright (C) 2018 Michael Muenz <m.muenz@gmail.com>
 Copyright (C) 2019 Felix Matouschek <felix@matouschek.org>
 All rights reserved.
@@ -45,7 +45,7 @@ POSSIBILITY OF SUCH DAMAGE.
             }
         );
 
-    {% include 'OPNsense/Postfix/apply.volt' %}
+    {% include 'Reticen8/Postfix/apply.volt' %}
 
     });
 

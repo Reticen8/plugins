@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/radsecproxy</mount>
+    <mount>//Reticen8/radsecproxy</mount>
     <description>
         RadSecProxy-Management
     </description>
@@ -156,7 +156,7 @@
                     <Required>N</Required>
                     <Model>
                         <tlsConfigs>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>tlsConfigs.tlsConfig</items>
                             <display>name</display>
                         </tlsConfigs>
@@ -180,7 +180,7 @@
                     <Required>N</Required>
                     <Model>
                         <rewrites>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>rewrites.rewrite</items>
                             <display>name</display>
                         </rewrites>
@@ -191,7 +191,7 @@
                     <Required>N</Required>
                     <Model>
                         <rewrites>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>rewrites.rewrite</items>
                             <display>name</display>
                         </rewrites>
@@ -273,7 +273,7 @@
                     <Required>N</Required>
                     <Model>
                         <tlsConfigs>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>tlsConfigs.tlsConfig</items>
                             <display>name</display>
                         </tlsConfigs>
@@ -297,7 +297,7 @@
                     <Required>N</Required>
                     <Model>
                         <rewrites>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>rewrites.rewrite</items>
                             <display>name</display>
                         </rewrites>
@@ -308,7 +308,7 @@
                     <Required>N</Required>
                     <Model>
                         <rewrites>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>rewrites.rewrite</items>
                             <display>name</display>
                         </rewrites>
@@ -400,7 +400,7 @@
                     <Sorted>Y</Sorted>
                     <Model>
                         <servers>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>servers.server</items>
                             <display>identifier</display>
                         </servers>
@@ -414,7 +414,7 @@
                     <Sorted>Y</Sorted>
                     <Model>
                         <servers>
-                            <source>OPNsense.RadSecProxy.RadSecProxy</source>
+                            <source>Reticen8.RadSecProxy.RadSecProxy</source>
                             <items>servers.server</items>
                             <display>identifier</display>
                         </servers>

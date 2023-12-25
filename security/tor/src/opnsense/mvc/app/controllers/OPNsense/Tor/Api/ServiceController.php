@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tor\Api;
+namespace Reticen8\Tor\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Tor\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Tor\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Tor
+ * @package Reticen8\Tor
  */
 class ServiceController extends ApiControllerBase
 {
@@ -144,7 +144,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Tor');
+            $backend->configdRun('template reload Reticen8/Tor');
 
             // (re)start daemon
             if ($general->enabled->__toString() == '1') {

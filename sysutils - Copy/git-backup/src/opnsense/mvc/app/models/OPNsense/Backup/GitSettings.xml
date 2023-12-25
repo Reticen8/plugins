@@ -1,7 +1,7 @@
 <model>
     <mount>//system/backup/git</mount>
     <version>1.0.0</version>
-    <description>OPNsense Git Backup Settings</description>
+    <description>Reticen8 Git Backup Settings</description>
     <items>
         <enabled type="BooleanField">
           <Default>0</Default>

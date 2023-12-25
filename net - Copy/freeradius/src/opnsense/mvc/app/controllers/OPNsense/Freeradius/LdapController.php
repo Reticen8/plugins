@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class LdapController extends \OPNsense\Base\IndexController
+class LdapController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->ldapForm = $this->getForm("ldap");
-        $this->view->pick('OPNsense/Freeradius/ldap');
+        $this->view->pick('Reticen8/Freeradius/ldap');
     }
 }

@@ -1,6 +1,6 @@
 <networks>
-{% if helpers.exists('OPNsense.Tinc.networks.network') %}
-{%   for network in helpers.toList('OPNsense.Tinc.networks.network', 'id') %}
+{% if helpers.exists('Reticen8.Tinc.networks.network') %}
+{%   for network in helpers.toList('Reticen8.Tinc.networks.network', 'id') %}
 {%     if network.enabled|default('0') == '1' %}
     <network>
         <id>{{network.id}}</id>
@@ -26,7 +26,7 @@
                 <cipher>{{network.cipher}}</cipher>
                 <connectto>0</connectto>
             </host>
-{%       for host in helpers.toList('OPNsense.Tinc.hosts.host', 'hostname') %}
+{%       for host in helpers.toList('Reticen8.Tinc.hosts.host', 'hostname') %}
 {%          if helpers.getUUID(host.network).id == network.id %}
             <host>
                 <hostname>{{host.hostname}}</hostname>

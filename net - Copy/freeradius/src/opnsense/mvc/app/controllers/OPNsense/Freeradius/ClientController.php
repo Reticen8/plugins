@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class ClientController extends \OPNsense\Base\IndexController
+class ClientController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditFreeRADIUSClient = $this->getForm("dialogEditFreeRADIUSClient");
-        $this->view->pick('OPNsense/Freeradius/client');
+        $this->view->pick('Reticen8/Freeradius/client');
     }
 }

@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Bind;
+namespace Reticen8\Bind;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -38,6 +38,6 @@ class GeneralController extends \OPNsense\Base\IndexController
         $this->view->formDialogEditBindPrimaryDomain = $this->getForm("dialogEditBindPrimaryDomain");
         $this->view->formDialogEditBindSecondaryDomain = $this->getForm("dialogEditBindSecondaryDomain");
         $this->view->formDialogEditBindRecord = $this->getForm("dialogEditBindRecord");
-        $this->view->pick('OPNsense/Bind/general');
+        $this->view->pick('Reticen8/Bind/general');
     }
 }

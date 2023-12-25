@@ -30,18 +30,18 @@
  *
  */
 
-namespace OPNsense\Apcupsd;
+namespace Reticen8\Apcupsd;
 
 /**
  * Class StatusController
- * @package OPNsense\Apcupsd
+ * @package Reticen8\Apcupsd
  */
 
-class StatusController extends \OPNsense\Base\IndexController
+class StatusController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         // pick the template to serve to our use
-        $this->view->pick('OPNsense/Apcupsd/status');
+        $this->view->pick('Reticen8/Apcupsd/status');
     }
 }

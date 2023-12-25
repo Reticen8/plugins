@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/dnscryptproxy/forward</mount>
+    <mount>//Reticen8/dnscryptproxy/forward</mount>
     <description>dnscrypt-proxy Forwarder configuration</description>
     <version>0.1.0</version>
     <items>

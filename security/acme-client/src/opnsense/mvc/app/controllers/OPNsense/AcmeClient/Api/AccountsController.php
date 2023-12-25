@@ -29,22 +29,22 @@
  *
  */
 
-namespace OPNsense\AcmeClient\Api;
+namespace Reticen8\AcmeClient\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\AcmeClient\AcmeClient;
 
 /**
  * Class AccountsController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class AccountsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'acmeclient';
-    protected static $internalModelClass = '\OPNsense\AcmeClient\AcmeClient';
+    protected static $internalModelClass = '\Reticen8\AcmeClient\AcmeClient';
 
     public function getAction($uuid = null)
     {

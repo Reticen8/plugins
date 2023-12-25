@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 /**
  * Interface for ACME validation methods
- * @package OPNsense\Backup
+ * @package Reticen8\Backup
  */
 interface LeValidationInterface
 {

@@ -27,12 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class LdapController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'ldap';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Ldap';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Ldap';
 }

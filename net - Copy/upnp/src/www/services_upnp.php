@@ -206,7 +206,7 @@ include("head.inc");
           <section class="col-xs-12">
             <div class="content-box">
               <div class="table-responsive">
-                <table class="table table-striped opnsense_standard_table_form">
+                <table class="table table-striped reticen8_standard_table_form">
                   <thead>
                     <tr>
                       <td style="width:22%">
@@ -372,7 +372,7 @@ include("head.inc");
           <section class="col-xs-12">
             <div class="content-box">
               <div class="table-responsive">
-                <table class="table table-striped opnsense_standard_table_form">
+                <table class="table table-striped reticen8_standard_table_form">
                   <thead>
                     <tr>
                       <th colspan="2"><?=gettext("User specified permissions");?></th>

@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail\Api;
+namespace Reticen8\Maltrail\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServerserviceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Maltrail\Server';
-    protected static $internalServiceTemplate = 'OPNsense/Maltrail';
+    protected static $internalServiceClass = '\Reticen8\Maltrail\Server';
+    protected static $internalServiceTemplate = 'Reticen8/Maltrail';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'maltrailserver';
 }

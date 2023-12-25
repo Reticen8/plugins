@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Wireguard\Api;
+namespace Reticen8\Wireguard\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class ClientController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'client';
-    protected static $internalModelClass = '\OPNsense\Wireguard\Client';
+    protected static $internalModelClass = '\Reticen8\Wireguard\Client';
 
     public function searchClientAction()
     {

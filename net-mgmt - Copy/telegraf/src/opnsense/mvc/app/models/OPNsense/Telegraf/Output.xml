@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/telegraf/output</mount>
+    <mount>//Reticen8/telegraf/output</mount>
     <description>Telegraf outputs configuration</description>
     <version>1.4.5</version>
     <items>

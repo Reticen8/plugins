@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/redis</mount>
+  <mount>//Reticen8/redis</mount>
   <description>Redis DB</description>
   <items>
     <general>

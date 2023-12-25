@@ -28,16 +28,16 @@
  *
  */
 
-namespace OPNsense\HelloWorld\Api;
+namespace Reticen8\HelloWorld\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 /**
  * a simplified settings controller for our HelloWorld app, uses our ApiMutableModelControllerBase type
- * @package OPNsense\Helloworld
+ * @package Reticen8\Helloworld
  */
 class SimplifiedSettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'helloworld';
-    protected static $internalModelClass = 'OPNsense\HelloWorld\HelloWorld';
+    protected static $internalModelClass = 'Reticen8\HelloWorld\HelloWorld';
 }

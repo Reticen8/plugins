@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Sslh;
+namespace Reticen8\Sslh;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class Settings is a BaseModel class used when retriving model data
@@ -36,7 +36,7 @@ use OPNsense\Base\BaseModel;
  *
  * Functionality of this class is inherited entirely from BaseModel.
  *
- * @package OPNsense\Sslh
+ * @package Reticen8\Sslh
  */
 class Settings extends BaseModel
 {

@@ -1,5 +1,5 @@
-{% if helpers.exists('OPNsense.nrpe.general.enabled') and OPNsense.nrpe.general.enabled == '1' %}
-nrpe3_setup="/usr/local/opnsense/scripts/OPNsense/Nrpe/setup.sh"
+{% if helpers.exists('Reticen8.nrpe.general.enabled') and Reticen8.nrpe.general.enabled == '1' %}
+nrpe3_setup="/usr/local/reticen8/scripts/Reticen8/Nrpe/setup.sh"
 nrpe3_enable="YES"
 {% else %}
 nrpe3_enable="NO"

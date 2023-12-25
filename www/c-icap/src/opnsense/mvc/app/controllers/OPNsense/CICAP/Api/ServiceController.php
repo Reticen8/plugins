@@ -26,20 +26,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\CICAP\Api;
+namespace Reticen8\CICAP\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\CICAP\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\CICAP\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\CICAP
+ * @package Reticen8\CICAP
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\CICAP\General';
-    protected static $internalServiceTemplate = 'OPNsense/CICAP';
+    protected static $internalServiceClass = '\Reticen8\CICAP\General';
+    protected static $internalServiceTemplate = 'Reticen8/CICAP';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'cicap';
 

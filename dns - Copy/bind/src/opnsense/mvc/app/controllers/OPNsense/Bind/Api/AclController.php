@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Bind\Api;
+namespace Reticen8\Bind\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class AclController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'acl';
-    protected static $internalModelClass = '\OPNsense\Bind\Acl';
+    protected static $internalModelClass = '\Reticen8\Bind\Acl';
 
     public function searchAclAction()
     {

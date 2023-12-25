@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/tor/general</mount>
+  <mount>//Reticen8/tor/general</mount>
   <description>General Tor configuration</description>
   <version>1.0.0</version>
   <items>

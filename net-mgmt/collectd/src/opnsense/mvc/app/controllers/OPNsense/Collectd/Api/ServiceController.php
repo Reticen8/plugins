@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Collectd\Api;
+namespace Reticen8\Collectd\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Collectd\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Collectd\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Collectd
+ * @package Reticen8\Collectd
  */
 class ServiceController extends ApiControllerBase
 {
@@ -136,7 +136,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Collectd');
+            $backend->configdRun('template reload Reticen8/Collectd');
 
             // (res)start daemon
             if ($mdlGeneral->enabled->__toString() == 1) {

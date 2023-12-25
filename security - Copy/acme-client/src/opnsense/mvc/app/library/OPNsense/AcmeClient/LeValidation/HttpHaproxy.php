@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\Core\Config;
 
 /**
- * OPNsense HAProxy plugin integration
- * @package OPNsense\AcmeClient
+ * Reticen8 HAProxy plugin integration
+ * @package Reticen8\AcmeClient
  */
 class HttpHaproxy extends Base implements LeValidationInterface
 {

@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Softether\Api;
+namespace Reticen8\Softether\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Softether\General';
+    protected static $internalModelClass = '\Reticen8\Softether\General';
     protected static $internalModelName = 'general';
 }

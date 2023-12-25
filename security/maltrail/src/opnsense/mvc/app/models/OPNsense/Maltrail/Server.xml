@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/maltrail/server</mount>
+    <mount>//Reticen8/maltrail/server</mount>
     <description>Maltrail server configuration</description>
     <version>0.0.2</version>
     <items>

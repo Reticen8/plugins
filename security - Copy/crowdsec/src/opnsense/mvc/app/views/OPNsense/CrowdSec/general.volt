@@ -53,14 +53,14 @@
         <p>This plugin installs a CrowdSec agent/<a href="https://doc.crowdsec.net/docs/next/local_api/intro">LAPI</a>
         node, and a <a href="https://docs.crowdsec.net/docs/bouncers/firewall/">Firewall Bouncer</a>.</p>
 
-        <p>Out of the box, by enabling them in the "Settings" tab, they can protect the OPNsense server
+        <p>Out of the box, by enabling them in the "Settings" tab, they can protect the Reticen8 server
         by receiving thousands of IP addresses of active attackers, which are immediately banned at the
-        firewall level. In addition, the logs of the ssh service and OPNsense administration interface are
+        firewall level. In addition, the logs of the ssh service and Reticen8 administration interface are
         analyzed for possible brute-force attacks; any such scenario triggers a ban and is reported to the
         CrowdSec Central API
         (meaning <a href="https://docs.crowdsec.net/docs/concepts/">timestamp, scenario, attacking IP</a>).</p>
 
-        <p>Other attack behaviors can be recognized on the OPNsense server and its plugins, or
+        <p>Other attack behaviors can be recognized on the Reticen8 server and its plugins, or
         <a href="https://doc.crowdsec.net/docs/next/user_guides/multiserver_setup">any other agent</a>
         connected to the same LAPI node. Other types of remediation are possible (ex. captcha test for scraping attempts).</p>
 
@@ -71,24 +71,24 @@
         the possibilities.</p>
 
         <p>For the latest plugin documentation, including how to use it with an external LAPI, see <a
-        href="https://docs.crowdsec.net/docs/next/getting_started/install_crowdsec_opnsense">Install
-        CrowdSec (OPNsense)</a></p>
+        href="https://docs.crowdsec.net/docs/next/getting_started/install_crowdsec_reticen8">Install
+        CrowdSec (Reticen8)</a></p>
 
         <p>A few remarks:</p>
 
         <ul>
             <li>
-                New acquisition files go under <code>/usr/local/etc/crowdsec/acquis.d</code>. See opnsense.yaml for details.
+                New acquisition files go under <code>/usr/local/etc/crowdsec/acquis.d</code>. See reticen8.yaml for details.
                 The option <code>poll_without_inotify: true</code> is required if the acquitision targets are symlinks (which
-                is the case for most opnsense logs).
+                is the case for most reticen8 logs).
             </li>
             <li>
-                If your OPNsense is &lt;22.1, you must check "Disable circular logs" in the Settings menu for the
+                If your Reticen8 is &lt;22.1, you must check "Disable circular logs" in the Settings menu for the
                 ssh and web-auth parsers to work. If you upgrade to 22.1, it will be done automatically.
-                See <a href="https://github.com/crowdsecurity/opnsense-plugin-crowdsec/blob/main/src/etc/crowdsec/acquis.d/opnsense.yaml">acquis.d/opnsense.yaml</a>
+                See <a href="https://github.com/crowdsecurity/reticen8-plugin-crowdsec/blob/main/src/etc/crowdsec/acquis.d/reticen8.yaml">acquis.d/reticen8.yaml</a>
             </li>
             <li>
-                At the moment, the CrowdSec package for OPNsense is fully functional on the
+                At the moment, the CrowdSec package for Reticen8 is fully functional on the
                 command line but its web interface is limited; you can only list the installed objects and revoke
                 <a href="https://docs.crowdsec.net/docs/user_guides/decisions_mgmt/">decisions</a>. For anything else
                 you need the shell.
@@ -100,7 +100,7 @@
             <li>
                 The parsers, scenarios and all plugins from the Hub are periodically upgraded. The
                 <a href="https://hub.crowdsec.net/author/crowdsecurity/collections/freebsd">crowdsecurity/freebsd</a> and
-                <a href="https://hub.crowdsec.net/author/crowdsecurity/collections/opnsense">crowdsecurity/opnsense</a>
+                <a href="https://hub.crowdsec.net/author/crowdsecurity/collections/reticen8">crowdsecurity/reticen8</a>
                 collections are installed by default.
             </li>
         </ul>
@@ -150,7 +150,7 @@
             connect, should anything go wrong.
 	</p>
 
-	<pre><code>[root@OPNsense ~]# cscli decisions add -t ban -d 2m -i &lt;your_ip_address&gt;</code></pre>
+	<pre><code>[root@Reticen8 ~]# cscli decisions add -t ban -d 2m -i &lt;your_ip_address&gt;</code></pre>
 
 	<p>
 	    This is a more secure way to test than attempting to brute-force

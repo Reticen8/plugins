@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Chrony;
+namespace Reticen8\Chrony;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm('general');
-        $this->view->pick('OPNsense/Chrony/general');
+        $this->view->pick('Reticen8/Chrony/general');
     }
 }

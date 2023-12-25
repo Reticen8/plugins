@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Freeradius\Proxy;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Freeradius\Proxy;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class ProxyController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'Proxy';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Proxy';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Proxy';
 
     public function getAction()
     {

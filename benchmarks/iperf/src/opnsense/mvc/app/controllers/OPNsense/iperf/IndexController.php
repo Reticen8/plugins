@@ -30,17 +30,17 @@
 */
 
 
-namespace OPNsense\iperf;
+namespace Reticen8\iperf;
 
 /**
 * Class IndexController
-* @package OPNsense/Iperf
+* @package Reticen8/Iperf
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->instance_settings = $this->getForm("instance_settings");
-        $this->view->pick('OPNsense/iperf/index');
+        $this->view->pick('Reticen8/iperf/index');
     }
 }

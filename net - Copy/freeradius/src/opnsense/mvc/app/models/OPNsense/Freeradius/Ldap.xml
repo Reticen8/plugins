@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/ldap</mount>
+    <mount>//Reticen8/freeradius/ldap</mount>
     <description>LDAP configuration</description>
     <version>1.0.1</version>
     <items>

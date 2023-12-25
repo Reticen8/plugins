@@ -25,13 +25,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix;
+namespace Reticen8\Postfix;
 
-class SenderController extends \OPNsense\Base\IndexController
+class SenderController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditPostfixSender = $this->getForm("dialogEditPostfixSender");
-        $this->view->pick('OPNsense/Postfix/sender');
+        $this->view->pick('Reticen8/Postfix/sender');
     }
 }

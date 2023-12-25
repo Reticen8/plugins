@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Telegraf;
+namespace Reticen8\Telegraf;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

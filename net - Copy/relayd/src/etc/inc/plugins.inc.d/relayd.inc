@@ -2,7 +2,7 @@
 
 /*
  * Copyright (C) 2018 EURO-LOG AG
- * Copyright (C) 2016 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2016 Franco Fichtner <franco@reticen8.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -31,8 +31,8 @@ function relayd_enabled()
 {
     global $config;
 
-    return isset($config['OPNsense']['relayd']['general']['enabled']) &&
-        $config['OPNsense']['relayd']['general']['enabled'] == 1;
+    return isset($config['Reticen8']['relayd']['general']['enabled']) &&
+        $config['Reticen8']['relayd']['general']['enabled'] == 1;
 }
 
 function relayd_firewall($fw)
@@ -72,7 +72,7 @@ function relayd_xmlrpc_sync()
 
     $result[] = array(
         'description' => gettext('Relayd Load Balancer'),
-        'section' => 'OPNsense.relayd',
+        'section' => 'Reticen8.relayd',
         'services' => ['relayd'],
         /* kept for backwards compat: */
         'id' => 'lb',

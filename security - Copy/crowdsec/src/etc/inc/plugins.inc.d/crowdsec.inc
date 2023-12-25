@@ -3,9 +3,9 @@
 // SPDX-License-Identifier: MIT
 // SPDX-FileCopyrightText: © 2021 CrowdSec <info@crowdsec.net>
 
-use OPNsense\Core\Config;
-use OPNsense\Firewall\Alias;
-use OPNsense\Firewall\Plugin;
+use Reticen8\Core\Config;
+use Reticen8\Firewall\Alias;
+use Reticen8\Firewall\Plugin;
 
 function add_alias_if_not_exist($name, $description, $proto)
 {
@@ -28,7 +28,7 @@ function crowdsec_firewall(Plugin $fw)
 {
     global $config;
 
-    $general = $config['OPNsense']['crowdsec']['general'];
+    $general = $config['Reticen8']['crowdsec']['general'];
 
     $bouncer_enabled = isset($general['firewall_bouncer_enabled']) && $general['firewall_bouncer_enabled'];
 
@@ -45,7 +45,7 @@ function crowdsec_firewall(Plugin $fw)
 
     add_alias_if_not_exist('crowdsec_blacklists', 'CrowdSec (IPv4)', 'IPv4');
 
-    // https://github.com/opnsense/core/blob/master/src/opnsense/mvc/app/library/OPNsense/Firewall/FilterRule.php
+    // https://github.com/reticen8/core/blob/master/src/reticen8/mvc/app/library/Reticen8/Firewall/FilterRule.php
 
     $fw->registerFilterRule(
         1, /* priority */

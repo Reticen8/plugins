@@ -27,11 +27,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Collectd\Api;
+namespace Reticen8\Collectd\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Collectd\General;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Collectd\General;
+use Reticen8\Core\Config;
 
 class GeneralController extends ApiControllerBase
 {

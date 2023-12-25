@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\AcmeClient\Migrations;
+namespace Reticen8\AcmeClient\Migrations;
 
-use OPNsense\Base\BaseModelMigration;
+use Reticen8\Base\BaseModelMigration;
 
 class M2_0_0 extends BaseModelMigration
 {

@@ -22,9 +22,9 @@
     ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     POSSIBILITY OF SUCH DAMAGE.
 */
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class OSPF6 extends BaseModel
 {

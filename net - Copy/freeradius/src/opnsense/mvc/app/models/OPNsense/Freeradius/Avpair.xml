@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/avpair</mount>
+    <mount>//Reticen8/freeradius/avpair</mount>
     <description>FreeRADIUS AVPair configuration</description>
     <version>1.0.0</version>
     <items>

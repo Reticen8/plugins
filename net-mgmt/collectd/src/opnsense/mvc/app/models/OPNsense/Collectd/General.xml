@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/collectd/general</mount>
+    <mount>//Reticen8/collectd/general</mount>
     <description>Collectd configuration</description>
     <version>1.0.3</version>
     <items>

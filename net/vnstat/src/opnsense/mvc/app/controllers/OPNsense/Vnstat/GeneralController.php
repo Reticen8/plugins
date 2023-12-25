@@ -26,13 +26,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Vnstat;
+namespace Reticen8\Vnstat;
 
-class GeneralController extends \OPNsense\Base\IndexController
+class GeneralController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->generalForm = $this->getForm("general");
-        $this->view->pick('OPNsense/Vnstat/general');
+        $this->view->pick('Reticen8/Vnstat/general');
     }
 }

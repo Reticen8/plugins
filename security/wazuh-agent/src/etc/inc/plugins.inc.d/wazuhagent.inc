@@ -30,7 +30,7 @@
 function wazuhagent_services()
 {
     $services = [];
-    if ((new \OPNsense\WazuhAgent\WazuhAgent())->general->enabled == '1') {
+    if ((new \Reticen8\WazuhAgent\WazuhAgent())->general->enabled == '1') {
         $service = [
             'description' => gettext('Wazuh Agent'),
             'configd' => [
@@ -50,7 +50,7 @@ function wazuhagent_firewall($fw)
 {
     global $config;
     $defaults = ['block' => ['type' => 'block', 'log' => !isset($config['syslog']['nologdefaultblock'])]];
-    if ((new \OPNsense\WazuhAgent\WazuhAgent())->general->enabled == '1') {
+    if ((new \Reticen8\WazuhAgent\WazuhAgent())->general->enabled == '1') {
         //$fw->registerFilterRule();
         $fw->registerFilterRule(
             1,

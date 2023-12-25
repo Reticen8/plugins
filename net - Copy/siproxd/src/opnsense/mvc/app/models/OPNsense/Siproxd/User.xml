@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/siproxd/user</mount>
+    <mount>//Reticen8/siproxd/user</mount>
     <description>Siproxd user configuration</description>
     <version>1.0.0</version>
     <items>

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PROVIDE: opnsense-tincd
+# PROVIDE: reticen8-tincd
 # REQUIRE: SERVERS
 # KEYWORD: shutdown
 
@@ -12,7 +12,7 @@ stop_cmd=ostincd_stop
 start_cmd=ostincd_start
 rcvar=ostincd_enable
 
-load_rc_config opnsense-tincd
+load_rc_config reticen8-tincd
 
 [ -z "$ostincd_enable" ] && ostincd_enable="NO"
 
@@ -20,14 +20,14 @@ load_rc_config opnsense-tincd
 ostincd_stop()
 {
 	echo "stopping tincd"
-	/usr/local/opnsense/scripts/OPNsense/Tinc/tincd.py stop
+	/usr/local/reticen8/scripts/Reticen8/Tinc/tincd.py stop
 }
 
 # start tincd
 ostincd_start()
 {
 	echo "starting tincd"
-	/usr/local/opnsense/scripts/OPNsense/Tinc/tincd.py start
+	/usr/local/reticen8/scripts/Reticen8/Tinc/tincd.py start
 }
 
 run_rc_command $1

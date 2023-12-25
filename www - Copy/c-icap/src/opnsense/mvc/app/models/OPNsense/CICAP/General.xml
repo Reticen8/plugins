@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/cicap/general</mount>
+    <mount>//Reticen8/cicap/general</mount>
     <description>c-icap configuration</description>
     <version>1.0.1</version>
     <items>

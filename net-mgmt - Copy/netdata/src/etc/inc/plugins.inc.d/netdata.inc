@@ -32,7 +32,7 @@ function netdata_services()
 
     $services = array();
 
-    if (isset($config['OPNsense']['netdata']['general']['enabled']) && $config['OPNsense']['netdata']['general']['enabled'] == 1) {
+    if (isset($config['Reticen8']['netdata']['general']['enabled']) && $config['Reticen8']['netdata']['general']['enabled'] == 1) {
         $services[] = array(
             'description' => gettext('netdata daemon'),
             'configd' => array(

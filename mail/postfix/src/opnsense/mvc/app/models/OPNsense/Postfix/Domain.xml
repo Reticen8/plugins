@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/postfix/domain</mount>
+    <mount>//Reticen8/postfix/domain</mount>
     <description>Postfix domain configuration</description>
     <version>1.0.1</version>
     <items>

@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/freeradius/dhcp</mount>
+    <mount>//Reticen8/freeradius/dhcp</mount>
     <description>FreeRADIUS DHCP configuration</description>
     <version>1.0.0</version>
     <items>

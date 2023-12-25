@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Softether\Api;
+namespace Reticen8\Softether\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Softether\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Softether\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Softether
+ * @package Reticen8\Softether
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Softether\General';
-    protected static $internalServiceTemplate = 'OPNsense/Softether';
+    protected static $internalServiceClass = '\Reticen8\Softether\General';
+    protected static $internalServiceTemplate = 'Reticen8/Softether';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'softether';
 }

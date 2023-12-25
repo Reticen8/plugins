@@ -26,14 +26,14 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Wol;
+namespace Reticen8\Wol;
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->wakeForm = $this->getForm("wake");
         $this->view->hostForm = $this->getForm("host");
-        $this->view->pick('OPNsense/Wol/index');
+        $this->view->pick('Reticen8/Wol/index');
     }
 }

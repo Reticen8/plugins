@@ -1,5 +1,5 @@
 <model>
-   <mount>//OPNsense/udpbroadcastrelays</mount>
+   <mount>//Reticen8/udpbroadcastrelays</mount>
    <version>1.0.0</version>
    <description>UDP Broadcast Relay settings</description>
    <items>

@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\Tinc;
+namespace Reticen8\Tinc;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class Tinc
- * @package OPNsense\Tinc
+ * @package Reticen8\Tinc
  */
 class Tinc extends BaseModel
 {

@@ -29,22 +29,22 @@
  *
  */
 
-namespace OPNsense\HAProxy\Api;
+namespace Reticen8\HAProxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Cron\Cron;
-use OPNsense\HAProxy\HAProxy;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Cron\Cron;
+use Reticen8\HAProxy\HAProxy;
 
 /**
  * Class MaintenanceController
- * @package OPNsense\HAProxy
+ * @package Reticen8\HAProxy
  */
 class MaintenanceController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'haproxy';
-    protected static $internalModelClass = '\OPNsense\HAProxy\HAProxy';
+    protected static $internalModelClass = '\Reticen8\HAProxy\HAProxy';
 
     /**
      * jQuery bootstrap certificates diff list
@@ -53,7 +53,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function searchCertificateDiffAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->getData(
             ["cert_diff_list"],
@@ -68,7 +68,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function searchServerAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->getData(
             ["server_status_list"],
@@ -83,7 +83,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function certSyncAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->syncCerts(
             ["cert_sync"],
@@ -98,7 +98,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function certSyncBulkAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->syncCerts(
             ["cert_sync_bulk"]
@@ -112,7 +112,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function certDiffAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->getData(
             ["cert_diff"],
@@ -127,7 +127,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
     public function certActionsAction()
     {
         $backend = new Backend();
-        $backend->configdRun('template reload OPNsense/HAProxy');
+        $backend->configdRun('template reload Reticen8/HAProxy');
 
         return $this->getData(
             ["cert_actions"],
@@ -323,7 +323,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
                             $mdlHaproxy->serializeToConfig($validateFullModel = false, $disable_validation = true);
                             Config::getInstance()->save();
                             // Refresh the crontab
-                            $backend->configdRun('template reload OPNsense/Cron');
+                            $backend->configdRun('template reload Reticen8/Cron');
                             // (res)start daemon
                             $backend->configdRun("cron restart");
                             $this->getLogger()->error("HAProxy: successfully created cron job $cron ($cron_uuid)");
@@ -349,7 +349,7 @@ class MaintenanceController extends ApiMutableModelControllerBase
                             $mdlHaproxy->serializeToConfig($validateFullModel = false, $disable_validation = true);
                             Config::getInstance()->save();
                             // Regenerate the crontab
-                            $backend->configdRun('template reload OPNsense/Cron');
+                            $backend->configdRun('template reload Reticen8/Cron');
                             // (res)start daemon
                             $backend->configdRun("cron restart");
                             $this->getLogger()->error("HAProxy: successfully deleted cron job $cron ($cron_uuid)");

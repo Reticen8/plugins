@@ -1,9 +1,9 @@
 <?php
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-use OPNsense\Base\BaseModel;
-use OPNsense\Core\Backend;
+use Reticen8\Base\BaseModel;
+use Reticen8\Core\Backend;
 
 class Proxy extends BaseModel
 {

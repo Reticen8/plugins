@@ -36,7 +36,7 @@
       local_api_credentials.yaml, crowdsec-firewall-bouncer.yaml. The next
       two configuration options (lapi_listen_address, lapi_listen_port) will
       be ignored. Allows unsupported configurations like linking together
-      multiple opnsense instances or connecting to an existing crowdsec
+      multiple reticen8 instances or connecting to an existing crowdsec
       multi-server setup.</help>
   </field>
 

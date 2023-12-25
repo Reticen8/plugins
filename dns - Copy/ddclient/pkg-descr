@@ -25,7 +25,7 @@ Plugin Changelog
 
 * Add AWS Route53 and DuckDNS to native backend (contributed by Greg Glockner)
 * Fix JSON output with disabled trailing accounts/escaping and empty stats in AccountField
-* Rename Python-based "OPNsense" backend to "native" to prevent ambiguity
+* Rename Python-based "Reticen8" backend to "native" to prevent ambiguity
 * Do not update on native backend when IP detection failed and emit a warning instead
 * Add desec to native backend (contributed by Clemens Hardewig)
 * Fix ClouDNS missing dynurl= parameter

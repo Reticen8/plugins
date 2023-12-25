@@ -32,7 +32,7 @@
   */
 function pfplugin_firewall($fw)
 {
-    $mdlFilter = new OPNsense\Firewall\Filter();
+    $mdlFilter = new Reticen8\Firewall\Filter();
     foreach ($mdlFilter->rules->rule->sortedBy(["sequence"]) as $key => $rule) {
          $content = $rule->serialize();
          $content["#ref"] = "ui/firewall/filter#" . (string)$rule->getAttributes()['uuid'];

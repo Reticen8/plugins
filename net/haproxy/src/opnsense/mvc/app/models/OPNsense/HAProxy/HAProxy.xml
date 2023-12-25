@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/HAProxy</mount>
+    <mount>//Reticen8/HAProxy</mount>
     <version>4.0.0</version>
     <description>the HAProxy load balancer</description>
     <items>
@@ -350,7 +350,7 @@
                 <allowedUsers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>users.user</items>
                             <display>name</display>
                         </template>
@@ -362,7 +362,7 @@
                 <allowedGroups type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>groups.group</items>
                             <display>name</display>
                         </template>
@@ -471,7 +471,7 @@
                 <defaultBackend type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -601,7 +601,7 @@
                 <basicAuthUsers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>users.user</items>
                             <display>name</display>
                         </template>
@@ -613,7 +613,7 @@
                 <basicAuthGroups type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>groups.group</items>
                             <display>name</display>
                         </template>
@@ -646,7 +646,7 @@
                 <linkedCpuAffinityRules type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>cpus.cpu</items>
                             <display>name</display>
                         </template>
@@ -824,7 +824,7 @@
                 <linkedActions type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>actions.action</items>
                             <display>name</display>
                         </template>
@@ -837,7 +837,7 @@
                 <linkedErrorfiles type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>errorfiles.errorfile</items>
                             <display>name</display>
                         </template>
@@ -904,7 +904,7 @@
                 <linkedServers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>servers.server</items>
                             <display>name</display>
                         </template>
@@ -916,7 +916,7 @@
                 <linkedFcgi type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>fcgis.fcgi</items>
                             <display>name</display>
                         </template>
@@ -928,7 +928,7 @@
                 <linkedResolver type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>resolvers.resolver</items>
                             <display>name</display>
                         </template>
@@ -968,7 +968,7 @@
                 <healthCheck type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>healthchecks.healthcheck</items>
                             <display>name</display>
                         </template>
@@ -1006,7 +1006,7 @@
                 <linkedMailer type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>mailers.mailer</items>
                             <display>name</display>
                         </template>
@@ -1157,7 +1157,7 @@
                 <basicAuthUsers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>users.user</items>
                             <display>name</display>
                         </template>
@@ -1169,7 +1169,7 @@
                 <basicAuthGroups type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>groups.group</items>
                             <display>name</display>
                         </template>
@@ -1226,7 +1226,7 @@
                 <linkedActions type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>actions.action</items>
                             <display>name</display>
                         </template>
@@ -1239,7 +1239,7 @@
                 <linkedErrorfiles type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>errorfiles.errorfile</items>
                             <display>name</display>
                         </template>
@@ -1328,7 +1328,7 @@
                 <linkedResolver type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>resolvers.resolver</items>
                             <display>name</display>
                         </template>
@@ -1418,7 +1418,7 @@
                 <unix_socket type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>frontends.frontend</items>
                             <display>name</display>
                             <filters>
@@ -2035,7 +2035,7 @@
                 <nbsrv_backend type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -2081,7 +2081,7 @@
                 <queryBackend type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -2093,7 +2093,7 @@
                 <allowedUsers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>users.user</items>
                             <display>name</display>
                         </template>
@@ -2105,7 +2105,7 @@
                 <allowedGroups type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>groups.group</items>
                             <display>name</display>
                         </template>
@@ -2139,7 +2139,7 @@
                 <linkedAcls type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>acls.acl</items>
                             <display>name</display>
                         </template>
@@ -2207,7 +2207,7 @@
                 <use_backend type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -2219,7 +2219,7 @@
                 <use_server type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>servers.server</items>
                             <display>name</display>
                         </template>
@@ -2415,7 +2415,7 @@
                 <useBackend type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -2427,7 +2427,7 @@
                 <useServer type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>servers.server</items>
                             <display>name</display>
                         </template>
@@ -2448,7 +2448,7 @@
                 <map_use_backend_file type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>mapfiles.mapfile</items>
                             <display>name</display>
                         </template>
@@ -2460,7 +2460,7 @@
                 <map_use_backend_default type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>backends.backend</items>
                             <display>name</display>
                         </template>
@@ -2566,7 +2566,7 @@
                 <linkedActions type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>actions.action</items>
                             <display>name</display>
                             <filters>
@@ -2659,7 +2659,7 @@
                 <members type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>users.user</items>
                             <display>name</display>
                         </template>
@@ -3016,7 +3016,7 @@
                 <syncCertsCron type="ModelRelationField">
                     <Model>
                         <queues>
-                            <source>OPNsense.Cron.Cron</source>
+                            <source>Reticen8.Cron.Cron</source>
                             <items>jobs.job</items>
                             <display>description</display>
                             <filters>
@@ -3034,7 +3034,7 @@
                 <updateOcspCron type="ModelRelationField">
                     <Model>
                         <queues>
-                            <source>OPNsense.Cron.Cron</source>
+                            <source>Reticen8.Cron.Cron</source>
                             <items>jobs.job</items>
                             <display>description</display>
                             <filters>
@@ -3052,7 +3052,7 @@
                 <reloadServiceCron type="ModelRelationField">
                     <Model>
                         <queues>
-                            <source>OPNsense.Cron.Cron</source>
+                            <source>Reticen8.Cron.Cron</source>
                             <items>jobs.job</items>
                             <display>description</display>
                             <filters>
@@ -3070,7 +3070,7 @@
                 <restartServiceCron type="ModelRelationField">
                     <Model>
                         <queues>
-                            <source>OPNsense.Cron.Cron</source>
+                            <source>Reticen8.Cron.Cron</source>
                             <items>jobs.job</items>
                             <display>description</display>
                             <filters>

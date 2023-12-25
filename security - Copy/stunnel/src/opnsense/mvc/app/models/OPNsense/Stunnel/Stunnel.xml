@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/Stunnel</mount>
+    <mount>//Reticen8/Stunnel</mount>
     <version>1.0.3</version>
     <description>
         Stunnel TLS encryption proxy

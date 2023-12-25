@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Netsnmp\Api;
+namespace Reticen8\Netsnmp\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Netsnmp\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Netsnmp\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Netsnmp
+ * @package Reticen8\Netsnmp
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Netsnmp\General';
-    protected static $internalServiceTemplate = 'OPNsense/Netsnmp';
+    protected static $internalServiceClass = '\Reticen8\Netsnmp\General';
+    protected static $internalServiceTemplate = 'Reticen8/Netsnmp';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'netsnmp';
 }

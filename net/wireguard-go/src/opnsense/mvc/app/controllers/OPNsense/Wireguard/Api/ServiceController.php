@@ -26,20 +26,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Wireguard\Api;
+namespace Reticen8\Wireguard\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Wireguard\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Wireguard\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Wireguard
+ * @package Reticen8\Wireguard
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Wireguard\General';
-    protected static $internalServiceTemplate = 'OPNsense/Wireguard';
+    protected static $internalServiceClass = '\Reticen8\Wireguard\General';
+    protected static $internalServiceTemplate = 'Reticen8/Wireguard';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'wireguard';
 

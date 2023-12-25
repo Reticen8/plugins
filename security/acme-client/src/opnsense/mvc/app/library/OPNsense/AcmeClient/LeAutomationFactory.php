@@ -27,13 +27,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\AcmeClient\AcmeClient;
 
 /**
 * Class LeAutomationFactory
-* @package OPNsense\AcmeClient
+* @package Reticen8\AcmeClient
 */
 class LeAutomationFactory
 {
@@ -47,7 +47,7 @@ class LeAutomationFactory
     public function getAutomation(string $uuid)
     {
         // Ensure that the automation can be found in config.
-        $model = new \OPNsense\AcmeClient\AcmeClient();
+        $model = new \Reticen8\AcmeClient\AcmeClient();
         $obj = $model->getNodeByReference(self::CONFIG_PATH . '.' . $uuid);
         if ($obj == null) {
             LeUtils::log_error("automation not found: ${uuid}");
@@ -61,11 +61,11 @@ class LeAutomationFactory
         foreach (glob(__DIR__ . "/LeAutomation/*.php") as $filename) {
             $file_found = basename($filename, '.php');
             try {
-                $reflClass = new \ReflectionClass("OPNsense\\AcmeClient\\LeAutomation\\{$file_found}");
+                $reflClass = new \ReflectionClass("Reticen8\\AcmeClient\\LeAutomation\\{$file_found}");
             } catch (\ReflectionException $e) {
                 break;
             }
-            if ($reflClass->implementsInterface('OPNsense\\AcmeClient\\LeAutomationInterface')) {
+            if ($reflClass->implementsInterface('Reticen8\\AcmeClient\\LeAutomationInterface')) {
                 if ($file_found == $auto_name) {
                     // Create new object
                     $objAuto = $reflClass->newInstance();

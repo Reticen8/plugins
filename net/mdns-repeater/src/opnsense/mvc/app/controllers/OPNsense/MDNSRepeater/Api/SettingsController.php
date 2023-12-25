@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\MDNSRepeater\Api;
+namespace Reticen8\MDNSRepeater\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class SettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\MDNSRepeater\MDNSRepeater';
+    protected static $internalModelClass = '\Reticen8\MDNSRepeater\MDNSRepeater';
     protected static $internalModelName = 'mdnsrepeater';
 }

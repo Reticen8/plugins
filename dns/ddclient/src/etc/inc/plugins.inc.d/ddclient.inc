@@ -31,7 +31,7 @@ function ddclient_services()
 {
     $services = [];
 
-    $mdl = new \OPNsense\DynDNS\DynDNS();
+    $mdl = new \Reticen8\DynDNS\DynDNS();
     if ($mdl->general->enabled == '1') {
         $service = [
             'description' => gettext('ddclient'),
@@ -42,7 +42,7 @@ function ddclient_services()
             ],
             'name' => 'ddclient',
         ];
-        $service['pidfile'] = (string)$mdl->general->backend != 'opnsense' ? '/var/run/ddclient.pid' : '/var/run/ddclient_opn.pid';
+        $service['pidfile'] = (string)$mdl->general->backend != 'reticen8' ? '/var/run/ddclient.pid' : '/var/run/ddclient_opn.pid';
         $services[] = $service;
     }
 
@@ -55,7 +55,7 @@ function ddclient_xmlrpc_sync()
 
     $result[] = [
         'description' => gettext('ddclient'),
-        'section' => 'OPNsense.DynDNS',
+        'section' => 'Reticen8.DynDNS',
         'services' => ['ddclient'],
         'id' => 'ddclient',
     ];

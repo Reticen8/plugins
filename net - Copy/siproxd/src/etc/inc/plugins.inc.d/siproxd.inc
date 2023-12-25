@@ -32,7 +32,7 @@ function siproxd_services()
 
     $services = array();
 
-    if (isset($config['OPNsense']['siproxd']['general']['enabled']) && $config['OPNsense']['siproxd']['general']['enabled'] == 1) {
+    if (isset($config['Reticen8']['siproxd']['general']['enabled']) && $config['Reticen8']['siproxd']['general']['enabled'] == 1) {
         $services[] = array(
             'description' => gettext('Siproxd Daemon'),
             'configd' => array(

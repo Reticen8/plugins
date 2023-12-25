@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Shadowsocks\Api;
+namespace Reticen8\Shadowsocks\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class LocalserviceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Shadowsocks\Local';
-    protected static $internalServiceTemplate = 'OPNsense/Shadowsocks';
+    protected static $internalServiceClass = '\Reticen8\Shadowsocks\Local';
+    protected static $internalServiceTemplate = 'Reticen8/Shadowsocks';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'shadowsockslocal';
 }

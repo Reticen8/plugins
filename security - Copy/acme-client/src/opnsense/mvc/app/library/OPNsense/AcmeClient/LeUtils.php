@@ -29,13 +29,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 /**
  * Helper functions for LeAcme
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class LeUtils
 {

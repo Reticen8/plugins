@@ -26,10 +26,10 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\iperf\Api;
+namespace Reticen8\iperf\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
 
 class ServiceController extends ApiControllerBase
 {

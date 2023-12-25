@@ -30,10 +30,10 @@
 
 require_once 'config.inc';
 
-use OPNsense\Nginx\Nginx;
-use OPNsense\Nginx\ErrorLogParser;
-use OPNsense\Nginx\AccessLogParser;
-use OPNsense\Nginx\StreamAccessLogParser;
+use Reticen8\Nginx\Nginx;
+use Reticen8\Nginx\ErrorLogParser;
+use Reticen8\Nginx\AccessLogParser;
+use Reticen8\Nginx\StreamAccessLogParser;
 
 $log_prefix = '/var/log/nginx/';
 $log_suffix = '.log';

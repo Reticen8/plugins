@@ -1,7 +1,7 @@
 <model>
-    <mount>//OPNsense/helloworld</mount>
+    <mount>//Reticen8/helloworld</mount>
     <description>
-        the OPNsense "Hello World" application
+        the Reticen8 "Hello World" application
     </description>
     <items>
         <!-- container -->

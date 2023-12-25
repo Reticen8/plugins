@@ -33,7 +33,7 @@ require_once("config.inc");
 require_once("certs.inc");
 require_once("legacy_bindings.inc");
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 
 $export_path = '/tmp/haproxy/ssl/';
 
@@ -48,8 +48,8 @@ $certTypes = ['cert', 'ca', 'crl'];
 $configObj = Config::getInstance()->object();
 foreach ($configNodes as $key => $value) {
     // lookup all config nodes
-    if (isset($configObj->OPNsense->HAProxy->$key)) {
-        foreach ($configObj->OPNsense->HAProxy->$key->children() as $child) {
+    if (isset($configObj->Reticen8->HAProxy->$key)) {
+        foreach ($configObj->Reticen8->HAProxy->$key->children() as $child) {
             // search in all matching child elements for ssl data
             foreach ($configNodes[$key] as $sslchild) {
                 if (isset($child->$sslchild)) {

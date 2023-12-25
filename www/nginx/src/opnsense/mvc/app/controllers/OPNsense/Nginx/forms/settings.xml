@@ -86,7 +86,7 @@
                 <id>nginx.webgui.limitnetworks</id>
                 <label>Limit Networks</label>
                 <type>checkbox</type>
-                <help>Limit networks to directly connected networks. Enabling this option is recommended if your nginx instance is reachable via the internet to prevent remote access to the web interface for security reasons. Please note that you can lock yourself out if you are accessing OPNsense via a router without SNAT.</help>
+                <help>Limit networks to directly connected networks. Enabling this option is recommended if your nginx instance is reachable via the internet to prevent remote access to the web interface for security reasons. Please note that you can lock yourself out if you are accessing Reticen8 via a router without SNAT.</help>
             </field>
         </subtab>
     </tab>

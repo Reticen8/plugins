@@ -26,13 +26,13 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\UDPBroadcastRelay;
+namespace Reticen8\UDPBroadcastRelay;
 
 /**
  * Class IndexController
- * @package OPNsense\UDPBroadcastRelay
+ * @package Reticen8\UDPBroadcastRelay
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     /**
      * udpbroadcastrelay index page
@@ -42,6 +42,6 @@ class IndexController extends \OPNsense\Base\IndexController
     {
         // include dialog form definitions
         $this->view->formDialogEdit = $this->getForm("dialogEdit");
-        $this->view->pick('OPNsense/UDPBroadcastRelay/index');
+        $this->view->pick('Reticen8/UDPBroadcastRelay/index');
     }
 }

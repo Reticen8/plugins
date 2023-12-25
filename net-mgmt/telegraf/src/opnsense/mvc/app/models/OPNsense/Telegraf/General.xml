@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/telegraf/general</mount>
+    <mount>//Reticen8/telegraf/general</mount>
     <description>Telegraf general configuration</description>
     <version>1.0.2</version>
     <items>

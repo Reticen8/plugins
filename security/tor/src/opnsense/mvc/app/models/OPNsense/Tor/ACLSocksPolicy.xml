@@ -1,5 +1,5 @@
 <model>
-  <mount>//OPNsense/tor/aclsockspolicy</mount>
+  <mount>//Reticen8/tor/aclsockspolicy</mount>
   <description>ACL for Socks port</description>
   <items>
     <policy type="ArrayField">

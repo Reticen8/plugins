@@ -1,4 +1,4 @@
-# Copyright (c) 2015-2023 Franco Fichtner <franco@opnsense.org>
+# Copyright (c) 2015-2023 Franco Fichtner <franco@reticen8.com>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -43,7 +43,7 @@ PLUGIN_DESC=		pkg-descr
 PLUGIN_SCRIPTS=		+PRE_INSTALL +POST_INSTALL \
 			+PRE_DEINSTALL +POST_DEINSTALL
 
-PLUGIN_WWW?=		https://opnsense.org/
+PLUGIN_WWW?=		https://reticen8.com/
 PLUGIN_LICENSE?=	BSD2CLAUSE
 PLUGIN_TIER?=		3
 PLUGIN_REVISION?=	0
@@ -108,7 +108,7 @@ PLUGIN_PKGVERSION=	${PLUGIN_VERSION}
 manifest: check
 	@echo "name: ${PLUGIN_PKGNAME}"
 	@echo "version: \"${PLUGIN_PKGVERSION}\""
-	@echo "origin: opnsense/${PLUGIN_PKGNAME}"
+	@echo "origin: reticen8/${PLUGIN_PKGNAME}"
 	@echo "comment: \"${PLUGIN_COMMENT}\""
 	@echo "maintainer: \"${PLUGIN_MAINTAINER}\""
 	@echo "categories: [ \"${.CURDIR:S/\// /g:[-2]}\" ]"
@@ -131,8 +131,8 @@ manifest: check
 	done
 	@echo "}"
 .endif
-	@if [ -f ${WRKSRC}/usr/local/opnsense/version/${PLUGIN_NAME} ]; then \
-	    echo "annotations $$(cat ${WRKSRC}/usr/local/opnsense/version/${PLUGIN_NAME})"; \
+	@if [ -f ${WRKSRC}/usr/local/reticen8/version/${PLUGIN_NAME} ]; then \
+	    echo "annotations $$(cat ${WRKSRC}/usr/local/reticen8/version/${PLUGIN_NAME})"; \
 	fi
 
 scripts: check scripts-pre scripts-auto scripts-manual scripts-post
@@ -155,7 +155,7 @@ scripts-auto:
 			done; \
 		done; \
 	fi
-	@if [ -d ${.CURDIR}/src/opnsense/service/conf/actions.d ]; then \
+	@if [ -d ${.CURDIR}/src/reticen8/service/conf/actions.d ]; then \
 		cat ${TEMPLATESDIR}/actions.d >> ${DESTDIR}/+POST_INSTALL; \
 	fi
 	@if [ -d ${.CURDIR}/src/etc/rc.loader.d ]; then \
@@ -164,8 +164,8 @@ scripts-auto:
 			    ${DESTDIR}/$${SCRIPT}; \
 		done; \
 	fi
-	@if [ -d ${.CURDIR}/src/opnsense/mvc/app/models ]; then \
-		for FILE in $$(cd ${.CURDIR}/src/opnsense/mvc/app/models && \
+	@if [ -d ${.CURDIR}/src/reticen8/mvc/app/models ]; then \
+		for FILE in $$(cd ${.CURDIR}/src/reticen8/mvc/app/models && \
 		    find -s . -depth 2 -type d); do \
 			cat ${TEMPLATESDIR}/models | \
 			    sed "s:%%ARG%%:$${FILE#./}:g" >> \
@@ -177,8 +177,8 @@ scripts-auto:
 			    ${DESTDIR}/$${SCRIPT}; \
 		done; \
 	fi
-	@if [ -d ${.CURDIR}/src/opnsense/service/templates ]; then \
-		for FILE in $$(cd ${.CURDIR}/src/opnsense/service/templates && \
+	@if [ -d ${.CURDIR}/src/reticen8/service/templates ]; then \
+		for FILE in $$(cd ${.CURDIR}/src/reticen8/service/templates && \
 		    find -s . -depth 2 -type d); do \
 			cat ${TEMPLATESDIR}/templates | \
 			    sed "s:%%ARG%%:$${FILE#./}:g" >> \
@@ -201,7 +201,7 @@ scripts-post:
 	done
 
 install: check
-	@mkdir -p ${DESTDIR}${LOCALBASE}/opnsense/version
+	@mkdir -p ${DESTDIR}${LOCALBASE}/reticen8/version
 	@(cd ${.CURDIR}/src 2> /dev/null && find * -type f) | while read FILE; do \
 		tar -C ${.CURDIR}/src -cpf - $${FILE} | \
 		    tar -C ${DESTDIR}${LOCALBASE} -xpf -; \
@@ -210,7 +210,7 @@ install: check
 			mv "${DESTDIR}${LOCALBASE}/$${FILE}" "${DESTDIR}${LOCALBASE}/$${FILE%%.in}"; \
 		fi; \
 	done
-	@cat ${TEMPLATESDIR}/version | sed ${SED_REPLACE} > "${DESTDIR}${LOCALBASE}/opnsense/version/${PLUGIN_NAME}"
+	@cat ${TEMPLATESDIR}/version | sed ${SED_REPLACE} > "${DESTDIR}${LOCALBASE}/reticen8/version/${PLUGIN_NAME}"
 
 plist: check
 	@(cd ${.CURDIR}/src 2> /dev/null && find * -type f) | while read FILE; do \
@@ -218,7 +218,7 @@ plist: check
 		FILE="$${FILE%%.in}"; \
 		echo ${LOCALBASE}/$${FILE}; \
 	done
-	@echo "${LOCALBASE}/opnsense/version/${PLUGIN_NAME}"
+	@echo "${LOCALBASE}/reticen8/version/${PLUGIN_NAME}"
 
 description: check
 	@if [ -f ${.CURDIR}/${PLUGIN_DESC} ]; then \
@@ -262,7 +262,7 @@ package: check
 	@${MAKE} DESTDIR=${WRKSRC} install
 	@echo " done"
 	@echo ">>> Generated version info for ${PLUGIN_PKGNAME}-${PLUGIN_PKGVERSION}:"
-	@cat ${WRKSRC}/usr/local/opnsense/version/${PLUGIN_NAME}
+	@cat ${WRKSRC}/usr/local/reticen8/version/${PLUGIN_NAME}
 	@echo -n ">>> Generating metadata for ${PLUGIN_PKGNAME}-${PLUGIN_PKGVERSION}..."
 	@${MAKE} DESTDIR=${WRKSRC} metadata
 	@echo " done"
@@ -313,7 +313,7 @@ lint-xml:
 	    -name "*.xml" -type f -print0 | xargs -0 -n1 xmllint --noout
 
 lint-model:
-	@if [ -d ${.CURDIR}/src/opnsense/mvc/app/models ]; then for MODEL in $$(find ${.CURDIR}/src/opnsense/mvc/app/models -depth 3 \
+	@if [ -d ${.CURDIR}/src/reticen8/mvc/app/models ]; then for MODEL in $$(find ${.CURDIR}/src/reticen8/mvc/app/models -depth 3 \
 	    -name "*.xml"); do \
 		(xmllint $${MODEL} --xpath '//*[@type and not(@type="ArrayField") and (not(Required) or Required="N") and Default]' 2> /dev/null | grep '^<' || true) | while read LINE; do \
 			echo "$${MODEL}: $${LINE} has a spurious default value set"; \
@@ -339,7 +339,7 @@ lint-model:
 	done; fi
 
 lint-exec: check
-.for DIR in ${.CURDIR}/src/opnsense/scripts ${.CURDIR}/src/etc/rc.d ${.CURDIR}/src/etc/rc.syshook.d
+.for DIR in ${.CURDIR}/src/reticen8/scripts ${.CURDIR}/src/etc/rc.d ${.CURDIR}/src/etc/rc.syshook.d
 .if exists(${DIR})
 	@find ${DIR} -type f ! -name "*.xml" -print0 | \
 	    xargs -0 -t -n1 test -x || \
@@ -380,7 +380,7 @@ sweep: check
 revision:
 	@MAKE=${MAKE} ${SCRIPTSDIR}/revbump.sh ${.CURDIR}
 
-STYLEDIRS?=	src/etc/inc src/opnsense
+STYLEDIRS?=	src/etc/inc src/reticen8
 
 style: check
 	@: > ${.CURDIR}/.style.out
@@ -412,7 +412,7 @@ style-python: check
 	fi
 
 style-model:
-	@for MODEL in $$(find ${.CURDIR}/src/opnsense/mvc/app/models -depth 3 \
+	@for MODEL in $$(find ${.CURDIR}/src/reticen8/mvc/app/models -depth 3 \
 	    -name "*.xml"); do \
 		perl -i -pe 's/<default>(.*?)<\/default>/<Default>$$1<\/Default>/g' $${MODEL}; \
 		perl -i -pe 's/<multiple>(.*?)<\/multiple>/<Multiple>$$1<\/Multiple>/g' $${MODEL}; \
@@ -420,10 +420,10 @@ style-model:
 	done
 
 test: check
-	@if [ -d ${.CURDIR}/src/opnsense/mvc/tests ]; then \
-		cd /usr/local/opnsense/mvc/tests && \
+	@if [ -d ${.CURDIR}/src/reticen8/mvc/tests ]; then \
+		cd /usr/local/reticen8/mvc/tests && \
 		    phpunit --configuration PHPunit.xml \
-		    ${.CURDIR}/src/opnsense/mvc/tests; \
+		    ${.CURDIR}/src/reticen8/mvc/tests; \
 	fi
 
 .PHONY:	check

@@ -1,7 +1,7 @@
 <model>
-    <mount>//OPNsense/GridExample</mount>
+    <mount>//Reticen8/GridExample</mount>
     <description>
-        the OPNsense "GridExample" application
+        the Reticen8 "GridExample" application
     </description>
     <items>
         <addresses>

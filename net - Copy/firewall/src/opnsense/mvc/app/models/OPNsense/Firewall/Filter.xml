@@ -1,9 +1,9 @@
 <model>
-    <mount>//OPNsense/Firewall/Filter</mount>
+    <mount>//Reticen8/Firewall/Filter</mount>
     <version>1.0.2</version>
     <migration_prefix>MFP</migration_prefix>
     <description>
-        OPNsense firewall filter rules
+        Reticen8 firewall filter rules
     </description>
     <items>
         <rules>

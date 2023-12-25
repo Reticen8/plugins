@@ -26,7 +26,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Base\Constraints;
+namespace Reticen8\Base\Constraints;
 
 use Phalcon\Messages\Message;
 
@@ -35,7 +35,7 @@ use Phalcon\Messages\Message;
  * it checks for the uniqueness of servers with the default_server directive
  *
  * Class NgxUniqueDefaultServerConstraint
- * @package OPNsense\Nginx\Constraints
+ * @package Reticen8\Nginx\Constraints
  */
 class NgxUniqueDefaultServerConstraint extends BaseConstraint
 {

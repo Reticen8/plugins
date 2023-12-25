@@ -25,20 +25,20 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-namespace OPNsense\Firewall\Api;
+namespace Reticen8\Firewall\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
 
 /**
  * Class FilterBaseController implements actions for various types
- * @package OPNsense\Firewall\Api
+ * @package Reticen8\Firewall\Api
  */
 abstract class FilterBaseController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'filter';
-    protected static $internalModelClass = 'OPNsense\Firewall\Filter';
+    protected static $internalModelClass = 'Reticen8\Firewall\Filter';
 
     public function applyAction($rollback_revision = null)
     {

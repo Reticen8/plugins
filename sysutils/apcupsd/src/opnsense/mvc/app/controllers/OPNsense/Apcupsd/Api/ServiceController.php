@@ -30,17 +30,17 @@
  *
  */
 
-namespace OPNsense\Apcupsd\Api;
+namespace Reticen8\Apcupsd\Api;
 
 use DateTime;
 use DateTimeInterface;
-use OPNsense\Core\Backend;
-use OPNsense\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Base\ApiMutableServiceControllerBase;
 
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Apcupsd\Apcupsd';
-    protected static $internalServiceTemplate = 'OPNsense/Apcupsd';
+    protected static $internalServiceClass = '\Reticen8\Apcupsd\Apcupsd';
+    protected static $internalServiceTemplate = 'Reticen8/Apcupsd';
     protected static $internalServiceEnabled = 'general.Enabled';
     protected static $internalServiceName = 'apcupsd';
 

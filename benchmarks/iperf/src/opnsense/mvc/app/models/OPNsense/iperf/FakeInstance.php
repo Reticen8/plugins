@@ -28,9 +28,9 @@
  *
  */
 
-namespace OPNsense\iperf;
+namespace Reticen8\iperf;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class FakeInstance extends BaseModel
 {

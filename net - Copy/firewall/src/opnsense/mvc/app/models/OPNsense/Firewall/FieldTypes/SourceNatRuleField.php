@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Firewall\FieldTypes;
+namespace Reticen8\Firewall\FieldTypes;
 
-use OPNsense\Base\FieldTypes\ArrayField;
-use OPNsense\Base\FieldTypes\ContainerField;
+use Reticen8\Base\FieldTypes\ArrayField;
+use Reticen8\Base\FieldTypes\ContainerField;
 
 /**
  * Class SourceNatRuleContainerField
- * @package OPNsense\Firewall\FieldTypes
+ * @package Reticen8\Firewall\FieldTypes
  */
 class SourceNatRuleContainerField extends ContainerField
 {
@@ -61,9 +61,9 @@ class SourceNatRuleContainerField extends ContainerField
         foreach ($this->iterateItems() as $key => $node) {
             $target_fieldname = isset($source_mapper[$key]) ? $source_mapper[$key] : $key;
             if ($target_fieldname) {
-                if (is_a($node, "OPNsense\\Base\\FieldTypes\\BooleanField")) {
+                if (is_a($node, "Reticen8\\Base\\FieldTypes\\BooleanField")) {
                     $result[$target_fieldname] = !empty((string)$node);
-                } elseif (is_a($node, "OPNsense\\Base\\FieldTypes\\ProtocolField")) {
+                } elseif (is_a($node, "Reticen8\\Base\\FieldTypes\\ProtocolField")) {
                     if ((string)$node != 'any') {
                         $result[$target_fieldname] = (string)$node;
                     }
@@ -96,7 +96,7 @@ class SourceNatRuleContainerField extends ContainerField
 
 /**
  * Class SourceNatRuleField
- * @package OPNsense\Firewall\FieldTypes
+ * @package Reticen8\Firewall\FieldTypes
  */
 class SourceNatRuleField extends ArrayField
 {

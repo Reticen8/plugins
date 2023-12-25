@@ -27,11 +27,11 @@
     ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     POSSIBILITY OF SUCH DAMAGE.
 */
-namespace OPNsense\Nginx\Api;
+namespace Reticen8\Nginx\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Nginx\Nginx;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Nginx\Nginx;
 
 class LogsController extends ApiControllerBase
 {
@@ -46,7 +46,7 @@ class LogsController extends ApiControllerBase
      * @param $perPage int number of entries per page
      * @param $query string filter string to apply
      * @return array if feasible, otherwise null and the data is sent directly back
-     * @throws \OPNsense\Base\ModelException ?
+     * @throws \Reticen8\Base\ModelException ?
      */
     public function accessesAction($uuid = null, $fileno = null, $page = 0, $perPage = 0, $query = "")
     {
@@ -80,7 +80,7 @@ class LogsController extends ApiControllerBase
      * @param $perPage int number of entries per page
      * @param $query string filter string to apply
      * @return array if feasible, otherwise null and the data is sent directly back
-     * @throws \OPNsense\Base\ModelException ?
+     * @throws \Reticen8\Base\ModelException ?
      */
     public function errorsAction($uuid = null, $fileno = null, $page = 0, $perPage = 0, $query = "")
     {
@@ -105,7 +105,7 @@ class LogsController extends ApiControllerBase
      * @param $perPage int number of entries per page
      * @param $query string filter string to apply
      * @return array if feasible, otherwise null and the data is sent directly back
-     * @throws \OPNsense\Base\ModelException ?
+     * @throws \Reticen8\Base\ModelException ?
      */
     public function streamaccessesAction($uuid = null, $fileno = null, $page = 0, $perPage = 0, $query = "")
     {
@@ -130,7 +130,7 @@ class LogsController extends ApiControllerBase
      * @param $perPage int number of entries per page
      * @param $query string filter string to apply
      * @return array if feasible, otherwise null and the data is sent directly back
-     * @throws \OPNsense\Base\ModelException ?
+     * @throws \Reticen8\Base\ModelException ?
      */
     public function streamerrorsAction($uuid = null, $fileno = null, $page = 0, $perPage = 0, $query = "")
     {

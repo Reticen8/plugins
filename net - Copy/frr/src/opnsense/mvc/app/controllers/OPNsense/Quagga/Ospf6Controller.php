@@ -23,14 +23,14 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Quagga;
+namespace Reticen8\Quagga;
 
-class Ospf6Controller extends \OPNsense\Base\IndexController
+class Ospf6Controller extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->ospf6Form = $this->getForm("ospf6");
         $this->view->formDialogEditInterface = $this->getForm("dialogEditOSPF6Interface");
-        $this->view->pick('OPNsense/Quagga/ospf6');
+        $this->view->pick('Reticen8/Quagga/ospf6');
     }
 }

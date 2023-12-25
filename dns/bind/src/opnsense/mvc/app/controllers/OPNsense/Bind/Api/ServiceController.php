@@ -28,21 +28,21 @@
  *
  */
 
-namespace OPNsense\Bind\Api;
+namespace Reticen8\Bind\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Bind\General;
-use OPNsense\Bind\Dnsbl;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Bind\General;
+use Reticen8\Bind\Dnsbl;
 
 /**
  * Class ServiceController
- * @package OPNsense\Bind
+ * @package Reticen8\Bind
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Bind\General';
-    protected static $internalServiceTemplate = 'OPNsense/Bind';
+    protected static $internalServiceClass = '\Reticen8\Bind\General';
+    protected static $internalServiceTemplate = 'Reticen8/Bind';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'bind';
 

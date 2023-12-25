@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Tayga;
+namespace Reticen8\Tayga;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

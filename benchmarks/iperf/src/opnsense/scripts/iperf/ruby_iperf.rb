@@ -80,7 +80,7 @@ end
 
 def forwarded_ports
   config = REXML::Document.new(File.new("/conf/config.xml"))
-  xml_firewall = config.elements['opnsense/nat'].children.select do |x|
+  xml_firewall = config.elements['reticen8/nat'].children.select do |x|
     x.node_type == :element && x.name == 'rule'
   end
   xml_firewall.map do |x|

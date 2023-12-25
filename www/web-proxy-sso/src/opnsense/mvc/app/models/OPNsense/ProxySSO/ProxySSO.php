@@ -26,10 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ProxySSO;
+namespace Reticen8\ProxySSO;
 
-use OPNsense\Base\BaseModel;
-use OPNsense\Core\Config;
+use Reticen8\Base\BaseModel;
+use Reticen8\Core\Config;
 
 class ProxySSO extends BaseModel
 {

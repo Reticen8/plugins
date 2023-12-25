@@ -28,7 +28,7 @@
 
 function netsnmp_enabled()
 {
-    $model = new \OPNsense\Netsnmp\General();
+    $model = new \Reticen8\Netsnmp\General();
     return (string)$model->enabled == '1';
 }
 

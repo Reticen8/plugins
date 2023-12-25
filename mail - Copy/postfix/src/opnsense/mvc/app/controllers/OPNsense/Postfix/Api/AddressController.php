@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class AddressController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'address';
-    protected static $internalModelClass = '\OPNsense\Postfix\Address';
+    protected static $internalModelClass = '\Reticen8\Postfix\Address';
 
     public function searchAddressAction()
     {

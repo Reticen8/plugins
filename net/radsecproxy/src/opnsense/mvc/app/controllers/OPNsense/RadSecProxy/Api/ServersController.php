@@ -22,14 +22,14 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy\Api;
+namespace Reticen8\RadSecProxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class ServersController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'radsecproxy';
-    protected static $internalModelClass = 'OPNsense\RadSecProxy\RadSecProxy';
+    protected static $internalModelClass = 'Reticen8\RadSecProxy\RadSecProxy';
 
     public function searchItemAction()
     {

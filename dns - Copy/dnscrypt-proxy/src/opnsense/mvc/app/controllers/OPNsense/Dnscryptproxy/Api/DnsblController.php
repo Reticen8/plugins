@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Dnscryptproxy\Api;
+namespace Reticen8\Dnscryptproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class DnsblController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Dnscryptproxy\Dnsbl';
+    protected static $internalModelClass = '\Reticen8\Dnscryptproxy\Dnsbl';
     protected static $internalModelName = 'dnsbl';
 }

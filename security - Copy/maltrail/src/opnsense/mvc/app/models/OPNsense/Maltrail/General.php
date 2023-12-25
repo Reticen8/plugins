@@ -26,9 +26,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Maltrail;
+namespace Reticen8\Maltrail;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

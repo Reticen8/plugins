@@ -25,7 +25,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-namespace OPNsense\Firewall\Api;
+namespace Reticen8\Firewall\Api;
 
 class SourceNatController extends FilterBaseController
 {

@@ -26,10 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Quagga\Migrations;
+namespace Reticen8\Quagga\Migrations;
 
-use OPNsense\Core\Config;
-use OPNsense\Base\BaseModelMigration;
+use Reticen8\Core\Config;
+use Reticen8\Base\BaseModelMigration;
 use OPNSense\Quagga\General;
 
 class M1_0_2 extends BaseModelMigration
@@ -42,9 +42,9 @@ class M1_0_2 extends BaseModelMigration
         // XXX: since migrations act per (general) version, we need to check which sub model is calling us.
         if ($model instanceof General) {
             $cfgObj = Config::getInstance()->object();
-            if (!empty($cfgObj->OPNsense->quagga->general->enablelogfile)) {
+            if (!empty($cfgObj->Reticen8->quagga->general->enablelogfile)) {
                 if ((string)$model->enablesyslog != "1") {
-                    $model->sysloglevel = (string)$cfgObj->OPNsense->quagga->general->logfilelevel;
+                    $model->sysloglevel = (string)$cfgObj->Reticen8->quagga->general->logfilelevel;
                 }
                 $model->enablesyslog = "1";
             }

@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class DhcpController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'dhcp';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Dhcp';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Dhcp';
 
     public function searchDhcpAction()
     {

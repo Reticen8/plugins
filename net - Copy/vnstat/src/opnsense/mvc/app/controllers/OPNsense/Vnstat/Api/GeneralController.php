@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Vnstat\Api;
+namespace Reticen8\Vnstat\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Vnstat\General';
+    protected static $internalModelClass = '\Reticen8\Vnstat\General';
     protected static $internalModelName = 'general';
 }

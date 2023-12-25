@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/netsnmp/user</mount>
+    <mount>//Reticen8/netsnmp/user</mount>
     <description>Netsnmp user configuration</description>
     <version>1.0.1</version>
     <items>

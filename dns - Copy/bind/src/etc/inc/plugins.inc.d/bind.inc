@@ -2,7 +2,7 @@
 
 /*
  * Copyright (C) 2018 Michael Muenz <m.muenz@gmail.com>
- * Copyright (C) 2023 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2023 Franco Fichtner <franco@reticen8.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -29,7 +29,7 @@
 
 function bind_enabled()
 {
-    $model = new \OPNsense\Bind\General();
+    $model = new \Reticen8\Bind\General();
     return (string)$model->enabled == '1';
 }
 
@@ -48,7 +48,7 @@ function bind_services()
         return $services;
     }
 
-    $model = new \OPNsense\Bind\General();
+    $model = new \Reticen8\Bind\General();
 
     /* DNS service is eligable for core use when both 0.0.0.0 and :: are set */
     $any4 = false;
@@ -83,7 +83,7 @@ function bind_xmlrpc_sync()
     $result = [];
 
     $result['id'] = 'bind';
-    $result['section'] = 'OPNsense.bind';
+    $result['section'] = 'Reticen8.bind';
     $result['description'] = gettext('BIND domain name service');
     $result['services'] = ['named'];
 
@@ -94,7 +94,7 @@ function bind_configure_do($verbose)
 {
     service_log('Starting BIND...', $verbose);
 
-    configd_run('template reload OPNsense/Bind');
+    configd_run('template reload Reticen8/Bind');
     configd_run('bind restart');
 
     service_log("done.\n", $verbose);

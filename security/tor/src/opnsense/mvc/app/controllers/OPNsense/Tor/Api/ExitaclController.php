@@ -26,17 +26,17 @@
  *    POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Tor\Api;
+namespace Reticen8\Tor\Api;
 
-use OPNsense\Tor\ACLSocksPolicy;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Tor\ACLSocksPolicy;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class ExitaclController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'exitpolicy';
-    protected static $internalModelClass = '\OPNsense\Tor\ACLExitPolicy';
+    protected static $internalModelClass = '\Reticen8\Tor\ACLExitPolicy';
     public function searchaclAction()
     {
         return $this->searchBase('policy', array('enabled', 'type', 'network', 'action', 'startport', 'endport'));

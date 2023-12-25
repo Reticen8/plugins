@@ -28,21 +28,21 @@
  *
  */
 
-namespace OPNsense\Relayd\Api;
+namespace Reticen8\Relayd\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Core\Config;
-use OPNsense\Relayd\Relayd;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Core\Config;
+use Reticen8\Relayd\Relayd;
+use Reticen8\Base\UIModelGrid;
 
 /**
  * Class SettingsController
- * @package OPNsense\Relayd
+ * @package Reticen8\Relayd
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'relayd';
-    protected static $internalModelClass = '\OPNsense\Relayd\Relayd';
+    protected static $internalModelClass = '\Reticen8\Relayd\Relayd';
 
     /**
      * list with valid model node types

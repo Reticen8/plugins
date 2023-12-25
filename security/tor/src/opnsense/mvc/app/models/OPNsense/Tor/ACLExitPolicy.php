@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Tor;
+namespace Reticen8\Tor;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class ACLExitPolicy extends BaseModel
 {

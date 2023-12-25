@@ -105,9 +105,9 @@ if (!function_exists("log_error")) {
 }
 
 // Importing classes
-use OPNsense\AcmeClient\Process;
-use OPNsense\AcmeClient\SSHKeys;
-use OPNsense\AcmeClient\Utils;
+use Reticen8\AcmeClient\Process;
+use Reticen8\AcmeClient\SSHKeys;
+use Reticen8\AcmeClient\Utils;
 
 // Implementing logic
 function commandShowIdentity(array &$options): int

@@ -28,17 +28,17 @@
  *
  */
 
-namespace OPNsense\GridExample;
+namespace Reticen8\GridExample;
 
 /**
  * Class IndexController
- * @package OPNsense\GridExample
+ * @package Reticen8\GridExample
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
-        $this->view->pick('OPNsense/GridExample/index');
+        $this->view->pick('Reticen8/GridExample/index');
         $this->view->formDialogAddress = $this->getForm("dialogAddress");
     }
 }

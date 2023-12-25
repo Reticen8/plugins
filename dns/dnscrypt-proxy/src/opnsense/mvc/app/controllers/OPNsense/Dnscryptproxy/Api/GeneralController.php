@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\Dnscryptproxy\Api;
+namespace Reticen8\Dnscryptproxy\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Dnscryptproxy\General';
+    protected static $internalModelClass = '\Reticen8\Dnscryptproxy\General';
     protected static $internalModelName = 'general';
 }

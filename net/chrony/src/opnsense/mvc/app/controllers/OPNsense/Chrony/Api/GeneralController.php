@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Chrony\Api;
+namespace Reticen8\Chrony\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\Chrony\General';
+    protected static $internalModelClass = '\Reticen8\Chrony\General';
     protected static $internalModelName = 'general';
 }

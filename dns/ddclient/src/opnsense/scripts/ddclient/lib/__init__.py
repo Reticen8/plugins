@@ -1,5 +1,5 @@
 """
-    Copyright (c) 2022-2023 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2022-2023 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -24,7 +24,7 @@
     POSSIBILITY OF SUCH DAMAGE.
 
     -------------------------------------------------------------------------------------------------------
-    OPNsense ddclient alternative version.
+    Reticen8 ddclient alternative version.
 
     The base for the application is a configuration file /usr/local/etc/ddclient.json containing a `general` and
     `account` section. Structured dictionaries per account settings determine the services to subscribe to,

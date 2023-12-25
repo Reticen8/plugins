@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/AcmeClient</mount>
+    <mount>//Reticen8/AcmeClient</mount>
     <version>3.4.0</version>
     <description>A secure ACME Client plugin</description>
     <items>
@@ -15,7 +15,7 @@
             <UpdateCron type="ModelRelationField">
                 <Model>
                     <queues>
-                        <source>OPNsense.Cron.Cron</source>
+                        <source>Reticen8.Cron.Cron</source>
                         <items>jobs.job</items>
                         <display>description</display>
                         <filters>
@@ -59,7 +59,7 @@
             <haproxyAclRef type="ModelRelationField">
                 <Model>
                     <acls>
-                        <source>OPNsense.HAProxy.HAProxy</source>
+                        <source>Reticen8.HAProxy.HAProxy</source>
                         <items>acls.acl</items>
                         <display>name</display>
                     </acls>
@@ -71,7 +71,7 @@
             <haproxyActionRef type="ModelRelationField">
                 <Model>
                     <actions>
-                        <source>OPNsense.HAProxy.HAProxy</source>
+                        <source>Reticen8.HAProxy.HAProxy</source>
                         <items>actions.action</items>
                         <display>name</display>
                     </actions>
@@ -83,7 +83,7 @@
             <haproxyServerRef type="ModelRelationField">
                 <Model>
                     <servers>
-                        <source>OPNsense.HAProxy.HAProxy</source>
+                        <source>Reticen8.HAProxy.HAProxy</source>
                         <items>servers.server</items>
                         <display>name</display>
                     </servers>
@@ -95,7 +95,7 @@
             <haproxyBackendRef type="ModelRelationField">
                 <Model>
                     <backends>
-                        <source>OPNsense.HAProxy.HAProxy</source>
+                        <source>Reticen8.HAProxy.HAProxy</source>
                         <items>backends.backend</items>
                         <display>name</display>
                     </backends>
@@ -218,7 +218,7 @@
                 <account type="ModelRelationField">
                     <Model>
                         <accounts>
-                            <source>OPNsense.AcmeClient.AcmeClient</source>
+                            <source>Reticen8.AcmeClient.AcmeClient</source>
                             <items>accounts.account</items>
                             <display>name</display>
                             <filters>
@@ -233,7 +233,7 @@
                 <validationMethod type="ModelRelationField">
                     <Model>
                         <validations>
-                            <source>OPNsense.AcmeClient.AcmeClient</source>
+                            <source>Reticen8.AcmeClient.AcmeClient</source>
                             <items>validations.validation</items>
                             <display>name</display>
                             <filters>
@@ -263,7 +263,7 @@
                 <restartActions type="ModelRelationField">
                     <Model>
                         <actions>
-                            <source>OPNsense.AcmeClient.AcmeClient</source>
+                            <source>Reticen8.AcmeClient.AcmeClient</source>
                             <items>actions.action</items>
                             <display>name</display>
                             <filters>
@@ -353,10 +353,10 @@
                 </method>
                 <http_service type="OptionField">
                     <Required>Y</Required>
-                    <default>opnsense</default>
+                    <default>reticen8</default>
                     <OptionValues>
-                        <opnsense>OPNsense Web Service (automatic port forward)</opnsense>
-                        <haproxy>HAProxy HTTP Frontend Integration (OPNsense plugin)</haproxy>
+                        <reticen8>Reticen8 Web Service (automatic port forward)</reticen8>
+                        <haproxy>HAProxy HTTP Frontend Integration (Reticen8 plugin)</haproxy>
                     </OptionValues>
                 </http_service>
                 <http_opn_autodiscovery type="BooleanField">
@@ -380,7 +380,7 @@
                 <http_haproxyFrontends type="ModelRelationField">
                     <Model>
                         <frontends>
-                            <source>OPNsense.HAProxy.HAProxy</source>
+                            <source>Reticen8.HAProxy.HAProxy</source>
                             <items>frontends.frontend</items>
                             <display>name</display>
                             <filters>
@@ -489,7 +489,7 @@
                         <dns_nsone>NS1.com</dns_nsone>
                         <dns_nsupdate>nsupdate (RFC 2136)</dns_nsupdate>
                         <dns_online>online.net</dns_online>
-                        <dns_opnsense>OPNsense BIND Plugin</dns_opnsense>
+                        <dns_reticen8>Reticen8 BIND Plugin</dns_reticen8>
                         <dns_ovh>OVH, kimsufi, soyoustart and runabove</dns_ovh>
                         <dns_pdns>PowerDNS.com</dns_pdns>
                         <dns_pleskxml>Plesk</dns_pleskxml>
@@ -920,24 +920,24 @@
                 <dns_online_key type="TextField">
                     <Required>N</Required>
                 </dns_online_key>
-                <dns_opnsense_host type="TextField">
+                <dns_reticen8_host type="TextField">
                     <Required>N</Required>
                     <default>localhost</default>
-                </dns_opnsense_host>
-                <dns_opnsense_port type="TextField">
+                </dns_reticen8_host>
+                <dns_reticen8_port type="TextField">
                     <Required>N</Required>
                     <default>443</default>
-                </dns_opnsense_port>
-                <dns_opnsense_key type="TextField">
+                </dns_reticen8_port>
+                <dns_reticen8_key type="TextField">
                     <Required>N</Required>
-                </dns_opnsense_key>
-                <dns_opnsense_token type="TextField">
+                </dns_reticen8_key>
+                <dns_reticen8_token type="TextField">
                     <Required>N</Required>
-                </dns_opnsense_token>
-                <dns_opnsense_insecure type="BooleanField">
+                </dns_reticen8_token>
+                <dns_reticen8_insecure type="BooleanField">
                     <Required>N</Required>
                     <default>0</default>
-                </dns_opnsense_insecure>
+                </dns_reticen8_insecure>
                 <dns_ovh_app_key type="TextField">
                     <Required>N</Required>
                 </dns_ovh_app_key>
@@ -1175,9 +1175,9 @@
                 <type type="OptionField">
                     <Required>Y</Required>
                     <OptionValues>
-                        <configd_restart_gui>Restart OPNsense Web UI</configd_restart_gui>
-                        <configd_restart_haproxy>Restart HAProxy (OPNsense plugin)</configd_restart_haproxy>
-                        <configd_restart_nginx>Restart Nginx (OPNsense plugin)</configd_restart_nginx>
+                        <configd_restart_gui>Restart Reticen8 Web UI</configd_restart_gui>
+                        <configd_restart_haproxy>Restart HAProxy (Reticen8 plugin)</configd_restart_haproxy>
+                        <configd_restart_nginx>Restart Nginx (Reticen8 plugin)</configd_restart_nginx>
                         <configd_upload_highwinds>Upload certificate to Highwinds CDN</configd_upload_highwinds>
                         <configd_upload_sftp>Upload certificate via SFTP</configd_upload_sftp>
                         <configd_remote_ssh>Remote Command via SSH</configd_remote_ssh>

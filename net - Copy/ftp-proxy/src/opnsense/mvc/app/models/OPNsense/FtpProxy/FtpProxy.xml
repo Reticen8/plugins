@@ -1,5 +1,5 @@
 <model>
-   <mount>//OPNsense/ftpproxies</mount>
+   <mount>//Reticen8/ftpproxies</mount>
    <version>1.0.0</version>
    <description>Ftp Proxy settings</description>
    <items>

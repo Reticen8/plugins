@@ -26,17 +26,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
 require_once("interfaces.inc");
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\AcmeClient\LeUtils;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
 
 /**
- * Use internal OPNsense webserver for HTTP-01 validation
- * @package OPNsense\AcmeClient
+ * Use internal Reticen8 webserver for HTTP-01 validation
+ * @package Reticen8\AcmeClient
  */
 class HttpOpnsense extends Base implements LeValidationInterface
 {
@@ -46,7 +46,7 @@ class HttpOpnsense extends Base implements LeValidationInterface
 
         // Get configured HTTP port for local lighttpd server.
         $configObj = Config::getInstance()->object();
-        $local_http_port = $configObj->OPNsense->AcmeClient->settings->challengePort;
+        $local_http_port = $configObj->Reticen8->AcmeClient->settings->challengePort;
 
         // Collect all IP addresses here, automatic port forward will be applied for each IP
         $iplist = array();
@@ -131,11 +131,11 @@ class HttpOpnsense extends Base implements LeValidationInterface
 
     public function cleanup()
     {
-        // Flush OPNsense port forward rules.
+        // Flush Reticen8 port forward rules.
         mwexec('/sbin/pfctl -a acme-client -F all');
 
         // Workaround to solve disconnection issues reported by some users.
-        $backend = new \OPNsense\Core\Backend();
+        $backend = new \Reticen8\Core\Backend();
         $response = $backend->configdRun('filter reload');
         return true;
     }

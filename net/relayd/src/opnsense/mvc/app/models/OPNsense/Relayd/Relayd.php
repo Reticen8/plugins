@@ -28,13 +28,13 @@
 *
 */
 
-namespace OPNsense\Relayd;
+namespace Reticen8\Relayd;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /**
  * Class Relayd
- * @package OPNsense\Relayd
+ * @package Reticen8\Relayd
  */
 class Relayd extends BaseModel
 {

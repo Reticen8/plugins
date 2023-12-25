@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/bind/dnsbl</mount>
+    <mount>//Reticen8/bind/dnsbl</mount>
     <description>DNSBL configuration</description>
     <version>1.0.5</version>
     <items>

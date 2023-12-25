@@ -29,17 +29,17 @@
  *
  */
 
-namespace OPNsense\AcmeClient\Api;
+namespace Reticen8\AcmeClient\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Core\Config;
-use OPNsense\Cron\Cron;
-use OPNsense\AcmeClient\AcmeClient;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Core\Config;
+use Reticen8\Cron\Cron;
+use Reticen8\AcmeClient\AcmeClient;
 
 /**
  * Class ServiceController
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class ServiceController extends ApiControllerBase
 {
@@ -147,7 +147,7 @@ class ServiceController extends ApiControllerBase
             }
 
             // generate template
-            $backend->configdRun('template reload OPNsense/AcmeClient');
+            $backend->configdRun('template reload Reticen8/AcmeClient');
 
             // (res)start daemon
             if ($mdlAcme->settings->enabled->__toString() == 1) {
@@ -173,7 +173,7 @@ class ServiceController extends ApiControllerBase
     {
         $backend = new Backend();
         // first generate template based on current configuration
-        $backend->configdRun('template reload OPNsense/AcmeClient');
+        $backend->configdRun('template reload Reticen8/AcmeClient');
         // finally run the syntax check
         $response = $backend->configdRun("acmeclient configtest");
         return array("result" => $response);

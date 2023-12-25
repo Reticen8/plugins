@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/wireguard/server</mount>
+    <mount>//Reticen8/wireguard/server</mount>
     <description>Wireguard Server configuration</description>
     <version>0.0.4</version>
     <items>
@@ -62,7 +62,7 @@
                 <peers type="ModelRelationField">
                     <Model>
                         <template>
-                            <source>OPNsense.Wireguard.Client</source>
+                            <source>Reticen8.Wireguard.Client</source>
                             <items>clients.client</items>
                             <display>name</display>
                         </template>

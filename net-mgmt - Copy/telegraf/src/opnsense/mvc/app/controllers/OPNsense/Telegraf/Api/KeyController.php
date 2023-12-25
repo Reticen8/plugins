@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Telegraf\Api;
+namespace Reticen8\Telegraf\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class KeyController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'key';
-    protected static $internalModelClass = '\OPNsense\Telegraf\Key';
+    protected static $internalModelClass = '\Reticen8\Telegraf\Key';
 
     public function searchKeyAction()
     {

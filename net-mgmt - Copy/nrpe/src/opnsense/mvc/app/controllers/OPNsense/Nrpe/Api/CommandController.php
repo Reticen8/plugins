@@ -28,14 +28,14 @@
  *
  */
 
-namespace OPNsense\Nrpe\Api;
+namespace Reticen8\Nrpe\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class CommandController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'command';
-    protected static $internalModelClass = '\OPNsense\Nrpe\Command';
+    protected static $internalModelClass = '\Reticen8\Nrpe\Command';
 
     public function searchCommandAction()
     {

@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class ProxyController extends \OPNsense\Base\IndexController
+class ProxyController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditFreeRADIUSHomeserver = $this->getForm("dialogEditFreeRADIUSHomeserver");
         $this->view->formDialogEditFreeRADIUSHomeserverpool = $this->getForm("dialogEditFreeRADIUSHomeserverpool");
         $this->view->formDialogEditFreeRADIUSRealm = $this->getForm("dialogEditFreeRADIUSRealm");
-        $this->view->pick('OPNsense/Freeradius/proxy');
+        $this->view->pick('Reticen8/Freeradius/proxy');
     }
 }

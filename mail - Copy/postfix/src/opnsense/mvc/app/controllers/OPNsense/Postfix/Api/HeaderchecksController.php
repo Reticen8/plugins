@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Postfix\Api;
+namespace Reticen8\Postfix\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 class HeaderchecksController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'headerchecks';
-    protected static $internalModelClass = '\OPNsense\Postfix\Headerchecks';
+    protected static $internalModelClass = '\Reticen8\Postfix\Headerchecks';
 
     public function searchHeaderchecksAction()
     {

@@ -26,10 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\DynDNS\FieldTypes;
+namespace Reticen8\DynDNS\FieldTypes;
 
-use OPNsense\Base\FieldTypes\BaseListField;
-use OPNsense\Core\Backend;
+use Reticen8\Base\FieldTypes\BaseListField;
+use Reticen8\Core\Backend;
 
 class ServiceField extends BaseListField
 {
@@ -39,7 +39,7 @@ class ServiceField extends BaseListField
     {
         if (empty(self::$internalCacheOptionList)) {
             // request supported services from backend
-            if ((string)$this->getParentModel()->general->backend == 'opnsense') {
+            if ((string)$this->getParentModel()->general->backend == 'reticen8') {
                 $supported = json_decode((new Backend())->configdRun("ddclient opnbackend supported"), true);
                 if (!empty($supported)) {
                     foreach ($supported as $srv) {
@@ -57,7 +57,7 @@ class ServiceField extends BaseListField
      */
     public function setOptionValues($data)
     {
-        if (!empty(self::$internalCacheOptionList) || (string)$this->getParentModel()->general->backend == 'opnsense') {
+        if (!empty(self::$internalCacheOptionList) || (string)$this->getParentModel()->general->backend == 'reticen8') {
             return;
         }
         if (is_array($data)) {

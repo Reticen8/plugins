@@ -28,12 +28,12 @@
  *
  */
 
-namespace OPNsense\FtpProxy;
+namespace Reticen8\FtpProxy;
 
 /**
  * Class ItemController
- * @package OPNsense\FtpProxy
+ * @package Reticen8\FtpProxy
  */
-class ItemController extends \OPNsense\Base\IndexController
+class ItemController extends \Reticen8\Base\IndexController
 {
 }

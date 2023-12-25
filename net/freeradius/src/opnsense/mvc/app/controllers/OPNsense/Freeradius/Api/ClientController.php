@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius\Api;
+namespace Reticen8\Freeradius\Api;
 
-use OPNsense\Freeradius\Client;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Freeradius\Client;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class ClientController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'Client';
-    protected static $internalModelClass = '\OPNsense\Freeradius\Client';
+    protected static $internalModelClass = '\Reticen8\Freeradius\Client';
     public function getAction()
     {
         // define list of configurable settings

@@ -1,5 +1,5 @@
 $TTL    86400
-@       IN      SOA     opnsense.localdomain. hostmaster.opnsense.localdomain. (
+@       IN      SOA     reticen8.localdomain. hostmaster.reticen8.localdomain. (
                2018072201
                     28800
                      7200

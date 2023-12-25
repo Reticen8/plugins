@@ -26,19 +26,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient;
+namespace Reticen8\AcmeClient;
 
 // Load legacy functions
 require_once("certs.inc"); // used in import()
 
-use OPNsense\Core\Config;
-use OPNsense\AcmeClient\LeAccount;
-use OPNsense\AcmeClient\LeAutomationFactory;
-use OPNsense\AcmeClient\LeValidationFactory;
+use Reticen8\Core\Config;
+use Reticen8\AcmeClient\LeAccount;
+use Reticen8\AcmeClient\LeAutomationFactory;
+use Reticen8\AcmeClient\LeValidationFactory;
 
 /**
  * Manage ACME certificates with acme.sh
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class LeCertificate extends LeCommon
 {
@@ -101,7 +101,7 @@ class LeCertificate extends LeCommon
     }
 
     /**
-     * Import the certificate into OPNsense's trust storage.
+     * Import the certificate into Reticen8's trust storage.
      * @param bool $skip_validation try to import even if some checks fail
      * @return bool
      */
@@ -349,7 +349,7 @@ class LeCertificate extends LeCommon
 
         // Get auto renewal plugin setting.
         $configObj = Config::getInstance()->object();
-        $auto_renewal = $configObj->OPNsense->AcmeClient->settings->autoRenewal;
+        $auto_renewal = $configObj->Reticen8->AcmeClient->settings->autoRenewal;
 
         // Check if called by auto renewal process.
         if (($acme_action == 'renew') and ($this->cron == 1) and ($auto_renewal == 0)) {

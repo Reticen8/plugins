@@ -28,18 +28,18 @@
  *
  */
 
-namespace OPNsense\GridExample\Api;
+namespace Reticen8\GridExample\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\ApiMutableModelControllerBase;
 
 /**
  * a settings controller for our GridExample app, uses our ApiMutableModelControllerBase type
- * @package OPNsense\GridExample
+ * @package Reticen8\GridExample
  */
 class SettingsController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'gridexample';
-    protected static $internalModelClass = 'OPNsense\GridExample\GridExample';
+    protected static $internalModelClass = 'Reticen8\GridExample\GridExample';
 
     public function searchItemAction()
     {

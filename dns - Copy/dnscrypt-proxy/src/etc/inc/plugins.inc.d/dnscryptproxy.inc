@@ -2,7 +2,7 @@
 
 /*
  * Copyright (C) 2018 Michael Muenz <m.muenz@gmail.com>
- * Copyright (C) 2023 Franco Fichtner <franco@opnsense.org>
+ * Copyright (C) 2023 Franco Fichtner <franco@reticen8.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -29,7 +29,7 @@
 
 function dnscryptproxy_enabled()
 {
-    $model = new \OPNsense\Dnscryptproxy\General();
+    $model = new \Reticen8\Dnscryptproxy\General();
     return (string)$model->enabled == '1';
 }
 
@@ -48,7 +48,7 @@ function dnscryptproxy_services()
         return $services;
     }
 
-    $model = new \OPNsense\Dnscryptproxy\General();
+    $model = new \Reticen8\Dnscryptproxy\General();
     $ports = [];
 
     /* DNS service is eligable for core use when either 0.0.0.0 or :: are set */
@@ -80,7 +80,7 @@ function dnscryptproxy_configure_do($verbose)
 {
     service_log('Starting DNSCrypt-Proxy...', $verbose);
 
-    configd_run('template reload OPNsense/Dnscryptproxy');
+    configd_run('template reload Reticen8/Dnscryptproxy');
     configd_run('dnscryptproxy restart');
 
     service_log("done.\n", $verbose);

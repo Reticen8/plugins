@@ -1,4 +1,4 @@
-{% if helpers.exists('OPNsense.Rspamd.general.enabled') and OPNsense.Rspamd.general.enabled == '1' %}
+{% if helpers.exists('Reticen8.Rspamd.general.enabled') and Reticen8.Rspamd.general.enabled == '1' %}
 upstream "local" {
   default = yes;
   hosts = "/var/run/rspamd/normal.sock";

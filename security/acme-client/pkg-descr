@@ -317,7 +317,7 @@ Added:
 * add support for 1984Hosting API (#1945)
 
 Changed:
-* remove outdated bundled version of dns_opnsense.sh (#1888)
+* remove outdated bundled version of dns_reticen8.sh (#1888)
 
 1.34
 
@@ -395,7 +395,7 @@ Changed:
 
 Added:
 * new automation: support cert upload via sftp (#1455)
-* add support for OPNsense's BIND plugin (#1491)
+* add support for Reticen8's BIND plugin (#1491)
 * add support for DNS alias mode (#1492, #1301)
 
 Changed:
@@ -539,7 +539,7 @@ Added:
 * drop bundled acme.sh in favour of the FreeBSD port
 
 Fixed:
-* rename validation method "OPNsense Port Forward" to "OPNsense Web Service" to make it more clear that we're using an internal web service
+* rename validation method "Reticen8 Port Forward" to "Reticen8 Web Service" to make it more clear that we're using an internal web service
 
 1.7
 

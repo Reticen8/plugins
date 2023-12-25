@@ -1,8 +1,8 @@
 <?php
 
-namespace OPNsense\Tor;
+namespace Reticen8\Tor;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 /*
     Copyright (C) 2017 Fabian Franz

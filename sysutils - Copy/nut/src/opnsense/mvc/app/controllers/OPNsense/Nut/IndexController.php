@@ -30,21 +30,21 @@
 */
 
 
-namespace OPNsense\Nut;
+namespace Reticen8\Nut;
 
-use OPNsense\Core\Backend;
-use OPNsense\Nut;
+use Reticen8\Core\Backend;
+use Reticen8\Nut;
 
 /**
 * Class IndexController
-* @package OPNsense/Nut
+* @package Reticen8/Nut
 */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $backend = new Backend();
         $this->view->settings = $this->getForm("settings");
-        $this->view->pick('OPNsense/Nut/index');
+        $this->view->pick('Reticen8/Nut/index');
     }
 }

@@ -26,14 +26,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\Core\Config;
 
 /**
  * Vultr DNS API
- * @package OPNsense\AcmeClient
+ * @package Reticen8\AcmeClient
  */
 class DnsVultr extends Base implements LeValidationInterface
 {

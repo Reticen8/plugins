@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/quagga/ospf6</mount>
+    <mount>//Reticen8/quagga/ospf6</mount>
     <description>OSPFv3 Routing configuration</description>
     <version>1.0.4</version>
     <items>

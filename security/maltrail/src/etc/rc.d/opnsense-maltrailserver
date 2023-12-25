@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PROVIDE: opnsense-maltrailserver
+# PROVIDE: reticen8-maltrailserver
 # REQUIRE: SERVERS
 # KEYWORD: shutdown
 
@@ -13,7 +13,7 @@ pidfile=/var/run/${name}.pid
 command=/usr/sbin/daemon
 command_args="-f -P /var/run/maltrailserver.pid python3 /usr/local/share/maltrail/server.py"
 
-load_rc_config opnsense-maltrailserver
+load_rc_config reticen8-maltrailserver
 
 : ${maltrailserver_enable="NO"}
 

@@ -32,7 +32,7 @@ ca: {{ data.ca }}
 {% set enabled_frontends = [] %}
 {% set crt_list_template = "/tmp/haproxy/ssl/%s.certlist" %}
 {% set cert_template = "/tmp/haproxy/ssl/%s.pem" %}
-{% for frontend in helpers.toList('OPNsense.HAProxy.frontends.frontend') %}
+{% for frontend in helpers.toList('Reticen8.HAProxy.frontends.frontend') %}
 {%  set certs = [] %}
 {%  for cert in frontend.get('ssl_default_certificate', '').split(',') + frontend.get('ssl_certificates', '').split(',') if cert %}
 {%    do certs.append(cert) %}
@@ -42,7 +42,7 @@ ca: {{ data.ca }}
 {%    do enabled_frontends.append(frontend) %}
 {%  endif %}
 {% endfor %}
-{% if helpers.exists('OPNsense.HAProxy.frontends') and enabled_frontends|length > 0 %}
+{% if helpers.exists('Reticen8.HAProxy.frontends') and enabled_frontends|length > 0 %}
 frontends:
 {%  for frontend in enabled_frontends %}
   "{{ frontend.id }}":

@@ -26,12 +26,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Firewall;
+namespace Reticen8\Firewall;
 
-use OPNsense\Core\Config;
+use Reticen8\Core\Config;
 use Phalcon\Messages\Message;
-use OPNsense\Base\BaseModel;
-use OPNsense\Firewall\Util;
+use Reticen8\Base\BaseModel;
+use Reticen8\Firewall\Util;
 
 class Filter extends BaseModel
 {
@@ -113,12 +113,12 @@ class Filter extends BaseModel
     {
         $filename = Config::getInstance()->getBackupFilename($revision);
         if ($filename) {
-            // fiddle with the dom, copy OPNsense->Firewall->Filter from backup to current config
+            // fiddle with the dom, copy Reticen8->Firewall->Filter from backup to current config
             $sourcexml = simplexml_load_file($filename);
-            if ($sourcexml->OPNsense->Firewall->Filter) {
-                $sourcedom = dom_import_simplexml($sourcexml->OPNsense->Firewall->Filter);
+            if ($sourcexml->Reticen8->Firewall->Filter) {
+                $sourcedom = dom_import_simplexml($sourcexml->Reticen8->Firewall->Filter);
                 $targetxml = Config::getInstance()->object();
-                $targetdom = dom_import_simplexml($targetxml->OPNsense->Firewall->Filter);
+                $targetdom = dom_import_simplexml($targetxml->Reticen8->Firewall->Filter);
                 $node = $targetdom->ownerDocument->importNode($sourcedom, true);
                 $targetdom->parentNode->replaceChild($node, $targetdom);
                 Config::getInstance()->save();

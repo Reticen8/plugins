@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/netdata/general</mount>
+    <mount>//Reticen8/netdata/general</mount>
     <description>Netdata configuration</description>
     <version>0.0.1</version>
     <items>

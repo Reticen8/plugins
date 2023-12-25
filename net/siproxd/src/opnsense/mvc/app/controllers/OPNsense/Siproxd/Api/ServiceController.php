@@ -27,15 +27,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Siproxd\Api;
+namespace Reticen8\Siproxd\Api;
 
-use OPNsense\Base\ApiControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Siproxd\General;
+use Reticen8\Base\ApiControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Siproxd\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Siproxd
+ * @package Reticen8\Siproxd
  */
 class ServiceController extends ApiControllerBase
 {
@@ -147,7 +147,7 @@ class ServiceController extends ApiControllerBase
             $this->stopAction();
 
             // generate template
-            $backend->configdRun('template reload OPNsense/Siproxd');
+            $backend->configdRun('template reload Reticen8/Siproxd');
 
             // (re)start daemon
             if ($mdlGeneral->enabled->__toString() == 1) {

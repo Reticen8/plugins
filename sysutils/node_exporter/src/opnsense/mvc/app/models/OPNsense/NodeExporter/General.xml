@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/NodeExporter</mount>
+    <mount>//Reticen8/NodeExporter</mount>
     <description>
         node_exporter - Prometheus exporter for hardware and OS metrics.
     </description>

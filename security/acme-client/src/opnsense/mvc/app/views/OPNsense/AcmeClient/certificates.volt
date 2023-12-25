@@ -1,10 +1,10 @@
 {#
 
-(Partially duplicates code from opnsense_bootgrid_plugin.js.)
+(Partially duplicates code from reticen8_bootgrid_plugin.js.)
 
 Copyright (C) 2017-2021 Frank Wall
 Copyright (C) 2015 Deciso B.V.
-OPNsense® is Copyright © 2014-2015 by Deciso B.V.
+Reticen8® is Copyright © 2014-2015 by Deciso B.V.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
@@ -138,7 +138,7 @@ POSSIBILITY OF SUCH DAMAGE.
         }
 
         /**
-         * copy actions for selected items from opnsense_bootgrid_plugin.js
+         * copy actions for selected items from reticen8_bootgrid_plugin.js
          */
         var grid_certificates = $("#grid-certificates").bootgrid(gridopt).on("loaded.rs.jquery.bootgrid", function (e)
         {
@@ -211,7 +211,7 @@ POSSIBILITY OF SUCH DAMAGE.
         });
 
         /**
-         * copy actions for items from opnsense_bootgrid_plugin.js
+         * copy actions for items from reticen8_bootgrid_plugin.js
          */
         grid_certificates.on("loaded.rs.jquery.bootgrid", function(){
             // edit dialog id to use
@@ -466,8 +466,8 @@ POSSIBILITY OF SUCH DAMAGE.
             <p>{{ lang._('The following principles apply when managing certificates with this plugin:') }}</p>
             <ul>
               <li>{{ lang._('Certificates must be %svalidated%s by the CA before they can be used. This process runs in the background and may take several minutes to complete. The progress can be monitored by using the %slog files%s.') | format('<b>', '</b>', '<a href="/ui/acmeclient/logs">', '</a>') }}</li>
-              <li>{{ lang._('Certificates are stored in the %sOPNsense certificate storage%s. When a CA has completed the validation of a certificate request, the resulting certificate is then automatically imported into the OPNsense certificate storage. The same applies when renewing certificates, the existing entry in the OPNsense certificate storage will automatically be updated.') | format('<a href="/system_certmanager.php">', '</a>') }}</li>
-              <li>{{ lang._('When removing a certificate from the plugin, the certificate in the %sOPNsense certificate storage%s is %sNOT removed%s, because it may still be used by a core application or another plugin. Obsolete certificates should be manually removed from the OPNsense certificate storage. Note that when creating a new certificate with the same name, a new certificated will be imported into the OPNsense certificate storage (instead of updating the existing entry).') | format('<a href="/system_certmanager.php">', '</a>', '<b>', '</b>') }}</li>
+              <li>{{ lang._('Certificates are stored in the %sReticen8 certificate storage%s. When a CA has completed the validation of a certificate request, the resulting certificate is then automatically imported into the Reticen8 certificate storage. The same applies when renewing certificates, the existing entry in the Reticen8 certificate storage will automatically be updated.') | format('<a href="/system_certmanager.php">', '</a>') }}</li>
+              <li>{{ lang._('When removing a certificate from the plugin, the certificate in the %sReticen8 certificate storage%s is %sNOT removed%s, because it may still be used by a core application or another plugin. Obsolete certificates should be manually removed from the Reticen8 certificate storage. Note that when creating a new certificate with the same name, a new certificated will be imported into the Reticen8 certificate storage (instead of updating the existing entry).') | format('<a href="/system_certmanager.php">', '</a>', '<b>', '</b>') }}</li>
             </ul>
             <p>{{ lang._('When experiencing issues, try setting the log level to "debug" on the %ssettings%s page.') | format('<a href="/ui/acmeclient#settings">', '</a>') }}</p>
         </div>

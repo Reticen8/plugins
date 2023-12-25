@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Siproxd\Api;
+namespace Reticen8\Siproxd\Api;
 
-use OPNsense\Siproxd\Domain;
-use OPNsense\Core\Config;
-use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\UIModelGrid;
+use Reticen8\Siproxd\Domain;
+use Reticen8\Core\Config;
+use Reticen8\Base\ApiMutableModelControllerBase;
+use Reticen8\Base\UIModelGrid;
 
 class DomainController extends ApiMutableModelControllerBase
 {
     protected static $internalModelName = 'Domain';
-    protected static $internalModelClass = '\OPNsense\Siproxd\Domain';
+    protected static $internalModelClass = '\Reticen8\Siproxd\Domain';
 
     public function getAction()
     {

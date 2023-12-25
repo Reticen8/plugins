@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\Freeradius;
+namespace Reticen8\Freeradius;
 
-class DhcpController extends \OPNsense\Base\IndexController
+class DhcpController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->formDialogEditFreeRADIUSDhcp = $this->getForm("dialogEditFreeRADIUSDhcp");
-        $this->view->pick('OPNsense/Freeradius/dhcp');
+        $this->view->pick('Reticen8/Freeradius/dhcp');
     }
 }

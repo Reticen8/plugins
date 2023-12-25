@@ -30,8 +30,8 @@ function zabbixagent_enabled()
 {
     global $config;
 
-    return isset($config['OPNsense']['ZabbixAgent']['settings']['main']['enabled']) &&
-    $config['OPNsense']['ZabbixAgent']['settings']['main']['enabled'] == 1;
+    return isset($config['Reticen8']['ZabbixAgent']['settings']['main']['enabled']) &&
+    $config['Reticen8']['ZabbixAgent']['settings']['main']['enabled'] == 1;
 }
 
 function zabbixagent_firewall($fw)
@@ -80,7 +80,7 @@ function zabbixagent_xmlrpc_sync()
 {
     $result = array();
     $result['id'] = 'zabbixagent';
-    $result['section'] = 'OPNsense.zabbixagent.settings';
+    $result['section'] = 'Reticen8.zabbixagent.settings';
     $result['description'] = gettext('Zabbix monitoring agent');
     $result['services'] = ['zabbix_agentd'];
     return array($result);

@@ -26,15 +26,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\AcmeClient\LeValidation;
+namespace Reticen8\AcmeClient\LeValidation;
 
-use OPNsense\AcmeClient\LeValidationInterface;
-use OPNsense\AcmeClient\LeUtils;
-use OPNsense\Core\Config;
+use Reticen8\AcmeClient\LeValidationInterface;
+use Reticen8\AcmeClient\LeUtils;
+use Reticen8\Core\Config;
 
 /**
- * OPNsense BIND DNS API
- * @package OPNsense\AcmeClient
+ * Reticen8 BIND DNS API
+ * @package Reticen8\AcmeClient
  */
 class DnsOpnsense extends Base implements LeValidationInterface
 {
@@ -45,10 +45,10 @@ class DnsOpnsense extends Base implements LeValidationInterface
             LeUtils::log_error('BIND plugin is NOT installed. Please install os-bind and try again.');
             return false;
         }
-        $this->acme_env['OPNs_Host'] = (string)$this->config->dns_opnsense_host;
-        $this->acme_env['OPNs_Port'] = (string)$this->config->dns_opnsense_port;
-        $this->acme_env['OPNs_Key'] = (string)$this->config->dns_opnsense_key;
-        $this->acme_env['OPNs_Token'] = (string)$this->config->dns_opnsense_token;
-        $this->acme_env['OPNs_Api_Insecure'] = (string)$this->config->dns_opnsense_insecure;
+        $this->acme_env['OPNs_Host'] = (string)$this->config->dns_reticen8_host;
+        $this->acme_env['OPNs_Port'] = (string)$this->config->dns_reticen8_port;
+        $this->acme_env['OPNs_Key'] = (string)$this->config->dns_reticen8_key;
+        $this->acme_env['OPNs_Token'] = (string)$this->config->dns_reticen8_token;
+        $this->acme_env['OPNs_Api_Insecure'] = (string)$this->config->dns_reticen8_insecure;
     }
 }

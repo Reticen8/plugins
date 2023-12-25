@@ -26,9 +26,9 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\Lldpd;
+namespace Reticen8\Lldpd;
 
-use OPNsense\Base\BaseModel;
+use Reticen8\Base\BaseModel;
 
 class General extends BaseModel
 {

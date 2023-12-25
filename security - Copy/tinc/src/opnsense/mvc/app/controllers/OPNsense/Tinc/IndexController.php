@@ -28,13 +28,13 @@
  *
  */
 
-namespace OPNsense\Tinc;
+namespace Reticen8\Tinc;
 
 /**
  * Class IndexController
- * @package OPNsense\Tinc
+ * @package Reticen8\Tinc
  */
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
@@ -42,6 +42,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->formDialogNetwork = $this->getForm("dialogNetwork");
         $this->view->formDialogHost = $this->getForm("dialogHost");
         // choose template
-        $this->view->pick('OPNsense/Tinc/index');
+        $this->view->pick('Reticen8/Tinc/index');
     }
 }

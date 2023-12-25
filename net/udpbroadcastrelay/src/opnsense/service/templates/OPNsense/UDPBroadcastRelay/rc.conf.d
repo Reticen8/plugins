@@ -1,8 +1,8 @@
-{% if helpers.exists('OPNsense.udpbroadcastrelays.udpbroadcastrelay') %}
-{% from 'OPNsense/Macros/interface.macro' import physical_interface %}
+{% if helpers.exists('Reticen8.udpbroadcastrelays.udpbroadcastrelay') %}
+{% from 'Reticen8/Macros/interface.macro' import physical_interface %}
 osudpbroadcastrelay_enable="YES"
 {% set Instances=[] %}
-{%  for osudpbroadcastrelay in helpers.toList('OPNsense.udpbroadcastrelays.udpbroadcastrelay') %}
+{%  for osudpbroadcastrelay in helpers.toList('Reticen8.udpbroadcastrelays.udpbroadcastrelay') %}
 {%   if osudpbroadcastrelay.enabled|default('0') == '1' %}
 {%    set Parameters=[] %}
 {%    if osudpbroadcastrelay.InstanceID %}

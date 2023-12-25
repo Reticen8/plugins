@@ -26,10 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\DynDNS\Migrations;
+namespace Reticen8\DynDNS\Migrations;
 
-use OPNsense\Base\BaseModelMigration;
-use OPNsense\Core\Config;
+use Reticen8\Base\BaseModelMigration;
+use Reticen8\Core\Config;
 
 class M1_2_0 extends BaseModelMigration
 {
@@ -41,17 +41,17 @@ class M1_2_0 extends BaseModelMigration
     {
         $config = Config::getInstance()->object();
 
-        if (empty($config->OPNsense->DynDNS)) {
+        if (empty($config->Reticen8->DynDNS)) {
             return;
         }
 
         // migration will move these settings, extract datapoints from raw config
-        $checkip =  (string)$config->OPNsense->DynDNS->general->checkip;
-        $interface = $checkip == "if" ? (string)$config->OPNsense->DynDNS->general->interface : "";
-        $force_ssl = (string)$config->OPNsense->DynDNS->general->force_ssl;
+        $checkip =  (string)$config->Reticen8->DynDNS->general->checkip;
+        $interface = $checkip == "if" ? (string)$config->Reticen8->DynDNS->general->interface : "";
+        $force_ssl = (string)$config->Reticen8->DynDNS->general->force_ssl;
         $pre_account = [];
-        if (!empty($config->OPNsense->DynDNS->accounts->account)) {
-            foreach ($config->OPNsense->DynDNS->accounts->account as $account) {
+        if (!empty($config->Reticen8->DynDNS->accounts->account)) {
+            foreach ($config->Reticen8->DynDNS->accounts->account as $account) {
                 $pre_account[(string)$account->attributes()['uuid']] = [
                     "checkip" => !empty($account->use_interface) ? "if" : $checkip,
                     "interface" => !empty($account->use_interface) ? (string)$account->interface : $interface

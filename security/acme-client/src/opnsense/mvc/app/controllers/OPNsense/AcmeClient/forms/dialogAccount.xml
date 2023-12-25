@@ -42,7 +42,7 @@
         <id>account.custom_ca</id>
         <label>Custom CA URL</label>
         <type>text</type>
-        <help><![CDATA[The HTTPS URL of the custom ACME CA that should be used for this account and all associated certificates. If using your own CA, make sure the Root CA is added to OPNsense's trust store. For example: https://acme-v02.api.letsencrypt.org/directory or https://ca.internal/acme/directory]]></help>
+        <help><![CDATA[The HTTPS URL of the custom ACME CA that should be used for this account and all associated certificates. If using your own CA, make sure the Root CA is added to Reticen8's trust store. For example: https://acme-v02.api.letsencrypt.org/directory or https://ca.internal/acme/directory]]></help>
     </field>
     <field>
         <label>Optional EAB Credentials</label>

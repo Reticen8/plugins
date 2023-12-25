@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/maltrail/general</mount>
+    <mount>//Reticen8/maltrail/general</mount>
     <description>Maltrail general configuration</description>
     <version>0.0.2</version>
     <items>

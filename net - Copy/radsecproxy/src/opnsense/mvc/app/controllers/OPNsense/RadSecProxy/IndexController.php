@@ -22,13 +22,13 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-class IndexController extends \OPNsense\Base\IndexController
+class IndexController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         $this->view->basicForm = $this->getForm("basic");
-        $this->view->pick('OPNsense/RadSecProxy/index');
+        $this->view->pick('Reticen8/RadSecProxy/index');
     }
 }

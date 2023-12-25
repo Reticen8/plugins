@@ -22,15 +22,15 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-namespace OPNsense\RadSecProxy;
+namespace Reticen8\RadSecProxy;
 
-class RewritesController extends \OPNsense\Base\IndexController
+class RewritesController extends \Reticen8\Base\IndexController
 {
     public function indexAction()
     {
         //$this->view->generalForm = $this->getForm("clients");
         // pick the template to serve to our users.
-        $this->view->pick('OPNsense/RadSecProxy/rewrites');
+        $this->view->pick('Reticen8/RadSecProxy/rewrites');
         $this->view->formDialogRewrite = $this->getForm("dialogRewrite");
     }
 }

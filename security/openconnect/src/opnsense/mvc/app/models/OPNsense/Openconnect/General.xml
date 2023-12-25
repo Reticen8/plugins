@@ -1,5 +1,5 @@
 <model>
-    <mount>//OPNsense/openconnect/general</mount>
+    <mount>//Reticen8/openconnect/general</mount>
     <description>Openconnect configuration</description>
     <version>1.0.3</version>
     <items>

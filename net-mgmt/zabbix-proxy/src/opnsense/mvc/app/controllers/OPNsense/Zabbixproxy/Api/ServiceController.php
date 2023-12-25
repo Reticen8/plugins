@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\Zabbixproxy\Api;
+namespace Reticen8\Zabbixproxy\Api;
 
-use OPNsense\Base\ApiMutableServiceControllerBase;
-use OPNsense\Core\Backend;
-use OPNsense\Zabbixproxy\General;
+use Reticen8\Base\ApiMutableServiceControllerBase;
+use Reticen8\Core\Backend;
+use Reticen8\Zabbixproxy\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Zabbixproxy
+ * @package Reticen8\Zabbixproxy
  */
 class ServiceController extends ApiMutableServiceControllerBase
 {
-    protected static $internalServiceClass = '\OPNsense\Zabbixproxy\General';
-    protected static $internalServiceTemplate = 'OPNsense/Zabbixproxy';
+    protected static $internalServiceClass = '\Reticen8\Zabbixproxy\General';
+    protected static $internalServiceTemplate = 'Reticen8/Zabbixproxy';
     protected static $internalServiceEnabled = 'enabled';
     protected static $internalServiceName = 'zabbixproxy';
 }

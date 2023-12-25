@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 
 """
-    Copyright (c) 2023 Ad Schellevis <ad@opnsense.org>
+    Copyright (c) 2023 Ad Schellevis <ad@reticen8.com>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -67,9 +67,9 @@ def read_data(filename):
 def main(params):
     send_log('Started')
     skip_alias=''
-    if os.path.isfile('/var/ossec/etc/opnsense-fw.conf'):
+    if os.path.isfile('/var/ossec/etc/reticen8-fw.conf'):
         cnf = ConfigParser()
-        cnf.read('/var/ossec/etc/opnsense-fw.conf')
+        cnf.read('/var/ossec/etc/reticen8-fw.conf')
         skip_alias = cnf.get('general', 'skip_alias') if cnf.has_option('general', 'skip_alias') else ''
     else:
         send_log('Skip configuration')
