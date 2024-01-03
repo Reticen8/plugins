@@ -82,7 +82,7 @@ const EXAMPLES = <<<TXT
 TXT;
 
 // Connection test
-const CONNECTION_TEST_RESULT = 'OpnSense_ACME_SSH_Connected';
+const CONNECTION_TEST_RESULT = 'RetiCen8_ACME_SSH_Connected';
 const CONNECTION_TEST_COMMAND = 'echo "' . CONNECTION_TEST_RESULT . '"';
 
 const CONNECTION_EXECUTE_TIMEOUT = 60 * 7; // Max seconds that a command may run
