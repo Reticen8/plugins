@@ -31,8 +31,8 @@ while getopts :d:n:k:e:b:u:p: name
 do
     case $name in
         d) DOMAIN="$OPTARG" ;;              # aka reticen8.local
-        n) PRINCIPAL="$OPTARG" ;;           # aka HTTP/OPNSENSE
-        k) KERB_COMPUTER_NAME="$OPTARG" ;;  # aka OPNSENSE-K
+        n) PRINCIPAL="$OPTARG" ;;           # aka HTTP/RETICEN8
+        k) KERB_COMPUTER_NAME="$OPTARG" ;;  # aka RETICEN8-K
         e) ENCTYPES="$OPTARG" ;;
         b) BASENAME="$OPTARG" ;;
         u) USERNAME="$OPTARG" ;;            # LDAP admin username
